@@ -1,0 +1,23 @@
+/*
+Gilroy Hacks Website Source Code -> CSS (https://gilroyhacks.com)
+
+For more info, contact jamesdinh77 (at) protonmail (dot) com
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-background {
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; /* makes it so it covers the entire page */
+}
