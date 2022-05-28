@@ -13,6 +13,65 @@ html {
     box-sizing: border-box;
 }
 
+nav {
+    background: rgb(31, 33, 35);;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+    flex-wrap: nowrap;
+    z-index: 100;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
+}
+
+nav * {
+    padding: 0;
+    margin: 1px 1px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline-block;
+    line-height: 58px;
+    margin: 0 7px;
+}
+
+nav a {
+    color:rgb(136, 180, 231);
+    font-size: 18px;
+}
+
+nav a.active,a:hover {
+    color: rgb(111, 129, 138);
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
 .header-background {
     background-image: none;
     background-position: center;
