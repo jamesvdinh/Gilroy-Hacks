@@ -14,7 +14,6 @@ html {
 }
 
 nav {
-    /*background: rgb(31, 33, 35);*/
     height: auto;
     width: 100%;
     overflow: hidden;
@@ -23,12 +22,11 @@ nav {
     position: fixed;
     flex-wrap: nowrap;
     z-index: 100;
-    /*box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);*/
 }
 
 nav * {
     padding: 0;
-    margin: 1px 1px;
+    margin: 2px 5px;
     list-style: none;
     box-sizing: border-box;
     z-index: 100;
@@ -110,11 +108,79 @@ nav li a:focus::after{
     font-size: 17px;
 }
 
-.header-background {
+#header-background {
     background-image: none;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh; /* makes it so it covers the entire page */
+}
+
+#header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(#0d111733 50%, #0d11175e 60%, #0d1117 100%);
+}
+
+#header-subtitle-date {
+    padding: 5px;
+}
+
+#header-subtitle-spots {
+    padding: 5px;
+}
+
+#entrance-arrow {
+    max-height: 90px;
+    max-width: 35px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    float: bottom;
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-5px);
+    }
+    60% {
+      transform: translateY(-3px);
+    }
+}
+
+main {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    display: grid;
+    padding-bottom: 30px;
+}
+
+section {
+    width: auto;
+    padding: 70px 0px 0 0px;
+    text-align: center;
+    align-items: center;
+    max-width: 1500px;
+}
+
+.line {
+    width: 200px;
+    margin-bottom: 5px;
 }

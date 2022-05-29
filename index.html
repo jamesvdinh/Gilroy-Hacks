@@ -12,12 +12,13 @@
     
     <title>Gilroy Hacks</title>
     <link href="css/general.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/scroll_nav.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="">
     <meta name="author" content="Gilroy Hacks">
     <meta name="copyright" content="This site and its pages are Copyright (c) 2022 Gilroy Hacks All Rights Reserved.">
     <meta name="description" content="The official webiste for the Gilroy Hacks Hackathon. Strengthen your skills and collaborate with others to create something useful.">
     <meta name="keywords" content="Gilroy Hacks, GilroyHacks, Gilroy, hackathon, Bay Area, GECA, Dr. TJ Owens Gilroy Early College Academy">
-    
+
     <style>
         @font-face {
             font-family: "Glacial Indifference";
@@ -34,29 +35,48 @@
     </style>
     <!--For icons, go here: https://iconsvg.xyz/ -->
 </head>
+<body></body>
+    <!--Nav-->
+    <nav id="navBar">
+        <a href="./">
+            <img src="img/Gilroy Hacks Logo [Summer-wide].png" loading="lazy" height="55" width="auto" alt="logo"/>
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="img/bars.png" loading="lazy" height="20" width="25" alt="Bars"/>
+        </label>
+        <ul>
+            <li><a href="event">Event</a></li>
+            <li><a href="rules">Rules</a></li>
+            <li><a href="prizes">Prizes</a></li>
+            <li><a href="teams">Teams</a></li>
+            <a href=""></a><li id="sign-up">SIGN UP</li></a>
+        </ul>
+    </nav>
+    <!--Front Page-->
     <header>
-        <div class="header-background">
+        <div id="header-background">
             <div id="header">
-                <nav>
-                    <a href="./">
-                        <img id="logo" src="img/Gilroy Hacks Logo [wide transparent].png" loading="lazy" height="55" width="auto" alt="logo"/>
+                <img id="logo" src="img/Gilroy Hacks Logo [Summer].png" height="300" width="300" loading="lazy" alt="logo"/>
+                <hr class="line">
+                <h2 id="header-subtitle-date">Aug 12 - 14</h2>
+                <h2 id="header-subtitle-spots">40 spots Left</h2>
+                <div id="entrance-arrow">
+                    <a href="#event" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
                     </a>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <img src="img/bars.png" loading="lazy" height="20" width="25" alt="Bars"/>
-                    </label>
-                    <ul>
-                        <li><a href="">Event</a></li>
-                        <li><a href="">Rules</a></li>
-                        <li><a href="">Prizes</a></li>
-                        <li><a href="">Teams</a></li>
-                        <a href=""></a><li id="sign-up">SIGN UP</li></a>
-                    </ul>
-                </nav>
+                </div>
             </div>
         </div>
     </header>
-<body>
+<!--Main-->
+    <main>
+        <section id="event">Event</section>
+        <section id="rules">Rules</section>
+        <section id="prizes">Prizes</section>
+        <section id="teams">Teams</section>
+    </main>
 
+<script src="js/scroll_nav.js"></script>
 </body>
 </html>
