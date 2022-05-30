@@ -13,7 +13,7 @@
     <title>Gilroy Hacks</title>
     <link href="css/general.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/scroll_nav.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="">
+    <link rel="icon" href="img/Gilroy-Hacks-Logo.ico">
     <meta name="author" content="Gilroy Hacks">
     <meta name="copyright" content="This site and its pages are Copyright (c) 2022 Gilroy Hacks All Rights Reserved.">
     <meta name="description" content="The official webiste for the Gilroy Hacks Hackathon. Strengthen your skills and collaborate with others to create something useful.">
@@ -69,7 +69,7 @@
                 <div id="entrance-arrow">
                     <a href="#event" id="arrow-link">
                         Event
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
                     </a>
                 </div>
             </div>
@@ -86,22 +86,53 @@
                         <li>Even if you're not an expert at coding, this hackathon will offer an opportunity to strengthen your skills and collaborate with others to create something useful. Below are important dates to keep in mind:
                             <ul style="margin-left: 25px">
                                 <li><span class="emphasis-text">Aug 11</span> -> Signup Period Ends</li>
-                                <li><span class="emphasis-text">Aug 12-14</span> -> Hackathon</li>
+                                <li><span class="emphasis-text">Aug 12-14</span> -> Summer 2022 Hackathon</li>
                             </ul>
                         </li>
                         <li>Our program is dedicated to providing the Gilroy/Morgan Hill/Hollister youth with the opportunity to develop their coding skills. We specialize in hackathons where students participate in teams and compete for prizes. Students can create their own teams or if they are competing individually, we will assign teams based on experience level and programming language. For this hackathon, we plan on grouping at least one experienced person with novices so that no one is out of their depth. The current estimate is that there will be one or two experienced people and two novices in each team for this contest. However, depending on the number of participants, we may decrease team size if not enough people participate. </li>
                     </ul>
-                    </article>
+                </article>
                 <article>
                     <h3 id="steps-header">STEPS</h3>
                     <div id="steps-card">
-                        <ol class="list" id="steps-list">
-                            <li>Sign up w/ <a class="link" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7">form</a></li>
-                            <li>Join the Discord</li>
-                            <li>Create/join a team</li>
-                            <li>Start discussing ideas for a project</li>
-                            <li>Wait for the hackathon to start!</li>
-                        </ol>
+                        <div class="timeline">
+                            <div class="outer">
+                              <div class="card">
+                                <div class="info">
+                                  <p class="title">Sign up w/ this <a class="link" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7" title="Signup Form">form</a></p>
+                                  <p>- These questions are used to gauge your experience and skills so we can pair you with others</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="info">
+                                  <p class="title">Join the <a class="link" target="_blank" href="https://discord.gg/nkTDKMcYbr" title="Discord Invite Link">Discord</a></p>
+                                  <p>- Please change your nickname to your First and Last name</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="info">
+                                  <p class="title">Create/join a team</p>
+                                  <p>- Join teams in the Discord Server!</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="info">
+                                  <p class="title">Start discussing ideas for a project</p>
+                                  <p>
+                                      - Between now and the start of the hackathon is a great time to come up with project ideas w/ your team
+                                      <br>
+                                      - However, you can't start working on the project before the hackathon
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="info">
+                                  <p class="title">Wait for the hackathon to start!</p>
+                                  <p>- Mark your calendars, Aug 12 - 14</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -125,12 +156,13 @@
 <!--Footer-->
 <footer>
     <ul>
-        <li><a class="link" target="_blank" href="https://discord.gg/nkTDKMcYbr">Discord</a></li>
+        <li><a class="link" target="_blank" href="https://discord.gg/nkTDKMcYbr" title="Discord Invite Link">Discord</a></li>
     </ul>
     <hr id="footer-line">
     © 2022 Gilroy Hacks <br>
     All Rights Reserved
 </footer>
 <script src="js/scroll_nav.js"></script>
+<script src="js/timeline.js"></script>
 </body>
 </html>

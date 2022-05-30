@@ -125,12 +125,10 @@ nav li a:focus::after{
 }
 
 #sign-up:hover {
+    transform: scale(1.1);
     background-color: blueviolet;
-    transition: 0.5s;
     cursor: pointer;
-    padding: 6px 8px;
-    margin: 13px 15px 13px 0;
-    font-size: 17px;
+    transition: 0.5s;
 }
 
 /* Responsive Functions */
@@ -164,11 +162,16 @@ nav li a:focus::after{
         grid-template-columns: repeat(1, 1fr) !important;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .checkbtn {
         display: none;
     }
+    #logo {
+        height: 300px;
+        width: 300px;
+    }
 }
+
 
 #spots-container {
     display: flex;
@@ -248,6 +251,11 @@ nav li a:focus::after{
     animation: bounce 3s infinite;
 }
 
+#entrance-arrow:hover {
+    font-size: 17px;
+    transition: 0.1s;
+}
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);
@@ -258,6 +266,11 @@ nav li a:focus::after{
     60% {
       transform: translateY(-3px);
     }
+}
+
+#logo {
+    min-height: 300px;
+    min-width: 300px;
 }
 
 /* Main Section */
@@ -322,19 +335,69 @@ section {
     border-radius: 5px;
     background-color: #0d1117;
     background-color: #1e2227;
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px 30px;
     box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
     text-align: left;
 }
 
-#steps-list {
-    padding-left: 10px;
+.list-item {
+    margin: 0 0 30px 30px;
+    padding: 10px;
+    position: relative;
 }
 
-#steps-list li{
-    margin: 10px 0 30px;
+.list-item::before {
+    content: "";
+    position: relative;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 999px;
+    float: left;
+    border: 3px solid rgb(44, 44, 44);
 }
+
+/* Timeline Container */
+.timeline {
+    margin: 20px auto;
+  }
+  
+  /* Outer Layer with the timeline border */
+  .outer {
+    border-left: 2px solid #333;
+  }
+  
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    max-width: 400px;
+  }
+  
+  /* Title of the card */
+  .title {
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 16px;
+  }
+  
+  /* Timeline dot  */
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -29px;
+    border: 3px solid rgb(253, 124, 77);
+  }
 
 /* Utilities */
 #line-header {
