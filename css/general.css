@@ -297,14 +297,20 @@ section {
 
 #event-container {
     display: flex;
-    flex: row wrap;
+    flex-wrap: wrap;
     margin-top: 20px;
+    justify-content: center;
 }
 
 #event-description {
     padding: 10px;
     max-width: 700px;
+    min-width: 400px;
     text-align: left;
+}
+
+.list {
+    padding-left: 20px;
 }
 
 .list li{
@@ -312,7 +318,8 @@ section {
 }
 
 #steps-card {
-    width: 300px;
+    width: fit-content;
+    min-width: 300px;
     border-radius: 5px;
     background-color: #0d1117;
     background-color: #1e2227;
@@ -323,11 +330,10 @@ section {
 }
 
 #steps-list {
-    list-style: inside;
+    padding-left: 10px;
 }
 
 #steps-list li{
-    list-style: inside;
     margin: 10px 0 30px;
 }
 
