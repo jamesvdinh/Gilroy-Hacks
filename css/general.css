@@ -7,6 +7,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Nav */
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +31,7 @@ nav * {
     list-style: none;
     box-sizing: border-box;
     z-index: 100;
+    text-decoration: none;
 }
 
 #nav-logo {
@@ -54,7 +56,6 @@ nav li {
 }
 
 nav li a {
-    /*color:rgb(136, 180, 231);*/
     color:rgb(233, 203, 104);
     font-size: 18px;
     text-decoration: none;
@@ -112,8 +113,8 @@ nav li a:focus::after{
 }
 
 #sign-up {
-    padding: 3px 7px;
-    margin: 14px 7px 14px 5px;
+    padding: 6px 7px;
+    margin: 14px 15px 14px 4px;
 
     border-radius: 5px;
     font-size: 16px;
@@ -127,11 +128,12 @@ nav li a:focus::after{
     background-color: blueviolet;
     transition: 0.5s;
     cursor: pointer;
-    padding: 4px 8px;
-    margin: 13px 7px 13px 0;
+    padding: 6px 8px;
+    margin: 13px 15px 13px 0;
     font-size: 17px;
 }
 
+/* Responsive Functions */
 @media (max-width: 800px) {
     .checkbtn {
         display: inline-block;
@@ -206,6 +208,7 @@ nav li a:focus::after{
     }
   }
 
+/* Header */
 #header-background {
     background-image: none;
     background-position: center;
@@ -258,6 +261,7 @@ nav li a:focus::after{
     }
 }
 
+/* Main Section */
 main {
     width: 100%;
     padding: 10px 0 10px 0;
@@ -278,7 +282,120 @@ section {
     max-width: 1500px;
 }
 
-.line {
+.topic {
+    width: auto;
+    font-size: 35px;
+    padding: 0 20px 0 20px;
+    color:rgb(255, 243, 205);
+}
+
+#discord-widget {
+    margin: 50px auto 0;
+    /* width: 20%; */
+    float: right;
+}
+
+#event-container {
+    display: flex;
+    flex: row wrap;
+    margin-top: 20px;
+}
+
+#event-description {
+    padding: 10px;
+    max-width: 700px;
+    text-align: left;
+}
+
+.list li{
+    margin: 10px 0;
+}
+
+#steps-card {
+    width: 300px;
+    border-radius: 5px;
+    background-color: #0d1117;
+    background-color: #1e2227;
+    margin: 10px;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+    text-align: left;
+}
+
+#steps-list {
+    list-style: inside;
+}
+
+#steps-list li{
+    list-style: inside;
+    margin: 10px 0 30px;
+}
+
+/* Utilities */
+#line-header {
     width: 200px;
-    margin-bottom: 5px;
+    margin: 0 auto 5px;
+}
+
+.emphasis-text {
+    color:rgb(51, 235, 189);
+}
+
+.line {
+    width: 100px;
+    margin: 10px auto;
+}
+
+#footer-line {
+    width: 100px;
+    margin: 10px auto;
+}
+
+#arrow-link {
+    color:rgb(252, 188, 93);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link {
+    color:rgb(252, 188, 93);
+    text-decoration: none;
+    cursor: pointer;
+    background: 
+    linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.link:hover {
+    color:rgba(252, 188, 93, 0.719);
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+footer {
+    width: auto;
+    height: 100px;
+    background-color: rgb(24, 24, 24);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    flex-flow: row wrap;
+}
+
+footer ul {
+    float: top;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+footer a {
+    color:rgb(108, 176, 231);
+    font-size: 16px;
 }

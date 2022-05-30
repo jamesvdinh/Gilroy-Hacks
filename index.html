@@ -46,7 +46,7 @@
             <label for="check" class="checkbtn">
                 <img src="img/bars.png" loading="lazy" height="17" width="25" alt="Bars"/>
             </label>
-            <a href=""></a><div id="sign-up">SIGN UP</div></a>
+            <a target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7"><div id="sign-up">SIGN UP</div></a>
             <ul>
                 <li><a href="#event">Event</a></li>
                 <li><a href="#rules">Rules</a></li>
@@ -60,14 +60,15 @@
         <div id="header-background">
             <div id="header">
                 <img id="logo" src="img/Gilroy Hacks Logo [Summer].png" height="400" width="400" loading="lazy" alt="logo"/>
-                <hr class="line">
+                <hr id="line-header">
                 <h2 id="header-subtitle-date">Aug 12 - 14</h2>
                 <div id="spots-container">
                     <div class="blob green" aria-hidden="true"></div>
                     <h2 id="header-subtitle-spots">40 spots Left</h2>
                 </div>
                 <div id="entrance-arrow">
-                    <a href="#event" class="link">
+                    <a href="#event" id="arrow-link">
+                        Event
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
                     </a>
                 </div>
@@ -76,12 +77,60 @@
     </header>
 <!--Main-->
     <main>
-        <section id="event">Event</section>
-        <section id="rules">Rules</section>
-        <section id="prizes">Prizes</section>
-        <section id="teams">Teams</section>
+        <section id="event">
+            <h2 class="topic">Hackathon Event</h2>
+            <hr class="line">
+            <div id="event-container">
+                <article id="event-description">
+                    <ul class="list">
+                        <li>Even if you're not an expert at coding, this hackathon will offer an opportunity to strengthen your skills and collaborate with others to create something useful. Below are important dates to keep in mind:
+                            <ul style="margin-left: 25px">
+                                <li><span class="emphasis-text">Aug 11</span> -> Signup Period Ends</li>
+                                <li><span class="emphasis-text">Aug 12</span> -> Hackathon</li>
+                            </ul>
+                        </li>
+                        <li>Our program is dedicated to providing the Gilroy/Morgan Hill/Hollister youth with the opportunity to develop their coding skills. We specialize in hackathons where students participate in teams and compete for prizes. Students can create their own teams or if they are competing individually, we will assign teams based on experience level and programming language. For this hackathon, we plan on grouping at least one experienced person with novices so that no one is out of their depth. The current estimate is that there will be one or two experienced people and two novices in each team for this contest. However, depending on the number of participants, we may decrease team size if not enough people participate. </li>
+                    </ul>
+                    </article>
+                <article>
+                    <h3 id="steps-header">STEPS</h3>
+                    <div id="steps-card">
+                        <ul class="list" id="steps-list">
+                            <li>Sign up w/ <a class="link" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7">form</a></li>
+                            <li>Join the Discord</li>
+                            <li>Create/join a team</li>
+                            <li>Start discussing ideas for a project</li>
+                            <li>Wait for the hackathon to start!</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="rules">
+            <h2 class="topic">Rules</h2>
+            <hr class="line">
+        </section>
+        <section id="prizes">
+            <h2 class="topic">Prizes</h2>
+            <hr class="line">
+        </section>
+        <section id="teams">
+            <h2 class="topic">Teams</h2>
+            <hr class="line">
+            <div id="discord-widget">
+                <iframe src="https://discord.com/widget?id=896884806124728352&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+        </section>
     </main>
-
+<!--Footer-->
+<footer>
+    <ul>
+        <li><a class="link" target="_blank" href="https://discord.gg/nkTDKMcYbr">Discord</a></li>
+    </ul>
+    <hr id="footer-line">
+    © 2022 Gilroy Hacks <br>
+    All Rights Reserved
+</footer>
 <script src="js/scroll_nav.js"></script>
 </body>
 </html>
