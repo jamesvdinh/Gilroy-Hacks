@@ -473,6 +473,7 @@ footer a {
   width: 100%;
   height: 100%;
   text-align: center;
+  margin-top: 50px;
 }
 
 #timeline-heading {
@@ -653,7 +654,7 @@ input::before, input::after {
       justify-content: center;
       width: 400px;
       height: auto;
-      margin-top: 15vh;
+      margin-top: 7vh;
       margin-left: 0;
       padding-bottom: 30px;
     }
