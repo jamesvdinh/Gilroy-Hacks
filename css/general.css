@@ -321,6 +321,10 @@ section {
     text-align: left;
 }
 
+#description-heading {
+  text-align: center;
+}
+
 .list {
     padding-left: 20px;
 }
@@ -330,7 +334,7 @@ section {
 }
 
 #steps-card {
-    width: fit-content;
+    width: 400px;
     min-width: 300px;
     border-radius: 5px;
     background-color: #0d1117;
@@ -339,6 +343,10 @@ section {
     padding: 10px 30px;
     box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
     text-align: left;
+}
+
+#steps-header {
+  padding-top: 10px;
 }
 
 .list-item {
