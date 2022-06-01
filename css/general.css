@@ -682,9 +682,9 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
 
 #prizes-container {
     display: grid;
-    margin: 20px 20px 0;
+    margin: 50px 20px 0;
     width: auto;
-    height: 300px;
+    height: 280px;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -692,7 +692,6 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
 .podium-description {
   width: 100%;
   height: auto;
-  justify-content: center;
 
   display: flex;
   flex-flow: column nowrap;
