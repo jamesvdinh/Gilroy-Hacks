@@ -336,7 +336,7 @@ section {
 #steps-card {
     width: 400px;
     min-width: 300px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #0d1117;
     background-color: #1e2227;
     margin: 10px auto;
@@ -367,8 +367,8 @@ section {
     border: 3px solid rgb(44, 44, 44);
 }
 
-/* Timeline Container */
-.timeline {
+/* Signup Container */
+#signup-container {
     margin: 20px auto;
   }
   
@@ -403,8 +403,8 @@ section {
     height: 10px;
     background: white;
     border-radius: 999px;
-    left: -29px;
-    border: 3px solid rgb(253, 124, 77);
+    left: -28px;
+    border: 2px solid rgb(155, 144, 144);
   }
 
 /* Utilities */
@@ -510,8 +510,8 @@ footer a {
   }
   
 input {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     background-color: #2C3E50;
     position: relative;
     border-radius: 50%;
