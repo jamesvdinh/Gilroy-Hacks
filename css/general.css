@@ -132,6 +132,12 @@ nav li a:focus::after{
 }
 
 /* Responsive Functions */
+@media (max-width: 880px) {
+  #photo-release-container {
+    transform: scale(0.8);
+    font-size: 20px;
+  }
+}
 @media (max-width: 800px) {
     .checkbtn {
         display: inline-block;
@@ -161,14 +167,20 @@ nav li a:focus::after{
     #card-container {
         grid-template-columns: repeat(1, 1fr) !important;
     }
+    #event, #rules, #prizes, #team {
+      transform: scale(0.9);
+    }
 }
-@media (max-width: 450px) {
+@media (max-width: 470px) {
     .checkbtn {
         display: none;
     }
     #logo {
         height: 300px;
         width: 300px;
+    }
+    #prizes-container {
+      transform: scale(0.8);
     }
 }
 @media (max-height: 700px) {
@@ -321,9 +333,9 @@ section {
 
 #event-description {
     padding: 10px;
-    margin-right: 20px;
+    margin: 0 20px;
     max-width: 700px;
-    min-width: 400px;
+    min-width: 200px;
     font-size: 18px;
     text-align: left;
 }
@@ -529,7 +541,6 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
     height: auto;
     margin-top: 7vh;
     margin-left: 0;
-    padding-bottom: 30px;
   }
 
   input, .dot-info {
@@ -673,11 +684,94 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
     border: 2px solid rgb(155, 144, 144);
   }
 
+#rules-description {
+  margin: 10px 20px;
+}
+
+#photo-description {
+  margin: 10px 20px;
+}
+
+#photo-release-container {
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #1f2b22;
+  margin: 10px auto;
+  max-width: 850px;
+  min-width: 400px;
+  padding: 10px;
+}
+
 #rules-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     justify-content: center;
+}
+
+#guidelines {
+  margin: 20px;
+}
+
+#code-of-conduct {
+  margin: 20px;
+}
+
+.rules-card {
+  position: relative;
+  padding: 10px;
+  margin: 0 0 20px 20px;
+  background: rgb(47, 55, 70);
+  color: rgb(179, 179, 179);
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+#rules-main-card {
+  width: 400px;
+  min-width: 300px;
+  border-radius: 10px;
+  background-color: #131d29;
+  margin: 10px auto;
+  padding: 10px 30px;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+  text-align: left;
+}
+
+#rules-header {
+  padding-top: 10px;
+}
+
+/* Title of the card */
+.rules-title {
+  color: rgb(253, 103, 103);
+  position: relative;
+  font-size: 17px;
+}
+
+.rules-card::before {
+  content: "";
+  font-size: 30px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -28px;
+}
+
+#rules-1::before {
+  content: "1";
+}
+#rules-2::before {
+  content: "2";
+}
+#rules-3::before {
+  content: "3";
+}
+#rules-4::before {
+  content: "4";
+}
+#rules-5::before {
+  content: "5";
 }
 
 #prizes-container {
