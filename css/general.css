@@ -167,9 +167,11 @@ nav li a:focus::after{
     #card-container {
         grid-template-columns: repeat(1, 1fr) !important;
     }
-    #event, #rules, #prizes, #team {
-      transform: scale(0.9);
-    }
+}
+@media (max-width: 500px) {
+  #event, #rules, #prizes, #team {
+    transform: scale(0.9);
+  }
 }
 @media (max-width: 470px) {
     .checkbtn {
