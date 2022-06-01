@@ -367,114 +367,6 @@ section {
     border: 3px solid rgb(44, 44, 44);
 }
 
-/* Signup Container */
-#signup-container {
-    margin: 20px auto;
-  }
-  
-  /* Outer Layer with the timeline border */
-  .outer {
-    border-left: 2px solid #333;
-  }
-  
-  /* Card container */
-  .card {
-    position: relative;
-    margin: 0 0 20px 20px;
-    padding: 10px;
-    background: #333;
-    color: gray;
-    border-radius: 8px;
-    max-width: 400px;
-  }
-  
-  /* Title of the card */
-  .title {
-    color: rgb(255, 255, 255);
-    position: relative;
-    font-size: 16px;
-  }
-  
-  /* Timeline dot  */
-  .card::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 999px;
-    left: -28px;
-    border: 2px solid rgb(155, 144, 144);
-  }
-
-/* Utilities */
-#line-header {
-    width: 200px;
-    margin: 0 auto 5px;
-}
-
-.emphasis-text {
-    color:rgb(51, 235, 189);
-}
-
-.line {
-    width: 100px;
-    margin: 10px auto;
-}
-
-#footer-line {
-    width: 100px;
-    margin: 10px auto;
-}
-
-#arrow-link {
-    color:rgb(252, 188, 93);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.link {
-    color:rgb(252, 188, 93);
-    text-decoration: none;
-    cursor: pointer;
-    background: 
-    linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
-    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
-    background-size: 100% 0.1em, 0 0.1em;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-}
-
-.link:hover {
-    color:rgba(252, 188, 93, 0.719);
-    background-size: 0 0.1em, 100% 0.1em;
-}
-
-footer {
-    width: auto;
-    height: 100px;
-    background-color: rgb(24, 24, 24);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px 20px 20px 20px;
-    flex-flow: row wrap;
-}
-
-footer ul {
-    float: top;
-}
-
-footer li {
-    display: inline-block;
-    margin: 0 7px;
-}
-
-footer a {
-    color:rgb(108, 176, 231);
-    font-size: 16px;
-} 
 
 /* Timeline */
 #timeline {
@@ -590,7 +482,7 @@ input:checked + .dot-info span {
   margin-top: 70px;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   text-align: left;
 }
 #timeline-descriptions-wrapper div {
@@ -734,3 +626,172 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
     width: 300px;
   }
 }
+
+/* Signup Container */
+#signup-container {
+    margin: 20px auto;
+  }
+  
+  /* Outer Layer with the steps border */
+  .outer {
+    border-left: 2px solid #333;
+  }
+  
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    max-width: 400px;
+  }
+  
+  /* Title of the card */
+  .title {
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 16px;
+  }
+  
+  /* Steps dot  */
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -28px;
+    border: 2px solid rgb(155, 144, 144);
+  }
+
+#rules-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#prizes-container {
+    display: grid;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.podium-description {
+  width: 100%;
+  height: 50px;
+}
+
+#second-column {
+  width: 100%;
+  height: 50px;
+}
+
+#first-column {
+  width: 100%;
+  height: 90px;
+  position: relative;
+}
+
+#third-column {
+  width: 100%;
+  height: 40px;
+}
+
+#second-podium {
+  width: 100%;
+  height: 50px;
+  bottom: -40px;
+  position: relative;
+  background-color: #333;
+}
+
+#first-podium {
+  width: 100%;
+  height: 90px;
+  position: relative;
+  background-color: #333;
+}
+
+#third-podium {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  bottom: -50px;
+  background-color: #333;
+}
+
+/* Utilities */
+#line-header {
+    width: 200px;
+    margin: 0 auto 5px;
+}
+
+.emphasis-text {
+    color:rgb(51, 235, 189);
+}
+
+.line {
+    width: 100px;
+    margin: 10px auto;
+}
+
+#footer-line {
+    width: 100px;
+    margin: 10px auto;
+}
+
+#arrow-link {
+    color:rgb(252, 188, 93);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link {
+    color:rgb(252, 188, 93);
+    text-decoration: none;
+    cursor: pointer;
+    background: 
+    linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.link:hover {
+    color:rgba(252, 188, 93, 0.719);
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+footer {
+    width: auto;
+    height: 100px;
+    background-color: rgb(24, 24, 24);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    flex-flow: row wrap;
+}
+
+footer ul {
+    float: top;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+footer a {
+    color:rgb(108, 176, 231);
+    font-size: 16px;
+} 
