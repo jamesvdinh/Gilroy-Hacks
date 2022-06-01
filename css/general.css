@@ -171,7 +171,12 @@ nav li a:focus::after{
         width: 300px;
     }
 }
-
+@media (max-height: 700px) {
+  #logo {
+    height: 300px;
+    width: 300px;
+  }
+}
 
 #spots-container {
     display: flex;
