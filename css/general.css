@@ -327,16 +327,11 @@ main {
 
 section {
   width: auto;
-  padding-top: 50px;
+  padding-top: 70px;
   text-align: center;
   justify-content: center;
   align-items: center;
   max-width: 1500px;
-}
-
-#event {
-  /* background-color: #0d1117; */
-  padding-bottom: 20px;
 }
 
 .topic {
@@ -344,12 +339,6 @@ section {
   font-size: 35px;
   padding: 0 20px 0 20px;
   color:rgb(255, 243, 205);
-}
-
-#discord-widget {
-  margin: 50px auto 0;
-  /* width: 20%; */
-  float: right;
 }
 
 #event-container {
