@@ -329,6 +329,7 @@ section {
   width: auto;
   padding-top: 70px;
   text-align: center;
+  justify-content: center;
   align-items: center;
   max-width: 1500px;
 }
@@ -807,7 +808,7 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
 
 #prizes-container {
     display: grid;
-    margin: 50px 20px 0;
+    margin: 50px 50px 0;
     width: auto;
     height: 280px;
     justify-content: center;
@@ -1000,7 +1001,11 @@ abbr[title] {
 }
 
 .discord-text {
-  color: rgb(153, 126, 248);
+  color: rgb(110, 112, 247);
+}
+
+.discord-tag {
+  color: rgb(150, 150, 150);
 }
 
 .line {
