@@ -247,7 +247,7 @@ nav li a:focus::after{
 
 /* Header */
 #header-background {
-    background-image: none;
+    background-image: url(/img/mountains-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
