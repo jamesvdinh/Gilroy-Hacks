@@ -315,7 +315,7 @@ nav li a:focus::after{
 /* Main Section */
 main {
   width: 100%;
-  padding: 0 0 10px 0;
+  padding-bottom: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -335,7 +335,7 @@ section {
 }
 
 #event {
-  background-color: #0d1117;
+  /* background-color: #0d1117; */
   padding-bottom: 20px;
 }
 
