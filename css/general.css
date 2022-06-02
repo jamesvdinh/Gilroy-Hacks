@@ -705,7 +705,7 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
     width: 10px;
     height: 10px;
     background: white;
-    border-radius: 999px;
+    border-radius: 50%;
     left: -28px;
     border: 2px solid rgb(155, 144, 144);
   }
@@ -822,6 +822,24 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
   position: relative;
 }
 
+.prize-desc {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  position: relative;
+}
+
+.prize-desc:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
 .prize-laurel {
   height: 150px;
   width: auto;
@@ -830,24 +848,26 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
 
 .prize-title {
   position: absolute;
-  color: rgb(203, 218, 77);
+  color: rgb(77, 218, 211);
   font-size: 25px;
 }
 
 #pr-ti-2 {
-  margin-bottom: 110px;
+  margin-bottom: 40px;
 }
 
 #pr-ti-1 {
-  margin-bottom: 160px;
+  margin-bottom: 40px;
 }
 
 #pr-ti-3 {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .prize-content {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  color:rgb(129, 218, 126);
+  font-size: 20px;
 }
 
 #second-column {
