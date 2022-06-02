@@ -314,124 +314,133 @@ nav li a:focus::after{
 
 /* Main Section */
 main {
-    width: 100%;
-    padding: 10px 0 10px 0;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    margin: auto;
-    display: grid;
-    padding-bottom: 30px;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  display: grid;
+  padding-bottom: 30px;
 }
 
 section {
-    width: auto;
-    padding-top: 70px;
-    text-align: center;
-    align-items: center;
-    max-width: 1500px;
+  width: auto;
+  padding-top: 70px;
+  text-align: center;
+  align-items: center;
+  max-width: 1500px;
 }
 
 .topic {
-    width: auto;
-    font-size: 35px;
-    padding: 0 20px 0 20px;
-    color:rgb(255, 243, 205);
+  width: auto;
+  font-size: 35px;
+  padding: 0 20px 0 20px;
+  color:rgb(255, 243, 205);
 }
 
 #discord-widget {
-    margin: 50px auto 0;
-    /* width: 20%; */
-    float: right;
+  margin: 50px auto 0;
+  /* width: 20%; */
+  float: right;
 }
 
 #event-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 #event-description {
-    padding: 10px;
-    margin: 0 20px;
-    max-width: 700px;
-    min-width: 200px;
-    font-size: 18px;
-    text-align: left;
+  margin: 0 20px;
+  max-width: 700px;
+  min-width: 200px;
+  font-size: 18px;
+  text-align: left;
+
+}
+
+#event-main-box {
+  padding: 10px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgb(68, 68, 68);
 }
 
 #description-heading {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .list {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .list li{
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 /* Timeline */
 #timeline {
+  padding: 10px;
   width: 100%;
   height: 100%;
   text-align: center;
-  margin-top: 50px;
 }
 
 #timeline-heading {
-    text-align: center;
-    margin-top: 20px;
-  }
+  text-align: center;
+  margin-top: 20px;
+}
   
 .flex-parent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
   
 .input-flex-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
-    max-width: 1000px;
-    position: relative;
-    z-index: 0;
-  }
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1000px;
+  position: relative;
+  z-index: 0;
+}
+
 input {
-    width: 22px;
-    height: 22px;
-    background-color: #2C3E50;
-    position: relative;
-    border-radius: 50%;
-    display: block;
-    appearance: none;
-    cursor: pointer;
-  }
+  width: 22px;
+  height: 22px;
+  background-color: #2C3E50;
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  appearance: none;
+  cursor: pointer;
+}
 input:focus {
-    outline: none;
-  }
+  outline: none;
+}
 input::before, input::after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #2C3E50;
-    width: 80px;
-    /* width: 6vw; */
-    height: 5px;
-  }
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2C3E50;
+  width: 80px;
+  /* width: 6vw; */
+  height: 5px;
+}
 input::before {
   right: calc(2vw);
 }
@@ -535,7 +544,7 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
   display: block;
 }
   
-@media (min-width: 1250px) {
+@media (max-width: 2250px) {
     input::before {
       left: -37.5px;
     }
@@ -925,7 +934,7 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
 }
 
 #team-container article {
-  padding: 20px 50px;
+  padding: 20px 35px;
   width: 400px;
 }
 
@@ -971,7 +980,8 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
 
 .person-contact {
   font-size: 15px;
-  padding-top: 15px;
+  padding-top: 16px;
+  font-style: normal;
 }
 
 /* Utilities */
@@ -987,6 +997,10 @@ abbr[title] {
 
 .emphasis-text {
     color:rgb(51, 235, 189);
+}
+
+.discord-text {
+  color: rgb(153, 126, 248);
 }
 
 .line {
@@ -1046,4 +1060,4 @@ footer li {
 footer a {
     color:rgb(108, 176, 231);
     font-size: 16px;
-} 
+}
