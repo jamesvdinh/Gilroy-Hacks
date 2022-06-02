@@ -182,7 +182,7 @@ nav li a:focus::after{
         width: 300px;
     }
     #prizes-container {
-      transform: scale(0.8);
+      transform: scale(0.9);
     }
 }
 @media (max-height: 700px) {
@@ -195,6 +195,11 @@ nav li a:focus::after{
 #spots-container {
     display: flex;
     place-items: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 0 7px;
+    border: 1px solid rgb(73, 73, 73);
+    background-color: rgb(22, 22, 22);
 }
 
 .blob {
@@ -255,10 +260,15 @@ nav li a:focus::after{
 
 #header-subtitle-date {
     padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(73, 73, 73);
+    background-color: rgb(22, 22, 22);
 }
 
 #header-subtitle-spots {
     padding: 5px;
+    
 }
 
 #entrance-arrow {
@@ -873,6 +883,11 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
 #line-header {
     width: 200px;
     margin: 0 auto 5px;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
 }
 
 .emphasis-text {
