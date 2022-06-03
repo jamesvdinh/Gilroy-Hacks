@@ -872,7 +872,7 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
   position: relative;
 }
 
-.prize-desc:hover {
+.prize-desc:hover > .prize-content {
   transform: rotate3d(0, 1, 0, 360deg);
   transition: 0.5s;
 }
@@ -887,12 +887,14 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
   position: absolute;
   color: rgb(77, 218, 211);
   font-size: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .prize-content {
   color:rgb(129, 218, 126);
   font-size: 20px;
+  height: 20px;
+  position: absolute;
 }
 
 #second-column {
