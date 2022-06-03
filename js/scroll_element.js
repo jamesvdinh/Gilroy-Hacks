@@ -9,6 +9,7 @@ const observer = new IntersectionObserver(entries => {
     });
   });
   
+  observer.observe(document.querySelector('#description-heading'));
   observer.observe(document.querySelector('#event-main-box'));
   observer.observe(document.querySelector('#timeline'));
   observer.observe(document.querySelector('#signup-article'));

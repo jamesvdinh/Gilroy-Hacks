@@ -469,7 +469,7 @@ section {
   z-index: 0;
 }
 
-input {
+.timeline-input {
   width: 22px;
   height: 22px;
   background-color: #2C3E50;
@@ -479,10 +479,10 @@ input {
   appearance: none;
   cursor: pointer;
 }
-input:focus {
+.timeline-input:focus {
   outline: none;
 }
-input::before, input::after {
+.timeline-input::before, .timeline-input::after {
   content: "";
   display: block;
   position: absolute;
@@ -494,25 +494,25 @@ input::before, input::after {
   /* width: 6vw; */
   height: 5px;
 }
-input::before {
+.timeline-input::before {
   right: calc(2vw);
 }
-input::after {
+.timeline-input::after {
   left: calc(1vw);
 }
-input:checked {
+.timeline-input:checked {
   background-color: #2C3E50;
 }
-input:checked::before {
+.timeline-input:checked::before {
   background-color: #2C3E50;
 }
-input:checked::after {
+.timeline-input:checked::after {
   background-color: #AEB6BF;
 }
-input:checked ~ input, input:checked ~ input::before, input:checked ~ input::after {
+.timeline-input:checked ~ .timeline-input, .timeline-input:checked ~ .timeline-input::before, .timeline-input:checked ~ .timeline-input::after {
   background-color: #AEB6BF;
 }
-input:checked + .dot-info span {
+.timeline-input:checked + .dot-info span {
   font-size: 13px;
   color: rgb(243, 174, 252);
   font-weight: bold;
@@ -577,31 +577,31 @@ input:checked + .dot-info span {
   color: rgb(255, 126, 126);
 }
 
-input[data-description="1"]:checked ~ #timeline-descriptions-wrapper div[data-description="1"] {
+.timeline-input[data-description="1"]:checked ~ #timeline-descriptions-wrapper div[data-description="1"] {
   display: block;
 }
 
-input[data-description="2"]:checked ~ #timeline-descriptions-wrapper div[data-description="2"] {
+.timeline-input[data-description="2"]:checked ~ #timeline-descriptions-wrapper div[data-description="2"] {
   display: block;
 }
 
-input[data-description="3"]:checked ~ #timeline-descriptions-wrapper div[data-description="3"] {
+.timeline-input[data-description="3"]:checked ~ #timeline-descriptions-wrapper div[data-description="3"] {
   display: block;
 }
 
-input[data-description="4"]:checked ~ #timeline-descriptions-wrapper div[data-description="4"] {
+.timeline-input[data-description="4"]:checked ~ #timeline-descriptions-wrapper div[data-description="4"] {
   display: block;
 }
 
-input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-description="5"] {
+.timeline-input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-description="5"] {
   display: block;
 }
   
 @media (max-width: 2250px) {
-    input::before {
+  .timeline-input::before {
       left: -37.5px;
     }
-    input::after {
+    .timeline-input::after {
       right: -37.5px;
     }
 
@@ -627,7 +627,7 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
     margin-left: 0;
   }
 
-  input, .dot-info {
+  .timeline-input, .dot-info {
     width: 60px;
     height: 60px;
     margin: 0 10px 50px;
@@ -637,16 +637,16 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
     background-color: transparent !important;
     z-index: 1;
   }
-  input::before, input::after {
+  .timeline-input::before, .timeline-input::after {
     content: none;
   }
-  input:checked + .dot-info {
+  .timeline-input:checked + .dot-info {
     background-color: #2C3E50;
   }
-  input:checked + .dot-info span.year {
+  .timeline-input:checked + .dot-info span.year {
     font-size: 14px;
   }
-  input:checked + .dot-info span.label {
+  .timeline-input:checked + .dot-info span.label {
     font-size: 12px;
   }
 
@@ -710,50 +710,223 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
   text-align: left;
 }
 
-  /* Outer Layer with the steps border */
-  .outer {
-    border-left: 2px solid #333;
-  }
-  
-  /* Card container */
-  .card {
-    position: relative;
-    margin: 0 0 20px 20px;
-    padding: 10px;
-    background: rgb(49, 48, 48);
-    color: gray;
-    border-radius: 8px;
-    max-width: 400px;
-  }
+/* Outer Layer with the steps border */
+.outer {
+  border-left: 2px solid #333;
+}
 
-  .card:hover {
-    filter: brightness(120%);
-    transition: 0.5s;
-  }
-  
-  #signup-header {
-    padding-top: 10px;
-  }
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: rgb(49, 48, 48);
+  color: gray;
+  border-radius: 8px;
+  max-width: 400px;
+}
 
-  /* Title of the card */
-  .title {
-    color: rgb(255, 255, 255);
-    position: relative;
-    font-size: 16px;
+.card:hover {
+  filter: brightness(120%);
+  transition: 0.5s;
+}
+
+#signup-header {
+  padding-top: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 16px;
+}
+
+/* Steps dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgb(49, 48, 48);
+  border-radius: 50%;
+  margin-top: 3px;
+  left: -38px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.caption {
+  float: middle;
+}
+
+/* Signup Checklist */
+#checklist {
+  --text: #414856;
+  --check: #00ff37;
+  --disabled: #C3C8DE;
+  --border-radius: 10px;
+  background: var(--background);
+  position: relative;
+  display: grid;
+  grid-template-columns: 0px auto;
+  align-items: center;
+}
+#checklist label {
+  color: var(--text);
+  position: relative;
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  width: fit-content;
+  transition: color 0.3s ease;
+}
+#checklist label::before, #checklist label::after {
+  content: "";
+  position: absolute;
+}
+#checklist label::before {
+  height: 2px;
+  width: 8px;
+  left: -35px;
+  background: var(--check);
+  border-radius: 2px;
+}
+#checklist label:after {
+  height: 4px;
+  width: 4px;
+  top: 8px;
+  left: -35px;
+  border-radius: 50%;
+}
+#checklist input[type=checkbox] {
+  appearance: none;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  outline: none;
+  border: 0;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+  background: var(--background);
+  display: grid;
+  align-items: center;
+}
+#checklist input[type=checkbox]::before, #checklist input[type=checkbox]::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  top: auto;
+  background: var(--check);
+  border-radius: 2px;
+}
+#checklist input[type=checkbox]::before {
+  width: 0px;
+  transform-origin: right bottom;
+  z-index: 2;
+}
+#checklist input[type=checkbox]::after {
+  width: 0px;
+  transform-origin: left bottom;
+  z-index: 2;
+}
+#checklist input[type=checkbox]:checked::before {
+  animation: check-01 0.4s ease forwards;
+  left: -36px;
+}
+#checklist input[type=checkbox]:checked::after {
+  animation: check-02 0.4s ease forwards;
+  left: -30px;
+}
+#checklist input[type=checkbox]:checked + label {
+  color: var(--disabled);
+    animation: move 0.3s ease 0.1s forwards;
+}
+#checklist input[type=checkbox]:checked + label::before {
+  background: var(--disabled);
+    animation: slice 0.4s ease forwards;
+}
+#checklist input[type=checkbox]:checked + label::after {
+  animation: firework 0.5s ease forwards 0.1s;
+  left: -33px;
+}
+
+@keyframes move {
+  50% {
+    padding-left: 8px;
+    padding-right: 0px;
   }
-  
-  /* Steps dot  */
-  .card::before {
-    content: "";
-    position: absolute;
+  100% {
+    padding-right: 4px;
+  }
+}
+@keyframes slice {
+  60% {
+    width: 100%;
+    left: 4px;
+  }
+  100% {
+    width: 100%;
+    left: -2px;
+    padding-left: 0;
+  }
+}
+@keyframes check-01 {
+  0% {
+    width: 4px;
+    top: auto;
+    transform: rotate(0);
+  }
+  50% {
+    width: 0px;
+    top: auto;
+    transform: rotate(0);
+  }
+  51% {
+    width: 0px;
+    top: 8px;
+    transform: rotate(45deg);
+  }
+  100% {
+    width: 5px;
+    top: 8px;
+    transform: rotate(45deg);
+  }
+}
+@keyframes check-02 {
+  0% {
+    width: 4px;
+    top: auto;
+    transform: rotate(0);
+  }
+  50% {
+    width: 0px;
+    top: auto;
+    transform: rotate(0);
+  }
+  51% {
+    width: 0px;
+    top: 8px;
+    transform: rotate(-45deg);
+  }
+  100% {
     width: 10px;
-    height: 10px;
-    background: rgb(56, 105, 56);
-    border-radius: 50%;
-    left: -28px;
-    cursor: pointer;
-    border: 2px solid rgb(255, 255, 255);
+    top: 8px;
+    transform: rotate(-45deg);
   }
+}
+@keyframes firework {
+  0% {
+    opacity: 1;
+    box-shadow: 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    box-shadow: 0 -15px 0 0px #4f29f0, 14px -8px 0 0px #4f29f0, 14px 8px 0 0px #4f29f0, 0 15px 0 0px #4f29f0, -14px 8px 0 0px #4f29f0, -14px -8px 0 0px #4f29f0;
+  }
+}
 
 #rules-description {
   margin: 10px 20px;
@@ -1141,82 +1314,4 @@ footer li {
 footer a {
     color:rgb(108, 176, 231);
     font-size: 16px;
-}
-
-@keyframes move {
-  50% {
-    padding-left: 8px;
-    padding-right: 0px;
-  }
-  100% {
-    padding-right: 4px;
-  }
-}
-@keyframes slice {
-  60% {
-    width: 100%;
-    left: 4px;
-  }
-  100% {
-    width: 100%;
-    left: -2px;
-    padding-left: 0;
-  }
-}
-@keyframes check-01 {
-  0% {
-    width: 4px;
-    top: auto;
-    transform: rotate(0);
-  }
-  50% {
-    width: 0px;
-    top: auto;
-    transform: rotate(0);
-  }
-  51% {
-    width: 0px;
-    top: 8px;
-    transform: rotate(45deg);
-  }
-  100% {
-    width: 5px;
-    top: 8px;
-    transform: rotate(45deg);
-  }
-}
-@keyframes check-02 {
-  0% {
-    width: 4px;
-    top: auto;
-    transform: rotate(0);
-  }
-  50% {
-    width: 0px;
-    top: auto;
-    transform: rotate(0);
-  }
-  51% {
-    width: 0px;
-    top: 8px;
-    transform: rotate(-45deg);
-  }
-  100% {
-    width: 10px;
-    top: 8px;
-    transform: rotate(-45deg);
-  }
-}
-@keyframes firework {
-  0% {
-    opacity: 1;
-    box-shadow: 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0;
-  }
-  30% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    box-shadow: 0 -15px 0 0px #4f29f0, 14px -8px 0 0px #4f29f0, 14px 8px 0 0px #4f29f0, 0 15px 0 0px #4f29f0, -14px 8px 0 0px #4f29f0, -14px -8px 0 0px #4f29f0;
-  }
 }
