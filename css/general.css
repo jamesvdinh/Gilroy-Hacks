@@ -334,6 +334,7 @@ nav li a:focus::after{
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 @keyframes slidein-2 {
@@ -346,6 +347,26 @@ nav li a:focus::after{
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slidein-side {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide-animation {
+    animation: slidein-side ease 1s;
   }
 }
 
@@ -861,7 +882,7 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
 
 .prize-desc:hover > .prize-content {
   transform: rotate3d(0, 1, 0, 360deg);
-  transition: 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 .prize-laurel {
@@ -872,15 +893,15 @@ input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-de
 
 .prize-title {
   position: absolute;
-  color: rgb(77, 218, 211);
+  color: rgb(167, 146, 234);
   font-size: 25px;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 }
 
 .prize-content {
   color:rgb(129, 218, 126);
   font-size: 20px;
-  height: 20px;
+  height: 25px;
   position: absolute;
 }
 
