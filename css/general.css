@@ -3,6 +3,7 @@ Gilroy Hacks Website Source Code -> CSS (https://gilroyhacks.com)
 
 For more info, contact jamesdinh77 (at) protonmail (dot) com
 */
+
 html {
     scroll-behavior: smooth;
 }
@@ -443,6 +444,7 @@ section {
   justify-content: center;
   align-items: center;
   max-width: 1500px;
+  min-width: 200px;
 }
 
 .topic {
@@ -465,7 +467,6 @@ section {
   min-width: 200px;
   font-size: 18px;
   text-align: left;
-
 }
 
 #event-main-box {
@@ -1015,8 +1016,9 @@ margin: 20px 100px;
   border: 1px solid white;
   background-color: #272b1f;
   margin: 10px auto;
+  width: 100%;
   max-width: 850px;
-  min-width: 400px;
+
   padding: 10px;
 }
 
