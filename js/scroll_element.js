@@ -46,6 +46,7 @@ const observer = new IntersectionObserver(entries => {
   observer.observe(document.querySelector('#event-main-box'));
   observer.observe(document.querySelector('#timeline'));
   observer.observe(document.querySelector('#signup-article'));
+  observer.observe(document.querySelector('#map-article'));
   observer.observe(document.querySelector('#rules-description'));
   observer.observe(document.querySelector('#guidelines'));
   observer.observe(document.querySelector('#code-of-conduct'));
