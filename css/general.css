@@ -132,6 +132,11 @@ nav li a:focus::after{
 }
 
 /* Responsive Functions */
+@media (max-width: 1156px) {
+  #signup-header {
+    margin-top: 20px;
+  }
+}
 @media (max-width: 880px) {
   #photo-release-container {
     transform: scale(0.8);
@@ -151,7 +156,6 @@ nav li a:focus::after{
         background: rgb(24, 24, 24);
         top: -100%;
         text-align: center;
-        /*animation: growOut 300ms ease-in-out forwards*/
     }
     nav ul li {
         display: block;
@@ -479,7 +483,7 @@ section {
 
 #description-heading {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 26px;
 }
 
 .list {
@@ -785,10 +789,6 @@ section {
   transition: 0.5s;
 }
 
-#signup-header {
-  padding-top: 10px;
-}
-
 /* Title of the card */
 .title {
   color: rgb(255, 255, 255);
@@ -984,6 +984,7 @@ section {
 
 #rules-description {
   margin: 10px 20px;
+  font-size: 18px;
 }
 
 #photo-description {
@@ -993,7 +994,7 @@ section {
 #photo-release-container {
   border-radius: 10px;
   border: 1px solid white;
-  background-color: #1f2b22;
+  background-color: #272b1f;
   margin: 10px auto;
   max-width: 850px;
   min-width: 400px;
@@ -1025,11 +1026,26 @@ section {
   max-width: 400px;
 }
 
+.code-card {
+  background: rgb(40, 63, 52);
+}
+
 #rules-main-card {
   width: 400px;
   min-width: 300px;
   border-radius: 10px;
   background-color: #131d29;
+  margin: 10px auto;
+  padding: 10px 30px;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+  text-align: left;
+}
+
+#code-main-card {
+  width: 400px;
+  min-width: 300px;
+  border-radius: 10px;
+  background-color: #15271b;
   margin: 10px auto;
   padding: 10px 30px;
   box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
@@ -1045,6 +1061,10 @@ section {
   color: rgb(253, 103, 103);
   position: relative;
   font-size: 17px;
+}
+
+.code-title {
+  color: rgb(212, 100, 223);
 }
 
 .rules-card::before {
@@ -1114,7 +1134,7 @@ section {
 
 .prize-laurel {
   height: 150px;
-  width: auto;
+  width: 150px;
   position: relative;
 }
 
@@ -1182,6 +1202,7 @@ section {
 
 #prize-logo {
   height: 50px;
+  width: 50px;
   border-radius: 50%;
   border: 1px solid rgb(119, 119, 119);
 }
@@ -1248,6 +1269,7 @@ section {
 
 .team-picture img {
   height: 100px;
+  width: 100px;
   border-radius: 50%;
   border: 1px solid rgb(161, 161, 161);
 }
