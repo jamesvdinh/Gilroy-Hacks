@@ -980,7 +980,9 @@ section {
 }
 
 #map-article {
-margin: 20px 100px;
+  margin: 20px auto 0;
+  width: 90%;
+  max-width: 1000px;
 }
 
 #map-title {
@@ -1120,8 +1122,8 @@ margin: 20px 100px;
 
 #prizes-container {
     display: grid;
-    margin: 50px 50px 0;
-    width: auto;
+    margin: 50px auto 0;
+    width: 80%;
     height: 280px;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
