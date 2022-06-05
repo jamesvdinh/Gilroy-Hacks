@@ -19,19 +19,6 @@
     <meta name="description" content="The official webiste for the Gilroy Hacks Hackathon. Strengthen your skills and collaborate with others to create something useful.">
     <meta name="keywords" content="Gilroy Hacks, GilroyHacks, Gilroy, hackathon, Bay Area, GECA, Dr. TJ Owens Gilroy Early College Academy">
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <!-- <script src="js/filldata_checkbox.js"></script>
-    <script type="text/javascript">
-        document.onload = function loadData()
-        {
-            function loadData() {
-            if (localStorage.getItem('checked') == 'true') {
-                document.getElementById("01").checked = true;
-            }
-            console.log("test");
-            }
-        }
-    </script> -->
     <style>
         @font-face {
             font-family: "Glacial Indifference";
@@ -214,7 +201,7 @@
                                 <div class="info">
                                     <!-- Checklist src: https://codepen.io/milanraring/pen/QWbqBGo -->
                                     <div id="checklist">
-                                        <input id="01" onclick="saveData()" type="checkbox" name="r" value="1">
+                                        <input id="01" onclick="save()" type="checkbox" name="r" value="1">
                                         <label for="01">
                                             <p class="title">1. Sign up w/ this <a class="link" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7" title="Signup Form">form</a></p>
                                         </label>
@@ -225,7 +212,7 @@
                               <div class="card">
                                 <div class="info">
                                     <div id="checklist">
-                                        <input id="02" type="checkbox" name="r" value="2">
+                                        <input id="02" onclick="save()" type="checkbox" name="r" value="2">
                                         <label for="02">
                                             <p class="title">2. Join the <a class="link" target="_blank" href="https://discord.gg/nkTDKMcYbr" title="Discord Invite Link">Discord</a></p>
                                         </label>
@@ -236,7 +223,7 @@
                               <div class="card">
                                 <div class="info">
                                     <div id="checklist">
-                                        <input id="03" type="checkbox" name="r" value="3">
+                                        <input id="03" onclick="save()" type="checkbox" name="r" value="3">
                                         <label for="03">
                                             <p class="title">3. Create/join a team</p>
                                         </label>
@@ -247,7 +234,7 @@
                               <div class="card">
                                 <div class="info">
                                     <div id="checklist">
-                                        <input id="04" type="checkbox" name="r" value="4">
+                                        <input id="04" onclick="save()" type="checkbox" name="r" value="4">
                                         <label for="04">
                                             <p class="title">4. Start discussing ideas for a project</p>
                                         </label>
@@ -262,7 +249,7 @@
                               <div class="card">
                                 <div class="info">
                                     <div id="checklist">
-                                        <input id="05" type="checkbox" name="r" value="5">
+                                        <input id="05" onclick="save()" type="checkbox" name="r" value="5">
                                         <label for="05">
                                             <p class="title">5. Wait for the hackathon to start!</p>
                                         </label>
