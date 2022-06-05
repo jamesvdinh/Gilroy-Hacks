@@ -42,6 +42,38 @@ const observer = new IntersectionObserver(entries => {
     });
   });
 
+  const observer_team_img = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+        entry.target.classList.add('slide-animation-card-img');
+      }
+    });
+  });
+
+  const observer_team_desc = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+        entry.target.classList.add('slide-animation-card-desc');
+      }
+    });
+  });
+
+  const entries = document.querySelectorAll('.team-picture');
+  entries.forEach(entry => {
+    observer_team_img.observe(entry);
+  });
+
+  const entries_desc = document.querySelectorAll('.team-description');
+  entries_desc.forEach(entry => {
+    observer_team_desc.observe(entry);
+  });
+
   observer.observe(document.querySelector('#description-heading'));
   observer.observe(document.querySelector('#event-main-box'));
   observer.observe(document.querySelector('#timeline'));
