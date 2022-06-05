@@ -19,6 +19,19 @@
     <meta name="description" content="The official webiste for the Gilroy Hacks Hackathon. Strengthen your skills and collaborate with others to create something useful.">
     <meta name="keywords" content="Gilroy Hacks, GilroyHacks, Gilroy, hackathon, Bay Area, GECA, Dr. TJ Owens Gilroy Early College Academy">
 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="js/filldata_checkbox.js"></script>
+    <script type="text/javascript">
+        document.onload = function loadData()
+        {
+            function loadData() {
+            if (localStorage.getItem('checked') == 'true') {
+                document.getElementById("01").checked = true;
+            }
+            console.log("test");
+            }
+        }
+    </script> -->
     <style>
         @font-face {
             font-family: "Glacial Indifference";
@@ -84,9 +97,8 @@
                 <article id="event-description">
                     <h2 id="description-heading">Our Mission Statement</h2>
                     <div id="event-main-box">
-                        <br>
                         <div id="description-content">Gilroy Hacks is a student-led organization focused on promoting community engagement and improving STEM exposure to local high school students.</div>
-                        <br><hr class="line"><br>
+                        <hr class="line">
                         <ul class="list">
                             <li>Even if you're not an expert at coding, this hackathon offers an opportunity for you to strengthen your skills and collaborate with others to create something useful. Below are important dates to keep in mind:
                                 <ul style="margin-left: 25px">
@@ -135,6 +147,7 @@
                                         <p class="timeline-description">The official start of the hackathon where we deliver the opening presentation along with the finalized teams, prompts, rules, and timeline.<br>
                                             <ul class="timeline-description-list">
                                                 <li>It is highly recommended you attend this portion of the hackathon (at least half of your team must attend to participate)</li>
+                                                <li>Along with the in-person event held at the Community Room at the Gilroy Library, we will be streaming the event on zoom</li>
                                                 <li><span class="important-text">=IMPORTANT=</span> DO NOT START CODING during this period</li>
                                             </ul>
                                         </p>
@@ -169,7 +182,7 @@
                                                 <li>Be Creative! Make your product stand out by including a demo or showing its function across multiple sources</li>
                                                 <li>Presentations will occur in order of team number (i.e. Team 1 will go first)</li>
                                                 <li>It is advised you have your camera on and that you ensure your microphone and tech work before presenting</li>
-                                                <li><span class="important-text">=IMPORTANT=</span> 5 minutes max per team. Your team is not allowed to go ABOVE those 5 minutes... Use your time wisely.</li>
+                                                <li><span class="important-text">=IMPORTANT=</span> Your team's presentation is not allowed to go ABOVE 5 minutes... Use your time wisely.</li>
                                                 <li>Your team will be graded on both the product and presentation as per the rubric</li>
                                             </ul>
                                         </p>
@@ -190,8 +203,10 @@
                     </div>
                 </article>
                 <article id="signup-article">
-                    <h2 id="signup-header">Signup Checklist</h2>
-                    <span class="caption">Click each step to cross it out!</span>
+                    <div id="signup-title">
+                        <h2 id="signup-header">Signup Checklist</h2>
+                        <span class="caption">Click each step to cross it out!</span>
+                    </div>
                     <div id="steps-card">
                         <div id="signup-container">
                             <div class="outer">
@@ -199,7 +214,7 @@
                                 <div class="info">
                                     <!-- Checklist src: https://codepen.io/milanraring/pen/QWbqBGo -->
                                     <div id="checklist">
-                                        <input id="01" type="checkbox" name="r" value="1">
+                                        <input id="01" onclick="saveData()" type="checkbox" name="r" value="1">
                                         <label for="01">
                                             <p class="title">1. Sign up w/ this <a class="link" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7" title="Signup Form">form</a></p>
                                         </label>
@@ -258,8 +273,10 @@
                             </div>
                         </div>
                     </div>
-                    <h2 id="sponsor-heading">Sponsors</h2>
-                    <span class="caption">Thank you to all these amazing sponsors!</span>
+                    <div id="sponsor-title">
+                        <h2 id="sponsor-heading">Sponsors</h2>
+                        <span class="caption">Thank you to all these amazing sponsors!</span>
+                    </div>
                     <div id="sponsor-container">
                         <a href="https://sccld.org/" target="_blank">
                             <img id="gilroy-library-logo" src="img/SCCLD_logo.png" alt="gilroy library logo">
@@ -516,5 +533,6 @@
 </footer>
 <script src="js/scroll_nav.js"></script>
 <script src="js/scroll_element.js"></script>
+<script src="js/data_checkbox.js"></script>
 </body>
 </html>

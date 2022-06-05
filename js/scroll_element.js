@@ -77,7 +77,10 @@ const observer = new IntersectionObserver(entries => {
   observer.observe(document.querySelector('#description-heading'));
   observer.observe(document.querySelector('#event-main-box'));
   observer.observe(document.querySelector('#timeline'));
-  observer.observe(document.querySelector('#signup-article'));
+  observer.observe(document.querySelector('#signup-title'));
+  observer.observe(document.querySelector('#steps-card'));
+  observer.observe(document.querySelector('#sponsor-title'));
+  observer.observe(document.querySelector('#sponsor-container'));
   observer.observe(document.querySelector('#map-article'));
   observer.observe(document.querySelector('#rules-description'));
   observer.observe(document.querySelector('#guidelines'));
