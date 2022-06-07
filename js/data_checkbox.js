@@ -22,3 +22,16 @@ function check02() {
 function checkt(id) {
     document.getElementById(id).checked = true;
 }
+function notifitcation_popup() {
+    var verify = true;
+    for (i = 0; i < checkbox.length; i++)
+    {
+        if (localStorage.getItem(checkboxes[i].value) != true) {
+            verify = false;
+        }
+    }
+    if (verify) {
+        document.getElementById("notification").style.visibility = "visible";
+        
+    }
+}
