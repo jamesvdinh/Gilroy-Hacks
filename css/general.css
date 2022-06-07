@@ -540,15 +540,15 @@ section {
   width: 0px;
   height: fit-content;
   position: relative;
-  right: 24px;
-  top: 2px;
+  right: 30px;
+  top: 3px;
 }
 #timeline-left-arrow {
   width: 0px;
   height: fit-content;
   position: relative;
-  right: 58px;
-  top: 2px;
+  right: 50px;
+  top: 3px;
 }
 @media (max-width: 740px) {
   #timeline-right-arrow {
