@@ -13,12 +13,13 @@
     <title>Gilroy Hacks</title>
     <link href="css/general.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/scroll_nav.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <script src="js/leaflet.js"></script>
     <link rel="icon" href="img/Gilroy-Hacks-Logo-icon-tp.ico">
     <meta name="author" content="Gilroy Hacks">
     <meta name="copyright" content="This site and its pages are Copyright (c) 2022 Gilroy Hacks All Rights Reserved.">
-    <meta name="description" content="The official webiste for the Gilroy Hacks Hackathon. Strengthen your skills and collaborate with others to create something useful.">
+    <meta name="description" content="The official website for the Gilroy Hacks Hackathon. Strengthen your skills and collaborate with others to create something useful.">
     <meta name="keywords" content="Gilroy Hacks, GilroyHacks, Gilroy, hackathon, Bay Area, GECA, Dr. TJ Owens Gilroy Early College Academy">
-
     <style>
         @font-face {
             font-family: "Glacial Indifference";
@@ -272,9 +273,62 @@
                 </article>
             </div>
             <article id="map-article">
-                <h2 id="map-title">Event Location</h2>
-                <div id="google-maps">
-                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.195428202165!2d-121.5748893844308!3d37.00513386383601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8091e3b7411b6c7b%3A0x23a4a857b416c1de!2sGilroy%20Library!5e0!3m2!1sen!2sus!4v1654314375400!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h2 id="map-title">Calendar</h2>
+                <div id="cal-container">
+                    <div class="cal-card">
+                        <div class="cal-entry">
+                            <div class="cal-date" id="fri">
+                                <span class="day-of-week">FRI</span>
+                                <span class="cal-subtitle">8/12</span>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="cal-desc">
+                                <h3 class="cal-title">Community Room</h3>
+                                <div class="event-list">
+                                    <div class="event-entry">
+                                        <span class="event-time">4-5pm</span><span class="event-title">Opening Ceremony</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cal-card">
+                        <div class="cal-entry">
+                            <div class="cal-date" id="sat">
+                                <span class="day-of-week">SAT</span>
+                                <span class="cal-subtitle">8/13</span>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="cal-desc">
+                                <h3 class="cal-title">Study Room</h3>
+                                <div class="event-list">
+                                    <div class="event-entry">
+                                        <span class="event-time">4-5pm</span><span class="event-title">Opening Ceremony</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cal-card">
+                        <div class="cal-entry">
+                            <div class="cal-date" id="sun">
+                                <span class="day-of-week">SUN</span>
+                                <span class="cal-subtitle">8/14</span>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="cal-desc">
+                                <h3 class="cal-title">Study Room</h3>
+                                <div class="event-list">
+                                    <div class="event-entry">
+                                        <span class="event-time">4-5pm</span><span class="event-title">Opening Ceremony</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="map-container">
+                    <div id="map"></div>
                 </div>
             </article>
         </section>
@@ -488,9 +542,9 @@
                     <div class="team-entry">
                         <div class="team-picture"><img src="img/Gilroy Hacks Logo [icon-tp-podium].png" loading="lazy" alt="profile picture"></div>
                         <div class="team-description">
-                            <h4 class="person-name">Mark Chen</h4>
+                            <h4 class="person-name">Mark Shen</h4>
                             <h5 class="person-subtitle">Tech Support</h5>
-                            <h5 class="person-contact"><span class="discord-text">Discord</span>: No Game no life<span class="discord-tag">#4534</span></h5>
+                            <h5 class="person-contact"><span class="discord-text">Discord</span>: No Game No life<span class="discord-tag">#4534</span><br><a class="link" target="_blank" href="mailto:markshen00@gmail.com" title="Email">markshen00@gmail.com</a></h5>
                         </div>
                     </div>
                 </article>
@@ -521,5 +575,6 @@
 <script src="js/scroll_nav.js"></script>
 <script src="js/scroll_element.js"></script>
 <script src="js/data_checkbox.js"></script>
+<script src="js/map.js"></script>
 </body>
 </html>

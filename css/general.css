@@ -176,6 +176,9 @@ nav li a:focus::after{
   #event, #rules, #prizes, #team {
     transform: scale(0.9);
   }
+  section {
+    padding-top: 0 !important;
+  }
 }
 @media (max-width: 470px) {
     .checkbtn {
@@ -359,10 +362,10 @@ nav li a:focus::after{
 }
 @keyframes slidein-prize-2 {
   0% {
-    transform: translateX(-150px);
     opacity: 0;
   }
   40% {
+    transform: translateX(-30px);
     opacity: 0;
   }
   100% {
@@ -372,10 +375,10 @@ nav li a:focus::after{
 }
 @keyframes slidein-prize-1 {
   0% {
-    transform: translateY(-100px);
     opacity: 0;
   }
-  40% {
+  30% {
+    transform: translateY(-30px);
     opacity: 0;
   }
   100% {
@@ -385,10 +388,10 @@ nav li a:focus::after{
 }
 @keyframes slidein-prize-3 {
   0% {
-    transform: translateX(300px);
     opacity: 0;
   }
   60% {
+    transform: translateX(30px);
     opacity: 0;
   }
   100% {
@@ -421,7 +424,6 @@ nav li a:focus::after{
 /* Main Section */
 main {
   width: 100%;
-  padding-bottom: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -496,8 +498,8 @@ section {
 #timeline {
   padding: 10px;
   width: 100%;
-  height: 100%;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #timeline-heading {
@@ -508,10 +510,10 @@ section {
 .flex-parent {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-top: 200px;
 }
   
 .input-flex-container {
@@ -604,7 +606,6 @@ section {
   margin-top: 70px;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 250px;
   text-align: left;
 }
 #timeline-descriptions-wrapper div {
@@ -1004,12 +1005,101 @@ section {
   max-width: 1000px;
 }
 
+#cal-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  justify-content: center;
+  padding: 10px 0 0;
+}
+
+.cal-card {
+  width: 33%;
+  border-radius: 7px;
+  border: 1px solid white;
+}
+
+#fri {
+  background-color: #18b14b65;
+}
+
+#sat {
+  background-color: #cc1b1b65;
+}
+
+#sun {
+  background-color: #cc83148a;
+}
+
+@media (max-width: 1000px) {
+  .cal-card {
+    width: 50% !important;
+  }
+}
+@media (max-width: 700px) {
+  .cal-card {
+    width: 100% !important;
+  }
+}
+
+.cal-entry {
+  display: flex;
+  align-content: stretch;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.day-of-week {
+  font-size: 35px;
+}
+
+.cal-date {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  width: 110px;
+  border-radius: 10px;
+}
+
+.cal-subtitle {
+  color: #8d8d8d;
+}
+
+.cal-title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.vertical-line {
+  width: 2px;
+  margin: 0 10px;
+  background-color: rgb(88, 88, 88);
+}
+
+.cal-desc {
+  justify-content: center;
+  width: 100%;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-time {
+  margin-right: 20px;
+  color: #8d8d8d;
+}
+
 #map-title {
   font-size: 25px;
   margin-bottom: 10px;
 }
 
-#google-maps {
+#map-container {
   border-radius: 10px;
   padding: 3px;
   height: 500px;
@@ -1017,6 +1107,13 @@ section {
 }
 
 #map {
+  height: 100%;
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+#map-iframe {
   border: 0;
   border-radius: 10px;
   width: 100%;
@@ -1294,7 +1391,7 @@ section {
   align-content: stretch;
   padding: 15px;
   border-radius: 10px;
-  width: 355px;
+  width: 357px;
   border: 0px solid rgb(54, 54, 54);
 }
 
