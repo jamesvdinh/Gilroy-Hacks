@@ -527,6 +527,11 @@ section {
   z-index: 0;
 }
 
+#timeline-left-arrow {
+  position: absolute;
+  float: left;
+}
+
 .timeline-input {
   width: 22px;
   height: 22px;
@@ -536,9 +541,22 @@ section {
   display: block;
   appearance: none;
   cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
+  animation: pulse-gray 2s infinite;
+}
+@keyframes pulse-gray {
+  0% {
+    box-shadow: 0 0 0 0 rgba(110, 110, 110, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+  }
 }
 .timeline-input:focus {
-  outline: none;
+  animation: pulse-gray 0s;
 }
 .timeline-input::before, .timeline-input::after {
   content: "";
@@ -548,14 +566,20 @@ section {
   top: 50%;
   transform: translateY(-50%);
   background-color: #2C3E50;
-  width: 80px;
+  width: 64px;
   height: 5px;
 }
 .timeline-input::before {
-  right: calc(2vw);
+  left: -64px;
 }
+/* #t1::before {
+  content: "<";
+  color: white;
+  font-size: 30px;
+} */
+
 .timeline-input::after {
-  left: calc(1vw);
+  right: -64px;
 }
 .timeline-input:checked {
   background-color: #2C3E50;
@@ -582,7 +606,7 @@ section {
   visibility: hidden;
   position: relative;
   z-index: -1;
-  left: calc((((80vw - 25px) / 20) * -1) - 1px);
+  right: 48px;
 }
 .dot-info span {
   visibility: visible;
@@ -592,6 +616,7 @@ section {
 .dot-info span.year {
   bottom: -30px;
   right: -0.2vw;
+  cursor: pointer;
 }
 .dot-info span.label {
   top: -56px;
@@ -599,6 +624,7 @@ section {
   transform: rotateZ(-45deg);
   width: 70px;
   text-indent: -10px;
+  cursor: pointer;
 }
 
 #timeline-descriptions-wrapper {
@@ -650,23 +676,6 @@ section {
 
 .timeline-input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-description="5"] {
   display: block;
-}
-  
-@media (max-width: 2250px) {
-  .timeline-input::before {
-      left: -37.5px;
-    }
-    .timeline-input::after {
-      right: -37.5px;
-    }
-
-    .dot-info {
-      left: calc((((1000px - 25px) / 20) * -1) - 1px);
-    }
-
-    #timeline-descriptions-wrapper {
-      margin-left: -37.5px;
-    }
 }
 @media (max-width: 630px) {
   .flex-parent {
@@ -794,6 +803,11 @@ section {
   font-size: 16px;
 }
 
+.step-desc {
+  color: gray;
+  width: 298px;
+}
+
 /* Steps dot  */
 .title::before {
   content: "";
@@ -840,7 +854,6 @@ section {
   height: 2px;
   width: 8px;
   left: -35px;
-  background: var(--check);
   border-radius: 2px;
 }
 #checklist label:after {
@@ -1065,7 +1078,7 @@ section {
 }
 
 .cal-subtitle {
-  color: #8d8d8d;
+  color: rgb(150, 150, 150);
 }
 
 .cal-title {
@@ -1091,7 +1104,7 @@ section {
 
 .event-time {
   margin-right: 20px;
-  color: #8d8d8d;
+  color: gray;
 }
 
 #map-title {
@@ -1111,6 +1124,7 @@ section {
   width: 100%;
 
   border-radius: 10px;
+  z-index: 0;
 }
 
 #map-iframe {

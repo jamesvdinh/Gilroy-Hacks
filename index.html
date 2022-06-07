@@ -62,7 +62,7 @@
             <div id="header">
                 <img id="logo" src="img/Gilroy Hacks Logo [Summer].png" height="400" width="400" alt="logo"/>
                 <hr id="line-header">
-                <h2 id="header-subtitle-date">Aug 12 - 14</h2>
+                <h2 id="header-subtitle-date">Aug 12 - 141</h2>
                 <div id="spots-container">
                     <div class="blob green" aria-hidden="true"></div>
                     <h2 id="header-subtitle-spots">40 spots remaining</h2>
@@ -103,28 +103,28 @@
                         <span class="caption">Click on each dot for more info</span>
                         <div class="flex-parent">
                             <div class="input-flex-container">
-                                <input class="timeline-input" type="radio" name="timeline-dot" data-description="1" checked>
-                                <div class="dot-info" data-description="1">
+                                <input id="t1" class="timeline-input" type="radio" name="timeline-dot" data-description="1" checked>
+                                <div onclick="checkt('t1')" class="dot-info" data-description="1">
                                     <span class="year">8/12 4:00pm</span>
                                     <span class="label">Opening Ceremony</span>
                                 </div>
-                                <input class="timeline-input" type="radio" name="timeline-dot" data-description="2">
-                                <div class="dot-info" data-description="2">
+                                <input id="t2" class="timeline-input" type="radio" name="timeline-dot" data-description="2">
+                                <div onclick="checkt('t2')" class="dot-info" data-description="2">
                                     <span class="year">8/12 5:00pm</span>
                                     <span class="label">Hacking Begins</span>
                                 </div>
-                                <input class="timeline-input" type="radio" name="timeline-dot" data-description="3">
-                                <div class="dot-info" data-description="3">
+                                <input id="t3" class="timeline-input" type="radio" name="timeline-dot" data-description="3">
+                                <div onclick="checkt('t3')" class="dot-info" data-description="3">
                                     <span class="year">8/14 12:00pm</span>
                                     <span class="label">Hacking Ends</span>
                                 </div>
-                                <input class="timeline-input" type="radio" name="timeline-dot" data-description="4">
-                                <div class="dot-info" data-description="4">
+                                <input id="t4" class="timeline-input" type="radio" name="timeline-dot" data-description="4">
+                                <div onclick="checkt('t4')" class="dot-info" data-description="4">
                                     <span class="year">8/14 2:00pm</span>
                                     <span class="label">Project Presentations</span>
                                 </div>
-                                <input class="timeline-input" type="radio" name="timeline-dot" data-description="5">
-                                <div class="dot-info" data-description="5">
+                                <input id="t5" class="timeline-input" type="radio" name="timeline-dot" data-description="5">
+                                <div onclick="checkt('t5')" class="dot-info" data-description="5">
                                     <span class="year">8/14 3:30pm</span>
                                     <span class="label">Awards Ceremony</span>
                                 </div>
@@ -204,10 +204,12 @@
                                     <div id="checklist">
                                         <input id="01" onclick="save()" type="checkbox" name="r" value="1">
                                         <label for="01">
-                                            <p class="title">1. Sign up w/ this <a class="link" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7" title="Signup Form">form</a></p>
+                                            <p class="title">1. Sign up w/ this <a onclick="check01()" class="link" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7" title="Signup Form">form</a></p>
+                                        </label>
+                                        <label for="01">
+                                            <p class="step-desc">- These questions are used to gauge your experience and skills so we can pair you with others</p>
                                         </label>
                                     </div>
-                                    <p>- These questions are used to gauge your experience and skills so we can pair you with others</p>
                                 </div>
                               </div>
                               <div class="card">
@@ -215,10 +217,12 @@
                                     <div id="checklist">
                                         <input id="02" onclick="save()" type="checkbox" name="r" value="2">
                                         <label for="02">
-                                            <p class="title">2. Join the <a class="link" target="_blank" href="https://discord.gg/nkTDKMcYbr" title="Discord Invite Link">Discord</a></p>
+                                            <p class="title">2. Join the <a onclick="check02()" class="link" target="_blank" href="https://discord.gg/nkTDKMcYbr" title="Discord Invite Link">Discord</a></p>
+                                        </label>
+                                        <label for="02">
+                                            <p class="step-desc">- Please change your nickname to your First and Last name</p>
                                         </label>
                                     </div>
-                                  <p>- Please change your nickname to your First and Last name</p>
                                 </div>
                               </div>
                               <div class="card">
@@ -228,8 +232,10 @@
                                         <label for="03">
                                             <p class="title">3. Create/join a team</p>
                                         </label>
+                                        <label for="03">
+                                            <p class="step-desc">- Join teams in the Discord Server!</p>
+                                        </label>
                                     </div>
-                                  <p>- Join teams in the Discord Server!</p>
                                 </div>
                               </div>
                               <div class="card">
@@ -239,12 +245,14 @@
                                         <label for="04">
                                             <p class="title">4. Start discussing ideas for a project</p>
                                         </label>
+                                        <label for="04">
+                                            <p class="step-desc">
+                                                - Between now and the start of the hackathon is a great time to come up with project ideas & download any software you may need
+                                                <br>
+                                                - However, you can't start working on the project until the hackathon begins
+                                            </p>                                        
+                                        </label>
                                     </div>
-                                  <p>
-                                      - Between now and the start of the hackathon is a great time to come up with project ideas & download any software you may need
-                                      <br>
-                                      - However, you can't start working on the project until the hackathon begins
-                                  </p>
                                 </div>
                               </div>
                               <div class="card">
@@ -254,8 +262,10 @@
                                         <label for="05">
                                             <p class="title">5. Wait for the hackathon to start!</p>
                                         </label>
+                                        <label for="05">
+                                            <p class="step-desc">- Mark your calendars, Aug 12 - 14</p>
+                                        </label>
                                     </div>
-                                  <p>- Mark your calendars, Aug 12 - 14</p>
                                 </div>
                               </div>
                             </div>
