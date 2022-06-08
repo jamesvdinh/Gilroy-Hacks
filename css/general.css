@@ -631,7 +631,7 @@ section {
   visibility: hidden;
   position: relative;
   z-index: -1;
-  right: 48px;
+  right: 44px;
 }
 .dot-info span {
   visibility: visible;
@@ -672,6 +672,10 @@ section {
 .timeline-description-subtitle {
   font-size: 18px;
   color: rgb(121, 120, 120);
+}
+
+.t-flex-container {
+  display: flex;
 }
 
 .timeline-description-list li {
