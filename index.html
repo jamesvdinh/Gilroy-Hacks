@@ -15,12 +15,13 @@
     <link href="css/general.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/scroll_nav.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="css/leaflet.css"/>
-    <script src="js/leaflet.js"></script>
     <link rel="icon" href="img/Gilroy-Hacks-Logo-icon-tp.ico">
     <meta name="author" content="Gilroy Hacks">
     <meta name="copyright" content="This site and its pages are Copyright (c) 2022 Gilroy Hacks All Rights Reserved.">
     <meta name="description" content="The official website for the Gilroy Hacks Hackathon. Strengthen your skills and collaborate with others to create something useful.">
     <meta name="keywords" content="Gilroy Hacks, GilroyHacks, Gilroy, hackathon, Bay Area, GECA, Dr. TJ Owens Gilroy Early College Academy">
+
+    <script src="js/leaflet.js"></script>
     <style>
         @font-face {
             font-family: "Glacial Indifference";
@@ -50,10 +51,10 @@
             </label>
             <a target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7"><div id="sign-up">SIGN UP</div></a>
             <ul>
-                <li><a href="#event">Event</a></li>
-                <li><a href="#rules">Rules</a></li>
-                <li><a href="#prizes">Prizes</a></li>
-                <li><a href="#team">Team</a></li>
+                <li><a onclick="uncheck('check')" href="#event">Event</a></li>
+                <li><a onclick="uncheck('check')" href="#rules">Rules</a></li>
+                <li><a onclick="uncheck('check')" href="#prizes">Prizes</a></li>
+                <li><a onclick="uncheck('check')" href="#team">Team</a></li>
             </ul>
         </div>
         <!-- <div id="notification">hi</div> -->
@@ -78,7 +79,7 @@
             </div>
         </div>
     </header>
-<!--Main-->
+    <!--Main-->
     <main>
         <section id="event">
             <h2 class="topic">Hackathon Event</h2>
@@ -96,7 +97,6 @@
                                     <li><span class="emphasis-text">Aug 12-14</span> -> Summer 2022 Hackathon</li>
                                 </ul>
                             </li>
-                            
                         </ul>
                     </div>
                     <!-- Timeline src: https://codepen.io/cjl750/pen/MXvYmg -->
@@ -133,7 +133,11 @@
                                 </div>
                                 <div id="timeline-right-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
                                 <div id="timeline-descriptions-wrapper">
-                                    <div data-description="1">
+                                    <div class="timeline-desc" data-description="1">
+                                        <div class="bracket" id="bracket-1">
+                                            <div class="left"></div>
+                                            <div class="right"></div>
+                                        </div>
                                         <h3>Opening Ceremony</h3>
                                         <h4 class="timeline-description-subtitle">8/12 | 4:00pm - 5:00pm</h4>
                                         <!-- <div class="t-flex-container"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/></svg><h5>Community Room</h5></div> -->
@@ -146,7 +150,11 @@
                                             </ul>
                                         </p>
                                     </div>
-                                    <div data-description="2">
+                                    <div class="timeline-desc" data-description="2">
+                                        <div class="bracket" id="bracket-2">
+                                            <div class="left"></div>
+                                            <div class="right"></div>
+                                        </div>
                                         <h3>Hacking Begins</h3>
                                         <h4 class="timeline-description-subtitle">8/12 | 5:00pm</h4><br>
                                         <p class="timeline-description">
@@ -157,7 +165,11 @@
                                             </ul>
                                         </p>
                                     </div>
-                                    <div data-description="3">
+                                    <div class="timeline-desc" data-description="3">
+                                        <div class="bracket" id="bracket-3">
+                                            <div class="left"></div>
+                                            <div class="right"></div>
+                                        </div>
                                         <h3>Hacking Ends</h3>
                                         <h4 class="timeline-description-subtitle">8/14 | 2:00pm</h4><br>
                                         <p class="timeline-description">STOP coding! Your 44 hours of intense stress and turmoil are finally up! We hope you learned some valuable skills and made some new friends along the way.<br>
@@ -168,7 +180,11 @@
                                             </ul>
                                         </p>
                                     </div>
-                                    <div data-description="4">
+                                    <div class="timeline-desc" data-description="4">
+                                        <div class="bracket" id="bracket-4">
+                                            <div class="left"></div>
+                                            <div class="right"></div>
+                                        </div>
                                         <h3>Project Presentations</h3>
                                         <h4 class="timeline-description-subtitle">8/14 | 2:30pm - 3:30pm</h4><br>
                                         <p class="timeline-description">This is where your team will present your product to our honored judges.<br>
@@ -181,7 +197,11 @@
                                             </ul>
                                         </p>
                                     </div>
-                                    <div data-description="5">
+                                    <div class="timeline-desc" data-description="5">
+                                        <div class="bracket" id="bracket-5">
+                                            <div class="left"></div>
+                                            <div class="right"></div>
+                                        </div>
                                         <h3>Awards Ceremony</h3>
                                         <h4 class="timeline-description-subtitle">8/14 | 3:30pm - 4:00pm</h4><br>
                                         <p class="timeline-description">Congratuations! Judge scores are tallied and here's where we announce the 1st, 2nd, and 3rd place teams along with positive feedback for each.<br>
@@ -496,11 +516,13 @@
             <div id="photo-release-container">
                 <h2>Photo Release Waiver</h2>
                 <div id=photo-description>
-                    By participating in this hackathon, you hereby grant us permission to use your likeness and projects in photographs, videos, or other digital media in any and all of its publications, including, but not limited to, social media and web-based publications. Any and all photos taken during the hackathon duration will become the sole property of Gilroy Hacks.
+                    By participating in this hackathon, you hereby grant us permission to use your likeness and project content in photographs, videos, or other digital media in any and all of its publications, including, but not limited to, social media and web-based publications. Any and all photos taken during the hackathon duration will become property of Gilroy Hacks.
                     <br><br>
-                    Upon agreeing to these terms, you authorize Gilroy Hacks to edit, copy, or distribute these photos for any lawful or advertising purpose. Additionally, you waive the right to royalties or compensation as a cause for using these photos.
+                    Upon agreeing to these terms, you authorize Gilroy Hacks to edit, copy, or distribute these photos for any lawful or advertising purpose. Additionally, you waive the right to royalties or compensation for using these photos.
                     <br><br>
-                    However, we take your privacy very seriously; if you have a disagreement with any of the terms stated above, please contact an event organizer or email <a class="link" target="_blank" href="mailto:tech@gilroyhacks.com" title="Email">tech@gilroyhacks.com</a>
+                    However, Gilroy Hacks will use these photos for promoting purposes ONLY. We will never share your personal or private information to anyone outside of community outreach.
+                    <br><br>
+                    If you have a disagreement with any of the terms stated above, please contact an event organizer or email <a class="link" target="_blank" href="mailto:tech@gilroyhacks.com" title="Email">tech@gilroyhacks.com</a>
                 </div>
             </div>
         </section>
@@ -573,6 +595,14 @@
                             <h5 class="person-contact"><span class="discord-text">Discord</span>: Fesh<span class="discord-tag">#5995</span><br><a class="link" target="_blank" href="mailto:ihwang125@gmail.com" title="Email">ihwang125@gmail.com</a></h5>
                         </div>
                     </div>
+                    <div class="team-entry">
+                        <div class="team-picture"><img src="img/Gilroy Hacks Logo [icon-tp-podium].png" loading="lazy" alt="profile picture"></div>
+                        <div class="team-description">
+                            <h4 class="person-name">Jonathan Tessman</h4>
+                            <h5 class="person-subtitle">Finance Manager</h5>
+                            <h5 class="person-contact"><span class="discord-text">Discord</span>: Alsace<span class="discord-tag">#5031</span></h5>
+                        </div>
+                    </div>
                 </article>
                 <article id="outreach">
                     <h3 class="team-title">Outreach</h3>
@@ -637,6 +667,7 @@
     © 2022 Gilroy Hacks <br>
     All Rights Reserved
 </footer>
+<!-- JavaScript Refs -->
 <script src="js/scroll_nav.js"></script>
 <script src="js/scroll_element.js"></script>
 <script src="js/data_checkbox.js"></script>
