@@ -154,11 +154,11 @@ nav li a:focus::after{
     opacity: 0;
     transform: translateY(-30px);
   }
-  40% {
+  20% {
     transform: translateY(0px);
     opacity: 1;
   }
-  60% {
+  40% {
     transform: translateY(-7px);
   }
   100% {
@@ -202,6 +202,14 @@ nav li a:focus::after{
   }
   #podium-label-2 {
     margin-left: 1px !important;
+  }
+  #header-background {
+    background-position: unset !important;
+    background-size: unset !important;
+  }
+  #logo {
+    height: 300px !important;
+    width: 300px !important;
   }
 }
 @media (max-width: 500px) {
@@ -281,8 +289,8 @@ nav li a:focus::after{
 /* Header */
 #header-background {
   background-image: url(/img/mountains-1.jpg);
-  /* background-position: center; */
-  /* background-size: cover; */
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
@@ -773,7 +781,7 @@ section {
   text-align: left;
 }
 .timeline-desc {
-  margin-top: 0;
+  margin-top: -30px;
   display: none;
 }
 
@@ -1181,6 +1189,12 @@ section {
   width: 33.3%;
   border-radius: 7px;
   border: 1px solid white;
+}
+
+.cal-card:hover {
+  transform: translateY(-5px);
+  background-color: #0f1318;
+  transition: 0.5s;
 }
 
 #fri {
