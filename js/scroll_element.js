@@ -1,3 +1,5 @@
+// Gilroy Hacks Website Source Code -> JS (https://gilroyhacks.com)
+
 // Creating an observer when the user views that element
 const observer = new IntersectionObserver(entries => {
     // Loop over the entries

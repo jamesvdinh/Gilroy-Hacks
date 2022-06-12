@@ -1,3 +1,5 @@
+// Gilroy Hacks Website Source Code -> JS (https://gilroyhacks.com)
+
 var i;
 var checkboxes = document.querySelectorAll('#signup-container input[type=checkbox]');
 var verify = true;

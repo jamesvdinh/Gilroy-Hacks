@@ -1,7 +1,10 @@
 /*
-Gilroy Hacks Website Source Code -> CSS (https://gilroyhacks.com)
+  Gilroy Hacks Website Source Code -> CSS (https://gilroyhacks.com)
 
-For more info, contact jamesdinh77 (at) protonmail (dot) com
+  Web-Designed by James Dinh ᓚᘏᗢ from scratch using pure HTML, CSS, and JS
+  For more info, contact jamesdinh77 (at) protonmail (dot) com
+
+  Copyright Disclaimer: This Source Code is Copyright (c) 2022 Gilroy Hacks All Rights Reserved.
 */
 
 html {
@@ -16,7 +19,7 @@ html {
 }
 
 nav {
-  height: auto;
+  height: 59px;
   width: 100%;
   overflow: hidden;
   top: 0;
@@ -139,6 +142,56 @@ nav li a:focus::after{
   background-color: blueviolet;
   cursor: pointer;
   transition: 0.5s;
+}
+
+#banner-text {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  display: inline-flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner-moving-text {
+  animation: headline 20s infinite;
+}
+.sub-text {
+  color: gray;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes headline {
+  0% {
+    transform: translateX(10vw);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;;
+    transform: translateX(-20vw);
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20vw);
+  }
 }
 
 /* .notification {
@@ -341,6 +394,11 @@ nav li a:focus::after{
 
 #header-subtitle-spots {
   padding: 5px;
+}
+
+#spots-container:hover, #header-subtitle-date:hover {
+  transform: translateY(-2px);
+  transition: 0.5s;
 }
 
 #entrance-arrow {
@@ -830,6 +888,7 @@ section {
 @media (max-width: 630px) {
   .flex-parent {
     justify-content: initial;
+    margin-top: 0;
   }
 
   .input-flex-container {
@@ -847,10 +906,6 @@ section {
     margin: 0 10px 50px;
   }
 
-  input {
-    background-color: transparent !important;
-    z-index: 1;
-  }
   .timeline-input::before, .timeline-input::after {
     content: none;
   }

@@ -1,3 +1,4 @@
+// Gilroy Hacks Website Source Code -> JS (https://gilroyhacks.com)
 
 // Toggle the .pa-fixed-header class when the user 
 // scroll 100px 
