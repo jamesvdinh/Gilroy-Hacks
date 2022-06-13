@@ -116,6 +116,7 @@ nav li a:focus::after{
 
 #nav-links-container {
   display: flex;
+  width: auto;
   margin: 0;
   padding: 0;
   height: 59px;
@@ -148,7 +149,7 @@ nav li a:focus::after{
   height: 100%;
   /* width: 50%; */
   width: 500px;
-  margin: 0 10px;
+  margin: auto;
   font-size: 20px;
   display: inline-flex;
   position: relative;
@@ -217,6 +218,11 @@ nav li a:focus::after{
 }
 
 /* Responsive Functions */
+@media (max-width: 1250px) {
+  #banner {
+    display: none;
+  }
+}
 @media (max-width: 800px) {
   .checkbtn {
     display: inline-block;
