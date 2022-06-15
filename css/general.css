@@ -44,6 +44,11 @@ nav * {
   width: 258px;
 }
 
+#nav-logo:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
 #nav-logo-div {
   height: 50px;
   width: 258px;
@@ -160,8 +165,8 @@ nav li a:focus::after{
 
 #banner-text {
   text-align: center;
-  animation: headline 20s infinite;
-  animation-timing-function: linear;
+  /* animation: headline 20s infinite;
+  animation-timing-function: linear; */
 }
 
 #timer {
