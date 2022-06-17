@@ -153,12 +153,12 @@ nav li a:focus::after{
 #banner {
   height: 100%;
   /* width: 50%; */
-  width: 500px;
+  width: 380px;
   margin: auto;
   font-size: 20px;
   display: inline-flex;
   position: relative;
-  justify-content: center;
+  justify-content: left;
   overflow: hidden;
   align-items: center;
 }
@@ -171,7 +171,14 @@ nav li a:focus::after{
 
 #timer {
   color: rgb(184, 184, 184);
-  animation: blinking 2s infinite;
+  animation: blinking 3s infinite;
+  background-color: rgb(57, 57, 57);
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+
+.tooltip-nav {
+  text-decoration: none;
 }
 
 @keyframes blinking {
@@ -179,13 +186,13 @@ nav li a:focus::after{
     opacity: 1;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.8;
   }
   100% {
     opacity: 1;
   }
 }
-@keyframes headline {
+/* @keyframes headline {
   0% {
     transform: translateX(600px);
   }
@@ -195,7 +202,7 @@ nav li a:focus::after{
   100% {
     transform: translateX(-600px);
   }
-}
+} */
 
 /* .notification {
   position: absolute;
@@ -223,7 +230,7 @@ nav li a:focus::after{
 }
 
 /* Responsive Functions */
-@media (max-width: 1250px) {
+@media (max-width: 1150px) {
   #banner {
     display: none;
   }
@@ -272,6 +279,15 @@ nav li a:focus::after{
     height: 300px !important;
     width: 300px !important;
   }
+  #banner {
+    display: inline-flex;
+    width: 300px;
+  }
+}
+@media (max-width: 750px) {
+  #banner {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   #event, #rules, #prizes, #team {
@@ -295,19 +311,18 @@ nav li a:focus::after{
     transform: scale(0.9);
   }
 }
-@media (max-height: 500px) {
+@media (max-height: 600px) {
   #logo {
-    height: 200px !important;
-    width: 200px !important;
+    transform: scale(0.8);
   }
   #header-subtitle-date {
-    height: 25px;
-    font-size: 15px;
+    transform: translateY(-50px);
   }
-  #header-subtitle-spots {
-    height: 25px;
-    font-size: 15px;
-    padding: 3px !important;
+  #spots-container {
+    transform: translateY(-50px);
+  }
+  #line-header {
+    transform: translateY(-50px);
   }
   #entrance-arrow {
     visibility: hidden;
@@ -1780,7 +1795,7 @@ section {
   }
 }
 
-abbr[title] {
+.tooltip {
   text-decoration: underline dotted;
   cursor: help;
 }
