@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Gilroy Hacks Website Source Code -> HTML (https://gilroyhacks.com)
+
+    Web-Designed by James Dinh ᓚᘏᗢ from scratch using pure HTML, CSS, and JS
+    For more info, contact jamesdinh77 (at) protonmail (dot) com
+
+    Copyright Disclaimer: This Source Code is Copyright (c) 2022 Gilroy Hacks All Rights Reserved.
+-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Gilroy Hacks</title>
+    <link href="css/general.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/scroll_nav.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="icon" href="img/Gilroy-Hacks-Logo-icon-tp.ico">
+    <link rel="apple-touch-icon" href="img/Gilroy Hacks Logo (app).png">
+
+    <meta name="author" content="Gilroy Hacks">
+    <meta name="copyright" content="This site and its pages are Copyright (c) 2022 Gilroy Hacks All Rights Reserved.">
+    <meta name="description" content="The official website for the Gilroy Hacks Hackathon. Strengthen your skills and collaborate with others to create something useful.">
+    <meta name="keywords" content="Gilroy Hacks, GilroyHacks, Gilroy, hackathon, Bay Area, GECA, Dr. TJ Owens Gilroy Early College Academy">
+    
+    <script src="js/leaflet.js"></script>
+    <script defer data-domain="gilroyhacks.com" src="https://plausible.gilroyhacks.com/js/plausible.js"></script>
+    <style>
+        @font-face {
+            font-family: "Glacial Indifference";
+            src: url("font/GlacialIndifference-Regular.otf") format('opentype');
+            font-display: swap;
+        }
+        body {
+            position: relative;
+            background-color: #0d1117 !important;
+            background-image: "";
+            color: #f2f1ef !important;
+            font-family: "Glacial Indifference";
+        }
+    </style>
+    <!--For icons, go here: https://iconsvg.xyz/ -->
+</head>
+<body>
+    <!--Nav-->
+    <nav id="navBar">
+        <a id="nav-logo-a" href="./">
+            <img id="nav-logo" src="img/Gilroy Hacks Logo [Summer-wide-2].png" alt="logo"/>
+        </a>
+        <div id="nav-links-container">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="img/bars.png" loading="lazy" height="17" width="25" alt="Bars"/>
+            </label>
+            <a onclick="check('01'); save();" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7"><div id="sign-up">SIGN UP</div></a>
+            <ul>
+                <li><a onclick="uncheck('check')" href="#event">Event</a></li>
+                <li><a onclick="uncheck('check')" href="#rules">Rules</a></li>
+                <li><a onclick="uncheck('check')" href="#prizes">Prizes</a></li>
+                <li><a onclick="uncheck('check')" href="#team">Team</a></li>
+            </ul>
+            <div id="banner">
+                <p id="banner-text">Next event:<br>Opening Ceremony <abbr class="tooltip-nav" title="Aug 12, 4pm"><span id="timer"></span></abbr></p>
+            </div>
+        </div>
+    </nav>
+    <!--Footer-->
+    <footer>
+        <ul>
+            <li><a class="link" onclick="check('02'); save()" target="_blank" href="https://discord.gg/nkTDKMcYbr" title="Discord Invite Link">Discord</a></li>
+            <li><a class="link" target="_blank" href="mailto:tech@gilroyhacks.com" title="Email">Contact Us</a></li>
+            <li><a class="link" target="_blank" href="https://forms.gle/jhVFg4hN42k7EMZs7" title="Volunteer Signup Form">Volunteer Signup</a></li>
+        </ul>
+        <hr id="footer-line">
+        © 2022 Gilroy Hacks <br>
+        All Rights Reserved
+    </footer>
+</body>
+</html>

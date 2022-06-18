@@ -311,21 +311,26 @@ nav li a:focus::after{
     transform: scale(0.9);
   }
 }
-@media (max-height: 600px) {
+@media (max-height: 550px) {
   #logo {
     transform: scale(0.8);
   }
   #header-subtitle-date {
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
   #spots-container {
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
   #line-header {
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
   #entrance-arrow {
     visibility: hidden;
+  }
+}
+@media (max-height: 400px) {
+  #header {
+    transform: scale(0.7);
   }
 }
 
@@ -382,7 +387,7 @@ nav li a:focus::after{
 
   text-align: center;
   position: relative;
-  background-image: linear-gradient(#0d111733 50%, #0d11175e 60%, #0d1117 100%);
+  /* background-image: linear-gradient(#0d111733 50%, #0d11175e 60%, #0d1117 100%); */
 }
 
 #logo {
@@ -436,6 +441,12 @@ nav li a:focus::after{
 #entrance-arrow:hover {
   font-size: 17px;
   transition: 0.1s;
+}
+
+#header-gradient {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#0d111733 50%, #0d11175e 60%, #0d1117 100%);
 }
 
 @keyframes bounce {
@@ -725,12 +736,6 @@ section {
 .timeline-input::before {
   left: -64px;
 }
-/* #t1::before {
-  content: "<";
-  color: white;
-  font-size: 30px;
-  position: relative;
-} */
 
 .timeline-input::after {
   right: -64px;
