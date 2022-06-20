@@ -22,7 +22,7 @@ function check(id) {
 function uncheck(id) {
     document.getElementById(id).checked = false;
 }
-function notifitcation_popup(id) {
+function notification(id) {
     if (localStorage.getItem(checkboxes[id].value) != true) { verify = false; }
     if (verify) { document.getElementById('notification').style.visibility = visible; }
 }

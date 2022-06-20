@@ -56,13 +56,13 @@
             </label>
             <a onclick="check('01'); save();" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7"><div id="sign-up">SIGN UP</div></a>
             <ul>
-                <li><a onclick="uncheck('check')" href="#event">Event</a></li>
-                <li><a onclick="uncheck('check')" href="#rules">Rules</a></li>
-                <li><a onclick="uncheck('check')" href="#prizes">Prizes</a></li>
-                <li><a onclick="uncheck('check')" href="#team">Team</a></li>
+                <li><a class="navlink" onclick="uncheck('check')" href="#event">Event</a></li>
+                <li><a class="navlink" onclick="uncheck('check')" href="#rules">Rules</a></li>
+                <li><a class="navlink" onclick="uncheck('check')" href="#prizes">Prizes</a></li>
+                <li><a class="navlink" onclick="uncheck('check')" href="#team">Team</a></li>
             </ul>
             <div id="banner">
-                <p id="banner-text">Next event:<br>Opening Ceremony <abbr class="tooltip-nav" title="Aug 12, 4pm"><span id="timer"></span></abbr></p>
+                <p id="banner-text"><a class="navlink" id="timer-link" href="#timeline" title="Click for more info">Opening Ceremony</a> in<abbr class="tooltip-nav" title="Aug 12, 4pm"><span id="timer"></span></abbr></p>
             </div>
         </div>
     </nav>
@@ -681,6 +681,7 @@
     All Rights Reserved
 </footer>
 <!-- JavaScript Refs -->
+<script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/scroll_nav.js"></script>
 <script src="js/scroll_element.js"></script>
 <script src="js/timer.js"></script>
