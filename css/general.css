@@ -173,7 +173,7 @@ nav ul li {
   color: rgb(184, 184, 184);
   animation: blinking 3s infinite;
   background-color: rgb(57, 57, 57);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2px 5px;
 }
 
