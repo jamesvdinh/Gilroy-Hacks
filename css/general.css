@@ -49,14 +49,6 @@ nav * {
   transition: 0.5s;
 }
 
-#nav-logo-div {
-  height: 50px;
-  width: 258px;
-  margin: none;
-  display: inline block;
-  position: fixed;
-}
-
 #nav-logo-a {
   position: relative;
 }
@@ -151,8 +143,15 @@ nav ul li {
 }
 
 #banner {
-  height: 100%;
-  /* width: 50%; */
+  width: 70%;
+  position: absolute;
+  justify-content: center;
+  display: inline-flex;
+  top: 16px;
+  font-size: 20px;
+  margin: auto;
+  /* height: 100%;
+  width: 50%;
   width: 380px;
   margin: auto;
   font-size: 20px;
@@ -160,7 +159,7 @@ nav ul li {
   position: relative;
   justify-content: left;
   overflow: hidden;
-  align-items: center;
+  align-items: center; */
 }
 
 #banner-text {
@@ -239,6 +238,11 @@ nav ul li {
 }
 
 /* Responsive Functions */
+@media (max-width: 1300px) {
+  #banner {
+    width: 50%;
+  }
+}
 @media (max-width: 1150px) {
   #banner {
     display: none;
