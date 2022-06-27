@@ -238,7 +238,7 @@ nav ul li {
 }
 
 /* Responsive Functions */
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   #banner {
     width: 50%;
   }
