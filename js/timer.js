@@ -17,20 +17,19 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="timer"
-  if (days != 0 && hours != 0) {
-    document.getElementById("timer").innerHTML = days + "d " + hours + "h";
-  }
-  else if (hours != 0) {
-    document.getElementById("timer").innerHTML = hours + "h";
-  }
-  else {
-    document.getElementById("timer").innerHTML = minutes + "m";
-  }
-
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("timer").innerHTML = "LIVE";
+  }
+  // Display the result in the element with id="timer"
+  if (days != 0) {
+    document.getElementById("timer").innerHTML = days + "d " + hours + "h";
+  }
+  else if (hours != 0) {
+    document.getElementById("timer").innerHTML = hours + "h" + minutes + "m";
+  }
+  else {
+    document.getElementById("timer").innerHTML = minutes + "m";
   }
 }, 1000);
