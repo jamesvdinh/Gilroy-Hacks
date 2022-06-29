@@ -150,16 +150,6 @@ nav ul li {
   top: 16px;
   font-size: 20px;
   margin: auto;
-  /* height: 100%;
-  width: 50%;
-  width: 380px;
-  margin: auto;
-  font-size: 20px;
-  display: inline-flex;
-  position: relative;
-  justify-content: left;
-  overflow: hidden;
-  align-items: center; */
 }
 
 #banner-text {
@@ -172,10 +162,6 @@ nav ul li {
   background-color: rgb(57, 57, 57);
   border-radius: 5px;
   padding: 2px 5px;
-}
-
-.tooltip-nav {
-  text-decoration: none;
 }
 
 #timer-link {
@@ -200,16 +186,33 @@ nav ul li {
     opacity: 1;
   }
 }
-/* @keyframes headline {
-  0% {
-    transform: translateX(600px);
-  }
-  50% {
-    transform: translateX(-600px);
-  }
-  100% {
-    transform: translateX(-600px);
-  }
+/* 
+.tooltip-nav {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  text-decoration: none;
+
+}
+
+.tooltip-nav .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip-nav:hover .tooltiptext {
+  visibility: visible;
 } */
 
 /* .notification {
