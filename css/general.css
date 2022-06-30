@@ -1791,6 +1791,10 @@ section {
   border: 1px solid rgb(161, 161, 161);
 }
 
+#jd {
+  border: 0px;
+}
+
 .team-description {
   text-align: left;
   width: auto;
