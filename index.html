@@ -52,6 +52,7 @@
         <div id="banner">
             <p id="banner-text"><a class="navlink" id="timer-link" href="#timeline">Opening Ceremony</a> in
                   <abbr class="tooltip-nav" title="Aug 12, 4pm"><span id="timer"></span></abbr>
+                  <!-- <span id="nav-tooltip" data-text="Aug 12, 4pm"></span> -->
             </p>
         </div>
         <div id="nav-links-container">
@@ -66,9 +67,6 @@
                 <li><a class="navlink" onclick="uncheck('check')" href="#prizes">Prizes</a></li>
                 <li><a class="navlink" onclick="uncheck('check')" href="#team">Team</a></li>
             </ul>
-            <!-- <div id="banner">
-                <p id="banner-text"><a class="navlink" id="timer-link" href="#timeline" title="Click for more info">Opening Ceremony</a> in<abbr class="tooltip-nav" title="Aug 12, 4pm"><span id="timer"></span></abbr></p>
-            </div> -->
         </div>
     </nav>
     <!--Front Page-->
@@ -154,7 +152,6 @@
                                         </div>
                                         <h3>Opening Ceremony</h3>
                                         <h4 class="timeline-description-subtitle">8/12 | 4:00pm - 5:00pm</h4>
-                                        <!-- <div class="t-flex-container"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/></svg><h5>Community Room</h5></div> -->
                                         <br>
                                         <p class="timeline-description">The official start of the hackathon where we deliver the opening presentation along with the finalized teams, prompts, rules, and timeline.<br>
                                             <ul class="timeline-description-list">
@@ -539,7 +536,7 @@
                     <br><br>
                     Upon agreeing to these terms, you authorize Gilroy Hacks to edit, copy, or distribute these photos for any lawful or advertising purpose. Additionally, you waive the right to royalties or compensation for using these photos.
                     <br><br>
-                    However, Gilroy Hacks will use these photos for promoting purposes ONLY. We will never share your personal or private information to anyone outside of community outreach.
+                    However, Gilroy Hacks will use these photos for promoting purposes ONLY. We will never share your personal or private information to anyone outside the event.
                     <br><br>
                     If you have a disagreement with any of the terms stated above, please contact an event organizer or email <a class="link" target="_blank" href="mailto:tech@gilroyhacks.com" title="Email">tech@gilroyhacks.com</a>
                 </div>
@@ -676,13 +673,38 @@
     </main>
 <!--Footer-->
 <footer>
-    <ul>
+    <div id="footer-container">
+        <article id="footer-desc">
+            <img id="footer-logo" src="img/Gilroy Hacks Logo [Summer-wide-2].png" alt="logo"/>
+            <p>
+                Gilroy Hacks is a student-led organization focused on promoting community engagement and improving STEM exposure for local high school students.
+            </p>
+            <div id="socials">
+                <div><a target="_blank" href="https://www.facebook.com/profile.php?id=100082498013066" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"><path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm4 7.278V4.5h-2.286c-2.1 0-3.428 1.6-3.428 3.889v1.667H8v2.777h2.286V19.5h2.857v-6.667h2.286L16 10.056h-2.857V8.944c0-1.11.572-1.666 1.714-1.666H16z"/></svg></a></div>
+                <div class="socials-icon"><a target="_blank" href="https://www.instagram.com/gilroyhacks/" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"><path d="M12 0c6.6274 0 12 5.3726 12 12s-5.3726 12-12 12S0 18.6274 0 12 5.3726 0 12 0zm3.115 4.5h-6.23c-2.5536 0-4.281 1.6524-4.3805 4.1552L4.5 8.8851v6.1996c0 1.3004.4234 2.4193 1.2702 3.2359.7582.73 1.751 1.1212 2.8818 1.1734l.2633.006h6.1694c1.3004 0 2.389-.4234 3.1754-1.1794.762-.734 1.1817-1.7576 1.2343-2.948l.0056-.2577V8.8851c0-1.2702-.4234-2.3589-1.2097-3.1452-.7338-.762-1.7575-1.1817-2.9234-1.2343l-.252-.0056zM8.9152 5.8911h6.2299c.9072 0 1.6633.2722 2.2076.8166.4713.499.7647 1.1758.8103 1.9607l.0063.2167v6.2298c0 .9375-.3327 1.6936-.877 2.2077-.499.4713-1.176.7392-1.984.7806l-.2237.0057H8.9153c-.9072 0-1.6633-.2722-2.2076-.7863-.499-.499-.7693-1.1759-.8109-2.0073l-.0057-.2306V8.885c0-.9073.2722-1.6633.8166-2.2077.4712-.4713 1.1712-.7392 1.9834-.7806l.2242-.0057h6.2299-6.2299zM12 8.0988c-2.117 0-3.871 1.7238-3.871 3.871A3.8591 3.8591 0 0 0 12 15.8408c2.1472 0 3.871-1.7541 3.871-3.871 0-2.117-1.754-3.871-3.871-3.871zm0 1.3911c1.3609 0 2.4798 1.119 2.4798 2.4799 0 1.3608-1.119 2.4798-2.4798 2.4798-1.3609 0-2.4798-1.119-2.4798-2.4798 0-1.361 1.119-2.4799 2.4798-2.4799zm4.0222-2.3589a.877.877 0 1 0 0 1.754.877.877 0 0 0 0-1.754z"/></svg></a></div>
+            </div>
+            <hr id="footer-line">
+            <p id="footer-copyright">
+                © 2022 Gilroy Hacks. All Rights Reserved
+            </p>
+        </article>
+        <article id="footer-links">
+            <h3>Links</h3>
+            <ul>
+                <li><a class="link" onclick="check('02'); save()" target="_blank" href="https://discord.gg/nkTDKMcYbr" title="Discord Invite Link">Discord</a></li>
+                <li><a class="link" onclick="check('01'); save();" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7">Signup Form</a></li>
+                <li><a class="link" target="_blank" href="https://sccl.bibliocommons.com/events/62acbe100685eb4200c37c48" title="Gilroy Library Event">Library Event Entry</a></li>
+                <li><a class="link" target="_blank" href="mailto:tech@gilroyhacks.com" title="Email">Email Us</a></li>
+            </ul>
+        </article>
+    </div>
+    <!-- <ul>
         <li><a class="link" onclick="check('02'); save()" target="_blank" href="https://discord.gg/nkTDKMcYbr" title="Discord Invite Link">Discord</a></li>
         <li><a class="link" target="_blank" href="mailto:tech@gilroyhacks.com" title="Email">Contact Us</a></li>
     </ul>
     <hr id="footer-line">
     © 2022 Gilroy Hacks <br>
-    All Rights Reserved
+    All Rights Reserved -->
 </footer>
 <!-- JavaScript Refs -->
 <script src="js/jquery-3.6.0.min.js"></script>

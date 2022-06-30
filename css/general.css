@@ -21,7 +21,6 @@ html {
 nav {
   height: 59px;
   width: 100%;
-  overflow: hidden;
   top: 0;
   left: 0;
   position: fixed;
@@ -186,6 +185,24 @@ nav ul li {
     opacity: 1;
   }
 }
+
+#nav-tooltip {
+  visibility: visible;
+  width: 80px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 101;
+  bottom: -100%;
+  left: 57%;
+  margin-left: -40px;
+  font-size: 14px;
+  transition: opacity 1s;
+}
+
 /* 
 .tooltip-nav {
   position: relative;
@@ -1838,11 +1855,6 @@ section {
   margin: 10px auto;
 }
 
-#footer-line {
-  width: 100px;
-  margin: 10px auto;
-}
-
 #arrow-link {
   color:rgb(252, 188, 93);
   text-decoration: none;
@@ -1869,25 +1881,65 @@ section {
 
 footer {
   width: auto;
-  height: 100px;
+  height: auto;
   background-color: rgb(24, 24, 24);
   justify-content: center;
-  align-items: center;
+  align-items: left;
   text-align: center;
-  padding: 10px 20px 20px 20px;
+  padding: 20px;
   flex-flow: row wrap;
 }
 
-footer ul {
-  float: top;
+#footer-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+}
+
+#footer-logo {
+  height: 50px;
+  width: 258px;
+  margin-left: -5px;
+}
+
+#footer-desc {
+  width: 350px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+#socials {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.socials-icon {
+  margin: 0 10px;
+}
+
+#footer-copyright {
+  color: rgb(129, 129, 129);
+}
+
+#footer-line {
+  width: 100%;
+  margin: 10px auto;
+}
+
+#footer-links {
+  width: 300px;
+  margin-top: 7px;
+  padding-left: 40px;
+  text-align: left;
 }
 
 footer li {
-  display: inline-block;
-  margin: 0 7px;
-}
-
-footer a {
-  color:rgb(108, 176, 231);
-  font-size: 16px;
+  line-height: 30px;
+  list-style: none;
 }
