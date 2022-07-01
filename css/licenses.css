@@ -159,6 +159,7 @@ nav ul li {
   top: 16px;
   font-size: 20px;
   margin: auto;
+  min-width: 310px;
 }
 
 #banner-text {
@@ -218,6 +219,11 @@ nav ul li {
 }
 
 /* Responsive Functions */
+@media (max-width: 1400px) {
+  #banner {
+    width: 50%;
+  }
+}
 @media (max-width: 1150px) {
   #banner {
     display: none;
@@ -263,13 +269,9 @@ nav ul li {
     background-position: unset !important;
     background-size: unset !important;
   }
-  #logo {
-    height: 300px !important;
-    width: 300px !important;
-  }
   #banner {
     display: inline-flex;
-    width: 300px;
+    width: 310px;
   }
 }
 @media (max-width: 750px) {
@@ -420,20 +422,6 @@ nav ul li {
   transition: 0.5s;
 }
 
-#entrance-arrow {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  bottom: 10px;
-  float: bottom;
-  animation: bounce 3s infinite;
-}
-
-#entrance-arrow:hover {
-  font-size: 17px;
-  transition: 0.1s;
-}
-
 #header-gradient {
   width: 100%;
   height: 100%;
@@ -450,15 +438,6 @@ nav ul li {
   60% {
     transform: translateY(-3px);
   }
-}
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    }
 }
 
 /* Main Section */
@@ -492,7 +471,7 @@ section {
 
 #license-list {
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   width: 100%;
   height: auto;
   margin: auto;
@@ -507,6 +486,7 @@ section {
   height: auto;
   padding: 10px;
   text-align: left;
+  overflow-wrap: break-word;
 }
 
   /* Utilities */
