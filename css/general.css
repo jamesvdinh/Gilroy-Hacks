@@ -1706,6 +1706,21 @@ section {
   color: #ffde59;
 }
 
+#prize-box {
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #3d3d3d;
+  margin: 10px auto;
+  width: 70%;
+  max-width: 850px;
+  min-width: 200px;
+  padding: 10px;
+}
+
+#prize-list {
+  list-style: none;
+}
+
 /* Teams */
 #team-container {
   width: 100%;
