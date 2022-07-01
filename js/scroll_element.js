@@ -64,7 +64,7 @@ const observer = new IntersectionObserver(entries => {
 
 
   // Adding the class animations to these elements
-  let elements_id = ['#description-heading', '#event-main-box', '#timeline', '#signup-title', '#steps-card', '#sponsor-title', '#sponsor-container', '#map-article', '#rules-description', '#guidelines', '#code-of-conduct', '#photo-release-container', '#second-column', '#first-column', '#third-column', '#administration', '#logistics', '#outreach', '#tech', '#marketing'];
+  let elements_id = ['#description-heading', '#event-main-box', '#timeline', '#signup-title', '#steps-card', '#sponsor-title', '#sponsor-container', '#map-article', '#rules-description', '#guidelines', '#code-of-conduct', '#photo-release-container', '#second-column', '#first-column', '#third-column', '#prize-box', '#administration', '#logistics', '#outreach', '#tech', '#marketing'];
   elements_id.forEach(entry => {
     observer.observe(document.querySelector(entry));
   });
