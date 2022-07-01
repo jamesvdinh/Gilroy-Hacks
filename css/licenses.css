@@ -380,9 +380,6 @@ nav ul li {
 #logo {
   height: 100px;
   width: 100px;
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 #header-info {
@@ -478,7 +475,7 @@ main {
 
 section {
   width: auto;
-  padding-top: 70px;
+  padding-top: 50px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -499,6 +496,10 @@ section {
   width: 100%;
   height: auto;
   margin: auto;
+}
+
+#license-list ul {
+  margin-left: 20px;
 }
 
 .license-entry {
