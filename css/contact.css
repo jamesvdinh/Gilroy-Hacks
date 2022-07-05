@@ -606,7 +606,7 @@ footer {
   text-align: left;
   line-height: 25px;
   font-size: 18px;
-  padding-right: 40px;
+  margin-right: 40px;
 }
 
 #socials {
@@ -633,7 +633,7 @@ footer {
 #footer-links {
   width: 200px;
   margin-top: 7px;
-  padding-right: 20px;
+  margin-right: 20px;
   text-align: left;
 }
 
