@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Gilroy Hacks Website Source Code -> HTML (https://gilroyhacks.com)
+    File: licenses.html
+
+    Web-Designed by James Dinh ᓚᘏᗢ from scratch using pure HTML, CSS, and JS
+    For more info, contact jamesdinh77 (at) protonmail (dot) com
+
+    Copyright Disclaimer: This Source Code is Copyright (c) 2022 Gilroy Hacks All Rights Reserved.
+-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Gilroy Hacks · Contact</title>
+    <link href="css/contact.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/scroll_nav.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="img/Gilroy-Hacks-Logo-icon-tp.ico">
+
+    <style>
+        @font-face {
+            font-family: "Glacial Indifference";
+            src: url("font/GlacialIndifference-Regular.otf") format('opentype');
+            font-display: swap;
+        }
+        body {
+            position: relative;
+            background-color: #0d1117 !important;
+            background-image: "";
+            color: #f2f1ef !important;
+            font-family: "Glacial Indifference";
+        }
+        /* width */
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 2px grey; 
+            background-color: rgb(12, 14, 26);
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(38, 45, 75); 
+            border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(31, 36, 61);
+        }
+    </style>
+    <!--For icons, go here: https://iconsvg.xyz/ -->
+</head>
+<body>
+    <!--Nav-->
+    <nav id="navBar">
+        <a id="nav-logo-a" href="./">
+            <img id="nav-logo" src="img/Gilroy Hacks Logo [Summer-wide-2].png" alt="logo"/>
+        </a>
+        <div id="banner">
+            <p id="banner-text"><a class="navlink" id="timer-link" href="index.html#timeline">Opening Ceremony</a> in
+                  <abbr class="tooltip-nav" title="Aug 12, 4pm"><span id="timer"></span></abbr>
+                  <!-- <span id="nav-tooltip" data-text="Aug 12, 4pm"></span> -->
+            </p>
+        </div>
+        <div id="nav-links-container">
+            <input onclick="btnToggle()" type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="img/bars.png" loading="lazy" height="17" width="25" alt="Bars"/>
+            </label>
+            <a target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7"><div id="sign-up">SIGN UP</div></a>
+            <ul id="navList">
+                <li><a class="navlink" href="index.html#event">Event</a></li>
+                <li><a class="navlink" href="index.html#rules">Rules</a></li>
+                <li><a class="navlink" href="index.html#prizes">Prizes</a></li>
+                <li><a class="navlink" href="index.html#team">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div id="header-background">
+            <div id="header-gradient">
+                <div id="header">
+                    <img id="logo" src="img/Gilroy Hacks Logo [Summer].png" height="100" width="100" alt="logo"/>
+                    <div class="vertical-line"></div>
+                    <div id="header-info">
+                        <h2 id="header-subtitle-date">Aug 12 - 14</h2>
+                        <div id="spots-container">
+                            <div class="blob green" aria-hidden="true"></div>
+                            <h2 id="header-subtitle-spots">32 spots remaining</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 class="topic">Contact Form</h2>
+            <hr class="line">
+            <!-- Src: https://codepen.io/nikhil8krishnan/pen/gaybLK -->
+                <form action="" class="contact-form">
+                  <div class="form-single-line">
+                    <div class="input-block">
+                      <label for="">Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-single-line">
+                    <div class="input-block">
+                      <label for="">Email</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-single-line">
+                    <div class="input-block">
+                      <label for="">Subject</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="input-block textarea">
+                      <label for="">Drop your message here</label>
+                      <textarea rows="3" type="text" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <button class="square-button">Send</button>
+                  </div>
+                </form>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div id="footer-container">
+            <article id="footer-desc">
+                <img id="footer-logo" src="img/Gilroy Hacks Logo [Summer-wide-2].png" alt="logo"/>
+                <p>
+                    Gilroy Hacks is a student-led organization focused on promoting community engagement and improving STEM exposure for local high school students.
+                </p>
+                <div id="socials">
+                    <div><a target="_blank" href="https://www.facebook.com/profile.php?id=100082498013066" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"><path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm4 7.278V4.5h-2.286c-2.1 0-3.428 1.6-3.428 3.889v1.667H8v2.777h2.286V19.5h2.857v-6.667h2.286L16 10.056h-2.857V8.944c0-1.11.572-1.666 1.714-1.666H16z"/></svg></a></div>
+                    <div class="socials-icon"><a target="_blank" href="https://www.instagram.com/gilroyhacks/" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"><path d="M12 0c6.6274 0 12 5.3726 12 12s-5.3726 12-12 12S0 18.6274 0 12 5.3726 0 12 0zm3.115 4.5h-6.23c-2.5536 0-4.281 1.6524-4.3805 4.1552L4.5 8.8851v6.1996c0 1.3004.4234 2.4193 1.2702 3.2359.7582.73 1.751 1.1212 2.8818 1.1734l.2633.006h6.1694c1.3004 0 2.389-.4234 3.1754-1.1794.762-.734 1.1817-1.7576 1.2343-2.948l.0056-.2577V8.8851c0-1.2702-.4234-2.3589-1.2097-3.1452-.7338-.762-1.7575-1.1817-2.9234-1.2343l-.252-.0056zM8.9152 5.8911h6.2299c.9072 0 1.6633.2722 2.2076.8166.4713.499.7647 1.1758.8103 1.9607l.0063.2167v6.2298c0 .9375-.3327 1.6936-.877 2.2077-.499.4713-1.176.7392-1.984.7806l-.2237.0057H8.9153c-.9072 0-1.6633-.2722-2.2076-.7863-.499-.499-.7693-1.1759-.8109-2.0073l-.0057-.2306V8.885c0-.9073.2722-1.6633.8166-2.2077.4712-.4713 1.1712-.7392 1.9834-.7806l.2242-.0057h6.2299-6.2299zM12 8.0988c-2.117 0-3.871 1.7238-3.871 3.871A3.8591 3.8591 0 0 0 12 15.8408c2.1472 0 3.871-1.7541 3.871-3.871 0-2.117-1.754-3.871-3.871-3.871zm0 1.3911c1.3609 0 2.4798 1.119 2.4798 2.4799 0 1.3608-1.119 2.4798-2.4798 2.4798-1.3609 0-2.4798-1.119-2.4798-2.4798 0-1.361 1.119-2.4799 2.4798-2.4799zm4.0222-2.3589a.877.877 0 1 0 0 1.754.877.877 0 0 0 0-1.754z"/></svg></a></div>
+                </div>
+                <hr id="footer-line">
+                <p id="footer-copyright">
+                    © 2022 Gilroy Hacks. All Rights Reserved
+                </p>
+            </article>
+            <article id="footer-links">
+                <h3>Links</h3><br>
+                <ul>
+                    <li><a class="link" target="_blank" href="https://discord.gg/nkTDKMcYbr" title="Discord Invite Link">Discord</a></li>
+                    <li><a class="link" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7">Signup Form</a></li>
+                    <li><a class="link" target="_blank" href="https://sccl.bibliocommons.com/events/62acbe100685eb4200c37c48" title="Gilroy Library Event">Library Event Entry</a></li>
+                    <li><a class="link" href="licenses.html" title="Licenses">Licenses</a></li>
+                    <li><a class="link" target="_blank" href="mailto:tech@gilroyhacks.com" title="Email">Email Us</a></li>
+                </ul>
+            </article>
+            <article id="footer-links">
+                <h3>Location</h3><br>
+                <ul>
+                    <li>Gilroy Library<br>350 W 6th St, Gilroy, CA 95020</li>
+                </ul>
+            </article>
+        </div>
+    </footer>
+<!-- JavaScript Refs -->
+<script src="js/scroll_nav.js"></script>
+<script src="js/scroll_element.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

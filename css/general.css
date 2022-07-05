@@ -1447,6 +1447,7 @@ section {
   height: 100%;
   border: 1px solid white;
   position: relative;
+  min-width: 375px;
 }
 
 #map {
@@ -1927,6 +1928,7 @@ footer {
   text-align: left;
   line-height: 25px;
   font-size: 18px;
+  margin-right: 40px;
 }
 
 #socials {
@@ -1953,7 +1955,7 @@ footer {
 #footer-links {
   width: 200px;
   margin-top: 7px;
-  padding-left: 40px;
+  margin-right: 20px;
   text-align: left;
 }
 

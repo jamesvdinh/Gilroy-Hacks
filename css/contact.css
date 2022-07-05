@@ -1,6 +1,6 @@
 /*
   Gilroy Hacks Website Source Code -> CSS (https://gilroyhacks.com)
-  File: licenses.css
+  File: contact.css
 
   Web-Designed by James Dinh ᓚᘏᗢ from scratch using pure HTML, CSS, and JS
   For more info, contact jamesdinh77 (at) protonmail (dot) com
@@ -280,6 +280,10 @@ nav ul li {
       height: 50px;
       width: 50px;
   }
+  #logo {
+      height: 300px;
+      width: 300px;
+  }
 }
 
 .blob {
@@ -427,24 +431,80 @@ section {
   color:rgb(255, 243, 205);
 }
 
-#license-list {
-  display: flex;
-  flex-flow: column wrap;
+.contact-form {
+  margin-top: 30px;
+}
+.contact-form .input-block {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: solid 1px #003f88;
   width: 100%;
+  height: 60px;
+  padding: 25px;
+  position: relative;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-out;
+}
+.contact-form .input-block.focus {
+  background-color: #fff;
+  border: solid 1px #00236e;
+}
+.contact-form .input-block.textarea {
   height: auto;
-  margin: auto;
+}
+.contact-form .input-block.textarea .form-control {
+  height: auto;
+  resize: none;
+}
+.contact-form .input-block label {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  display: block;
+  margin: 0;
+  font-weight: 300;
+  z-index: 1;
+  color: #333;
+  font-size: 18px;
+  line-height: 10px;
+}
+.contact-form .input-block .form-control {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  color: #333;
+}
+.contact-form .input-block .form-control:focus label {
+  top: 0;
+}
+.contact-form .square-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #006dac;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  padding: 0 60px;
+  height: 60px;
+  border: none;
+  width: 100%;
+}
+.contact-form .square-button:hover, .contact-form .square-button:focus {
+  background-color: white;
 }
 
-#license-list ul {
-  margin-left: 20px;
-}
-
-.license-entry {
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  text-align: left;
-  overflow-wrap: break-word;
+@media (min-width: 768px) {
+  .contact-wrap {
+    width: 60%;
+    margin: auto;
+  }
 }
 
   /* Utilities */
@@ -490,6 +550,12 @@ section {
 #footer-line {
   width: 100px;
   margin: 10px auto;
+}
+
+#arrow-link {
+  color:rgb(252, 188, 93);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .link {
