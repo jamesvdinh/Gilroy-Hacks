@@ -1953,7 +1953,14 @@ footer {
 }
 
 #footer-links {
-  width: 200px;
+  width: 180px;
+  margin-top: 7px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+#footer-location {
+  width: 220px;
   margin-top: 7px;
   margin-right: 20px;
   text-align: left;

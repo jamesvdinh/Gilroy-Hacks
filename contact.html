@@ -19,6 +19,7 @@
     <link href="css/scroll_nav.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="img/Gilroy-Hacks-Logo-icon-tp.ico">
 
+    <script src="js/jquery-3.6.0.min.js"></script>
     <style>
         @font-face {
             font-family: "Glacial Indifference";
@@ -101,37 +102,47 @@
     </header>
     <main>
         <section>
-            <h2 class="topic">Contact Form</h2>
+            <h2 class="topic">Contact Us</h2>
             <hr class="line">
             <!-- Src: https://codepen.io/nikhil8krishnan/pen/gaybLK -->
-                <form action="" class="contact-form">
-                  <div class="form-single-line">
-                    <div class="input-block">
-                      <label for="">Name</label>
-                      <input type="text" class="form-control">
+                <form action="https://formsubmit.co/tech@gilroyhacks.com" class="contact-form" method="POST">
+                    <input type="hidden" name="email" id="email" value="tech@gilroyhacks.com">
+                    <input type="hidden" name="success">
+                    <div class="form-single-line">
+                        <div class="input-block">
+                        <label for="">Name</label>
+                        <input type="text" name="Name" class="form-control" required>
+                        </div>
                     </div>
-                  </div>
-                  <div class="form-single-line">
-                    <div class="input-block">
-                      <label for="">Email</label>
-                      <input type="text" class="form-control">
+                    <div class="form-single-line">
+                        <div class="input-block">
+                        <label for="">Email</label>
+                        <input type="email" name="Email" class="form-control" required>
+                        </div>
                     </div>
-                  </div>
-                  <div class="form-single-line">
-                    <div class="input-block">
-                      <label for="">Subject</label>
-                      <input type="text" class="form-control">
+                    <div class="form-single-line">
+                        <div class="input-block">
+                        <label for="">Subject</label>
+                        <!-- <input type="text" name="subject" class="form-control"> -->
+                        <select name="Subject" class="form-control" required>
+                            <option value="choose">--Choose a Subject--</option>
+                            <option value="signup">Signups & Registration</option>
+                            <option value="details">Event Details</option>
+                            <option value="website">Website</option>
+                            <option value="discord">Discord</option>
+                            <option value="other">Other</option>
+                        </select>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="input-block textarea">
-                      <label for="">Drop your message here</label>
-                      <textarea rows="3" type="text" class="form-control"></textarea>
+                    <div class="form-multi-line">
+                        <div class="input-block textarea">
+                        <label for="">Drop your message here</label>
+                        <textarea rows="3" name="Message" class="form-control" required></textarea>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <button class="square-button">Send</button>
-                  </div>
+                    <div class="form-submit-button">
+                        <button type="submit" name="Send" class="square-button">Send</button>
+                    </div>
                 </form>
         </section>
     </main>
@@ -159,10 +170,10 @@
                     <li><a class="link" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7">Signup Form</a></li>
                     <li><a class="link" target="_blank" href="https://sccl.bibliocommons.com/events/62acbe100685eb4200c37c48" title="Gilroy Library Event">Library Event Entry</a></li>
                     <li><a class="link" href="licenses.html" title="Licenses">Licenses</a></li>
-                    <li><a class="link" target="_blank" href="mailto:tech@gilroyhacks.com" title="Email">Email Us</a></li>
+                    <li><a class="link" href="contact.html" title="Contact">Contact Form</a></li>
                 </ul>
             </article>
-            <article id="footer-links">
+            <article id="footer-location">
                 <h3>Location</h3><br>
                 <ul>
                     <li>Gilroy Library<br>350 W 6th St, Gilroy, CA 95020</li>
