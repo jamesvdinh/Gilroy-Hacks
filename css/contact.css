@@ -45,10 +45,10 @@ nav * {
   width: 258px;
 }
 
-#nav-logo:hover {
+/* #nav-logo:hover {
   transform: scale(1.03);
   transition: 0.5s;
-}
+} */
 
 #nav-logo-div {
   height: 50px;
