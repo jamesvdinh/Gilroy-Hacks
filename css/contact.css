@@ -40,26 +40,20 @@ nav * {
 }
 
 #nav-logo {
-  margin-top: 5px;
   height: 50px;
   width: 258px;
+  margin: 5px 0 0;
 }
 
-/* #nav-logo:hover {
-  transform: scale(1.03);
+#nav-logo:hover {
+  transform: scale(1.01);
   transition: 0.5s;
-} */
-
-#nav-logo-div {
-  height: 50px;
-  width: 258px;
-  margin: none;
-  display: inline block;
-  position: fixed;
 }
 
 #nav-logo-a {
   position: relative;
+  margin: 0;
+  margin-left: 10px;
 }
 
 nav ul {
@@ -176,6 +170,7 @@ nav ul li {
 
 .tooltip-nav {
   text-decoration: none;
+  margin: 0;
 }
 
 #timer-link {
