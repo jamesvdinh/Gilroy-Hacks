@@ -35,18 +35,18 @@ function notification(id) {
 //         document.getElementById('#check').checked = true;
 //     }
 // }
-document.getElementById('#check').addEventListener('click', function (event) {
-    if (!document.getElementById('check').checked) {
-        event.stopPropagation();
-    }
-});
-window.onclick = function(event) {
-    if (!event.target.matches('check')) {
-        if (document.getElementById('check').checked) {
-            document.getElementById('check').checked = false;
-        }
-    }
-}
+// document.getElementById('#check').addEventListener('click', function (event) {
+//     if (!document.getElementById('check').checked) {
+//         event.stopPropagation();
+//     }
+// });
+// window.onclick = function(event) {
+//     if (!event.target.matches('check')) {
+//         if (document.getElementById('check').checked) {
+//             document.getElementById('check').checked = false;
+//         }
+//     }
+// }
 
 // document.getElementById("navList").addEventListener('click', function (event) {
 //     if (document.getElementById('check').checked) {
