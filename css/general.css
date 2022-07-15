@@ -1628,36 +1628,31 @@ section {
   position: relative;
 }
 
-.prize-title {
+.prize-text {
   position: absolute;
   color: rgb(167, 146, 234);
   font-size: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 67px;
+  line-height: 25px;
+}
+
+.prize-title {
+  color: rgb(167, 146, 234);
+  font-size: 25px;
 }
 
 .prize-content {
   color:rgb(129, 218, 126);
   font-size: 20px;
-  height: 25px;
-  position: absolute;
 }
 
-#second-column {
-  width: 100%;
-  height: auto;
-  margin-top: 40px;
+.prize-subtitle {
+  margin-bottom: 10px;
 }
 
-#first-column {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-#third-column {
-  width: 100%;
-  height: auto;
-  margin-top: 50px;
+#prize-column {
+  display: flex;
+  flex-flow: column-reverse;
 }
 
 #second-podium {
@@ -1716,7 +1711,7 @@ section {
   border-radius: 10px;
   border: 1px solid white;
   background-color: #3d3d3d;
-  margin: 10px auto;
+  margin: 30px auto 10px;
   width: 70%;
   max-width: 850px;
   min-width: 350px;
