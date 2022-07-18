@@ -1622,7 +1622,7 @@ section {
   position: relative;
 }
 
-.prize-desc:hover > .prize-content {
+.prize-desc:hover > .prize-text {
   transform: rotate3d(0, 1, 0, 360deg);
   transition: ease-in-out 0.5s;
 }
