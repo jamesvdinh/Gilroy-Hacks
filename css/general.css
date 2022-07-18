@@ -675,6 +675,10 @@ section {
   margin: auto;
 }
 
+.desc-title {
+  margin-top: 15px;
+}
+
 .list {
   padding-left: 20px;
 }
@@ -1299,13 +1303,14 @@ section {
 }
 
 #gavilan-college-logo {
-  height: auto;
+  height: 102px;
   width: 352px;
 }
 
 #gear-club-logo {
-  height: auto;
+  height: 60px;
   width: 352px;
+  margin-top: 50px !important;
 }
 
 #map-article {
@@ -1586,7 +1591,7 @@ section {
   display: grid;
   margin: 50px auto 0;
   width: 80%;
-  height: 280px;
+  height: auto;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -1632,8 +1637,9 @@ section {
   position: absolute;
   color: rgb(167, 146, 234);
   font-size: 25px;
-  margin-bottom: 67px;
+  margin-bottom: 177px;
   line-height: 25px;
+  z-index: 1;
 }
 
 .prize-title {
@@ -1644,10 +1650,12 @@ section {
 .prize-content {
   color:rgb(129, 218, 126);
   font-size: 20px;
+  transform: rotate3d(0, 1, 0, 360deg);
+  transition: ease 0.5s;
 }
 
 .prize-subtitle {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 #prize-column {
@@ -1705,6 +1713,10 @@ section {
 #podium-label-2 {
   margin-left: 7px;
   color: #ffde59;
+}
+
+.prize-img {
+  height: 100px;
 }
 
 #prize-box {
@@ -1860,7 +1872,7 @@ section {
 }
 
 .emphasis-text {
-    color:rgb(51, 235, 189);
+  color:rgb(51, 235, 189);
 }
 
 .discord-text {
@@ -1880,6 +1892,10 @@ section {
   color:rgb(252, 188, 93);
   text-decoration: none;
   cursor: pointer;
+}
+
+.bottom-text {
+  margin: 10px 5px;
 }
 
 .link {

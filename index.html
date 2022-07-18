@@ -25,7 +25,10 @@
     <meta name="description" content="The official website for the Gilroy Hacks Hackathon. Strengthen your skills and collaborate with others to create something useful.">
     <meta name="keywords" content="Gilroy Hacks, GilroyHacks, Gilroy, hackathon, Bay Area, GECA, Dr. TJ Owens Gilroy Early College Academy">
     
-    <script src="js/leaflet.js"></script>
+    <!-- JavaScript Refs -->
+    <script defer src="js/leaflet.js"></script>
+    <script defer src="js/map.js"></script>
+    <script defer src="js/general.js"></script>
     <script defer data-domain="gilroyhacks.com" src="https://plausible.gilroyhacks.com/js/plausible.js"></script>
     <style>
         @font-face {
@@ -117,17 +120,25 @@
             <hr class="line">
             <div id="event-container">
                 <article id="event-description">
-                    <h2 id="description-heading">Our Mission Statement</h2>
+                    <h2 id="description-heading">Our Mission & Important Info</h2>
                     <div id="event-main-box">
                         <div id="description-content">Gilroy Hacks is a student-led organization focused on promoting community engagement and improving STEM exposure for local middle/high school students.</div>
                         <hr class="line">
                         <ul class="list">
-                            <li>Even if you're not an expert at coding, this hackathon offers an opportunity for you to strengthen your skills and collaborate with others to create something useful. Below are important dates to keep in mind:
+                            <li>Even if you're not an expert at coding, this hackathon offers an opportunity for you to strengthen your skills and collaborate with others to create something useful.</li>
+                            <h3 class="desc-title">Main Events</h3>
                                 <ul style="margin-left: 25px">
-                                    <li><span class="emphasis-text">Aug 11</span> -> Signup Period Ends</li>
-                                    <li><span class="emphasis-text">Aug 12-14</span> -> Summer 2022 Hackathon</li>
+                                    <li><span class="emphasis-text">Aug 12</span> -> Opening Ceremony</li>
+                                    <li><span class="emphasis-text">Aug 13</span> -> Web Dev + Python Workshops</li>
+                                    <li><span class="emphasis-text">Aug 14</span> -> Project Presentations</li>
                                 </ul>
                             </li>
+                            <h3 class="desc-title">Details</h3>
+                            <ul style="margin-left: 25px">
+                                <li>Signups are limited to <u>middle and high school students only</u></li>
+                                <li>Workshops are <u>fully open to the public</u> (as space allows)</li>
+                                <li>All events will be held <u>in-person</u> at the Gilroy Library</li>
+                            </ul>
                         </ul>
                     </div>
                     <!-- Timeline src: https://codepen.io/cjl750/pen/MXvYmg -->
@@ -338,9 +349,9 @@
                         <a href="https://www.gavilan.edu/" target="_blank">
                             <img id="gavilan-college-logo" src="img/gavilan_college.png" alt="Gavilan College logo">
                         </a>
-                        <!-- <a href="https://www.gavengineering.club/" target="_blank">
+                        <a href="https://www.gavengineering.club/" target="_blank">
                             <img id="gear-club-logo" src="img/gear_logo.png" alt="GEAR Club logo">
-                        </a> -->
+                        </a>
                     </div>
                 </article>
             </div>
@@ -446,6 +457,7 @@
                                 </div>
                             </div>
                         </div>
+                        <p class="bottom-text">*All events will be held in-person at the Gilroy Library</p>
                     </article>
                     <article id="map-div">
                         <h2 class="map-title">Location</h2>
@@ -575,10 +587,11 @@
                     <div class="podium-description">
                         <div class="prize-desc" id="second-place">
                             <div class="prize-text">
-                                <span class="prize-title">2nd</span><br>
-                                <span class="prize-content">$213</span>
+                                <span class="prize-title">2nd</span>
+                                <div class="prize-content">$213</div>
                             </div>
                             <img class="prize-laurel" src="img/silver-laurel.png" loading="lazy" alt="silver laurel">
+                            <img class="prize-img" src="img/NEHEME_drone.png" loading="lazy" alt="NEHEME Drone">
                             <div class="prize-subtitle">NEHEME NH525 Foldable Drone (x4)</div>
                         </div>
                         <div class="podium-edge"></div>
@@ -593,6 +606,7 @@
                                 <span class="prize-content">$362</span>
                             </div>
                             <img class="prize-laurel" src="img/gold-laurel.png" loading="lazy" alt="gold laurel">
+                            <img class="prize-img" src="img/pixoo_sling_bag.png" loading="lazy" alt="NEHEME Drone">
                             <div class="prize-subtitle">Divoom LED Display Sling Bag (x4)</div>
                         </div>
                         <div class="podium-edge"></div>
@@ -611,6 +625,7 @@
                                 <span class="prize-content">$100</span>
                             </div>
                             <img class="prize-laurel" src="img/bronze-laurel.png" loading="lazy" alt="bronze laurel">
+                            <img class="prize-img" src="img/Kunodi_speaker.png" loading="lazy" alt="NEHEME Drone">
                             <div class="prize-subtitle">Kunodi Bluetooth 5.0 Portable Speaker (x4)</div>
                         </div>
                         <div class="podium-edge"></div>
@@ -623,7 +638,7 @@
                 <ul id="prize-list">
                     <li><span class="emphasis-text">1st Place</span>: Divoom LED Display Sling Bag (x4)</li>
                     <li><span class="emphasis-text">2nd Place</span>: NEHEME NH525 Foldable Drone (x4)</li>
-                    <li><span class="emphasis-text">3rd Place</span>: Kunodi Bluetooth 5.0 Wireless Portable Speaker (x4)</li>
+                    <li><span class="emphasis-text">3rd Place</span>: Kunodi Bluetooth 5.0 Portable Speaker (x4)</li>
                 </ul>
                 <br>
                 <h4><u>Terms & Conditions</u></h4>
@@ -685,7 +700,7 @@
                         <div class="team-description">
                             <h4 class="person-name">James Dinh</h4>
                             <h5 class="person-subtitle">Lead Website Designer</h5>
-                            <h5 class="person-contact"><span class="discord-text">Discord</span>: wellfedbison<span class="discord-tag">#0607</span><br><a class="link" target="_blank" href="mailto:jamesdinh77@protonmail.com" title="Email">jamesdinh77@protonmail.com</a></h5>
+                            <h5 class="person-contact"><span class="discord-text">Discord</span>: wellfedbison<span class="discord-tag">#0607</span><br><a class="link email-replace" target="_blank" href="mailto:jamesdinh77@protonmail.com" title="Email">jamesdinh77@protonmail.com</a></h5>
                         </div>
                     </div>
                     <div class="team-entry">
@@ -754,12 +769,5 @@
         </article>
     </div>
 </footer>
-<!-- JavaScript Refs -->
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/scroll_nav.js"></script>
-<script src="js/scroll_element.js"></script>
-<script src="js/timer.js"></script>
-<script src="js/data_checkbox.js"></script>
-<script src="js/map.js"></script>
 </body>
 </html>
