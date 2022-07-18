@@ -3,10 +3,44 @@
 
 // document is loaded and DOM is ready
 document.addEventListener('DOMContentLoaded', function(){
-    document.querySelectorAll('a.email-replace').forEach(elem => {
-        elem.href = "mailto:jamesdinh77" + "@" + "protonmail.com";
-        elem.target = "_blank";
-    });
+    // Email replace
+    function setAttributes(elem, attrs) {
+        for(var key in attrs) {
+          elem.setAttribute(key, attrs[key]);
+        }
+    }
+
+    var tech = document.getElementById("email-replace-tech");
+    setAttributes(tech, {"href": "mailto:tech" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
+    tech.innerHTML = "tech" + "@" + "gilroyhacks.com";
+
+    var aadhavan = document.getElementById("email-replace-aadhavan");
+    setAttributes(aadhavan, {"href": "mailto:aadhavan.magesh" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+    aadhavan.innerHTML = "aadhavan.magesh" + "@" + "gmail.com";
+
+    var isaac = document.getElementById("email-replace-isaac");
+    setAttributes(isaac, {"href": "mailto:ihwang125" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+    isaac.innerHTML = "ihwang125" + "@" + "gmail.com";
+
+    var vijay = document.getElementById("email-replace-vijay");
+    setAttributes(vijay, {"href": "mailto:vijaykethanaboyina" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+    vijay.innerHTML = "vijaykethanaboyina" + "@" + "gmail.com";
+
+    var james = document.getElementById("email-replace-james");
+    setAttributes(james, {"href": "mailto:jamesdinh77" + "@" + "protonmail.com?subject=Gilroy Hacks", "target": "_blank"});
+    james.innerHTML = "jamesdinh77" + "@" + "protonmail.com";
+
+    var ezra = document.getElementById("email-replace-ezra");
+    setAttributes(ezra, {"href": "mailto:ezrabridger27" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+    ezra.innerHTML = "ezrabridger27" + "@" + "gmail.com";
+
+    var mark = document.getElementById("email-replace-mark");
+    setAttributes(mark, {"href": "mailto:markshen00" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+    mark.innerHTML = "markshen00" + "@" + "gmail.com";
+
+    var bryce = document.getElementById("email-replace-bryce");
+    setAttributes(bryce, {"href": "mailto:brycemankovsky" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+    bryce.innerHTML = "brycemankovsky" + "@" + "gmail.com";
 
     // Checkbox Local Storage
     var i;
