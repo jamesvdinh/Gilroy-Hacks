@@ -1279,11 +1279,26 @@ section {
 
 .email-link::after {
   content: 'Email';
-  right: 65px;
+  right: calc((100%/2) - 25px);
 }
 
 #discord-link::after {
   content: 'Discord Invite Link';
+  right: -40px;
+}
+
+#website::after {
+  content: 'Check out my website!';
+  top: 100px;
+  color: rgb(255, 208, 137)
+}
+
+#discord::after {
+  content: 'Discord';
+  color: rgb(128, 130, 245);
+  right: -70px;
+  top: -5px;
+  transform-origin: left;
 }
 
 #sponsor-heading {
@@ -1932,6 +1947,14 @@ section {
   fill: white;
   height: 10px;
   margin-left: 5px;
+}
+
+.discord-icon {
+  width: 16px;
+  height: 16px;
+  fill: rgb(110, 112, 247);
+  float: left;
+  margin-right: 5px;
 }
 
 footer {
