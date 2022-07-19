@@ -1924,6 +1924,12 @@ section {
   background-size: 0 0.1em, 100% 0.1em;
 }
 
+.new-tab-icon {
+  fill: white;
+  height: 10px;
+  margin-left: 5px;
+}
+
 footer {
   width: auto;
   height: auto;
