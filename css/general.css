@@ -1488,7 +1488,7 @@ section {
   margin: 10px 20px;
 }
 
-#photo-release-container {
+.rules-box {
   border-radius: 10px;
   border: 1px solid white;
   background-color: #272b1f;
@@ -1497,6 +1497,10 @@ section {
   max-width: 850px;
   min-width: 350px;
   padding: 10px;
+}
+
+#disclaimer {
+  background-color: #2b1f20;
 }
 
 #rules-container {
