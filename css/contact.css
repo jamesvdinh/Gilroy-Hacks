@@ -22,7 +22,6 @@ html {
 nav {
   height: 59px;
   width: 100%;
-  overflow: hidden;
   top: 0;
   left: 0;
   position: fixed;
@@ -166,6 +165,29 @@ nav ul li {
   background-color: rgb(57, 57, 57);
   border-radius: 5px;
   padding: 2px 5px;
+  position: relative;
+}
+
+#timer::after {
+  content: 'Aug 12, 4pm';
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  top: 30px;
+  right: -23px;
+  padding: 2px 7px;
+  width: 150%;
+  opacity: 1;
+  background-color: #222429;
+  border-radius: 10px;
+  transition: opacity 300ms, transform 300ms;
+  transform: scale(0);
+  transform-origin: top;
+  }
+
+  #timer:hover::after,
+  #timer:focus::after{
+  transform: scale(1);
 }
 
 .tooltip-nav {
