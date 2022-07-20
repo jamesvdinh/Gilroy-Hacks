@@ -551,6 +551,12 @@ footer {
   margin: 0 10px;
 }
 
+.new-tab-icon {
+  fill: white;
+  height: 10px;
+  margin-left: 5px;
+}
+
 #footer-copyright {
   color: rgb(129, 129, 129);
 }
