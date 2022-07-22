@@ -1064,6 +1064,11 @@ section {
   color: rgb(230, 96, 96);
 }
 
+#submit-tooltip:after {
+  content: 'Submission Form';
+  right: -20px;
+}
+
 /* Signup Container */
 #signup-container {
     margin: 20px auto;
