@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function(){
     setAttributes(isaac, {"href": "mailto:ihwang125" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
     isaac.innerHTML = "ihwang125" + "@" + "gmail.com";
 
+    var jonathan = document.getElementById("email-replace-jonathan");
+    setAttributes(jonathan, {"href": "mailto:jonathantessmann" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+    jonathan.innerHTML = "jonathantessmann" + "@" + "gmail.com";
+
     var vijay = document.getElementById("email-replace-vijay");
     setAttributes(vijay, {"href": "mailto:vijaykethanaboyina" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
     vijay.innerHTML = "vijaykethanaboyina" + "@" + "gmail.com";
