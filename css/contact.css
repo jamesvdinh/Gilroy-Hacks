@@ -562,8 +562,41 @@ option {
 }
 
 .tooltip {
-  text-decoration: underline dotted;
-  cursor: help;
+  position: relative;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  top: 22px;
+  right: -35px;
+  padding: 3px 7px;
+  width: max-content;
+  opacity: 1;
+  z-index: 1;
+  background-color: #222429;
+  border-radius: 10px;
+  transition: opacity 300ms, transform 300ms;
+  transform: scale(0);
+  transform-origin: top;
+  }
+
+.tooltip:hover::after {
+  transform: scale(1);
+}
+
+#facebook::after {
+  content: 'Facebook';
+  right: -34px;
+  color: rgb(255, 208, 137)
+}
+
+#instagram::after {
+  content: 'Instagram';
+  right: -35px;
+  color: rgb(255, 208, 137)
 }
 
 .emphasis-text {
