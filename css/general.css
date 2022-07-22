@@ -1301,6 +1301,18 @@ section {
   transform-origin: left;
 }
 
+#facebook::after {
+  content: 'Facebook';
+  right: -34px;
+  color: rgb(255, 208, 137)
+}
+
+#instagram::after {
+  content: 'Instagram';
+  right: -35px;
+  color: rgb(255, 208, 137)
+}
+
 #sponsor-heading {
   margin: 30px 0 0;
 }
@@ -1492,6 +1504,14 @@ section {
   border-radius: 10px;
   position: relative;
   z-index: 1;
+
+  align-items: center;
+}
+
+/* Workshops */
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 #rules-description {
