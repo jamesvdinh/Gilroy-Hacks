@@ -661,7 +661,7 @@ section {
   padding: 10px;
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #timeline-heading {
@@ -1011,6 +1011,57 @@ section {
   .input-flex-container {
     width: 300px;
   }
+}
+
+.timeline-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none !important;
+  margin-top: 15px;
+}
+
+.timeline-icon {
+  height: 23px;
+  float: left;
+}
+
+.timeline-button {
+  color: rgb(233, 203, 104);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid rgb(192, 168, 88);
+  padding: 5px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#zoom-link {
+  border: 1px solid rgb(45, 140, 255);
+}
+
+.timeline-button#zoom-link:hover {
+  background-color: rgb(45, 140, 255);
+}
+
+.timeline-button#zoom-link:hover > .timeline-icon{
+  filter:hue-rotate(90deg);
+}
+
+.timeline-button:hover {
+  color: white;
+  background-color: rgb(192, 168, 88);
+  transition: 0.5s;
+}
+
+#zoom-tooltip::after {
+  content: 'Unavailable';
+  font-size: 16px;
+  top: 40px;
+  right: 5px;
+  color: rgb(230, 96, 96);
 }
 
 /* Signup Container */
@@ -1514,6 +1565,18 @@ section {
 .flex-container {
   display: flex;
   flex-flow: row wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.workshop-entry {
+  margin: 20px;
+  min-width: 500px;
+  background-color: rgb(19, 29, 41);
+  border-radius: 10px;
+  padding: 10px 30px;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+  text-align: left;
 }
 
 #rules-description {
