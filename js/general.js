@@ -10,9 +10,11 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
 
-    var tech = document.getElementById("email-replace-tech");
-    setAttributes(tech, {"href": "mailto:tech" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
-    tech.innerHTML = "tech" + "@" + "gilroyhacks.com";
+    const tech_emails = document.querySelectorAll('.email-replace-tech');
+    tech_emails.forEach(entry => {
+        setAttributes(entry, {"href": "mailto:tech" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
+        entry.innerHTML = "tech" + "@" + "gilroyhacks.com";
+    });
 
     var aadhavan = document.getElementById("email-replace-aadhavan");
     setAttributes(aadhavan, {"href": "mailto:aadhavan.magesh" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
