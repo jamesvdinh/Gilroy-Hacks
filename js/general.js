@@ -101,6 +101,11 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     });
 
+    const workshop_entry = document.querySelectorAll('.workshop-entry');
+    workshop_entry.forEach(entry => {
+        observer.observe(entry);
+    });
+
     const rules_obj = document.querySelectorAll('.rules-box');
     rules_obj.forEach(entry => {
         observer.observe(entry);
@@ -127,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
     // Adding the class animations to these elements
-    let elements_id = ['#description-heading', '#event-main-box', '#timeline', '#signup-title', '#steps-card', '#sponsor-title', '#sponsor-container', '#map-article', '#rules-description', '#guidelines', '#code-of-conduct', '#second-podium', '#first-podium', '#third-podium', '#prize-box', '#administration', '#logistics', '#outreach', '#tech', '#marketing'];
+    let elements_id = ['#description-heading', '#event-main-box', '#timeline', '#signup-title', '#steps-card', '#sponsor-title', '#sponsor-container', '#map-article', '#workshops-description', '#rules-description', '#guidelines', '#code-of-conduct', '#second-podium', '#first-podium', '#third-podium', '#prize-box', '#administration', '#logistics', '#outreach', '#tech', '#marketing'];
     elements_id.forEach(entry => {
         var thing = document.querySelector(entry)
         observer.observe(document.querySelector(entry));

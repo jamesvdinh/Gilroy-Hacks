@@ -84,6 +84,7 @@
             <a onclick="check('01'); save();" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7"><div id="sign-up">SIGN UP</div></a>
             <ul id="navList">
                 <li><a class="navlink" onclick="uncheck('check')" href="#event">Event</a></li>
+                <li><a class="navlink" onclick="uncheck('check')" href="#workshops">Workshops</a></li>
                 <li><a class="navlink" onclick="uncheck('check')" href="#rules">Rules</a></li>
                 <li><a class="navlink" onclick="uncheck('check')" href="#prizes">Prizes</a></li>
                 <li><a class="navlink" onclick="uncheck('check')" href="#team">Team</a></li>
@@ -483,31 +484,82 @@
                 </div>
             </article>
         </section>
-        <!-- <section id="workshops">
+        <section id="workshops">
             <h2 class="topic">Workshops</h2>
             <hr class="line">
-            (under construction)
+            <p id="workshops-description">Our workshops are fully open to the public!</p>
             <div class="flex-container">
                 <div class="workshop-entry">
-                    <div class="workshop-header">
-                        <h3>Web Dev Workshop</h3>
-                        <h4>Aug 13, 11am</h4>
+                    <div class="workshop-header" id="webdev-workshop">
+                        <div class="workshop-title">
+                            <h3 class="title-font-weight">Web Dev Workshop</h3>
+                            <h4>Study Room</h4>
+                        </div>
+                        <div class="workshop-topics">
+                            <span class="tooltip" id="git-tooltip"><img class="workshop-img" src="img/git.png"></span>
+                            <span class="tooltip" id="html-tooltip"><img class="workshop-img" src="img/html.png"></span>
+                        </div>
+                    </div>
+                    <div class="workshop-date">
+                        <div><svg class="workshop-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Aug 13</div>
+                        <div><svg class="workshop-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>11am - 12pm</div>
+                        <div><svg class="workshop-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/></svg>Gilroy Library</div>
                     </div>
                     <div class="workshop-desc">
-                        Topics Covered:
-                        <ul>
+                        <h4>Description</h4>
+                        <p>A chance for you to learn the world's most common version control system: Git -- and creating your own website!</p><br>
+                        <h4>Topics Covered:</h4>
+                        <ul style="margin-left: 20px">
                             <li>Git Version Control</li>
-                            <li>Basics of Website Development</li>
+                            <li>Basics of Web Development</li>
                             <li>HTML</li>
                             <li>CSS</li>
+                        </ul><br>
+                        <h4>Please Bring</h4>
+                        <ul style="margin-left: 20px">
+                            <li>A Laptop (Windows, MacBook, Linux, etc.)</li>
                         </ul>
+                    </div>
+                    <div class="workshop-footer">
+                        Instructed By <span class="emphasis-text">James Dinh</span>
                     </div>
                 </div>
                 <div class="workshop-entry">
-                    
+                    <div class="workshop-header" id="python-workshop">
+                        <div class="workshop-title">
+                            <h3 class="title-font-weight">Python Workshop</h3>
+                            <h4>Study Room</h4>
+                        </div>
+                        <div class="workshop-topics">
+                            <span class="tooltip" id="python-tooltip"><img class="workshop-img" src="img/python-logo.webp"></span>
+                        </div>
+                    </div>
+                    <div class="workshop-date">
+                        <div><svg class="workshop-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Aug 13</div>
+                        <div><svg class="workshop-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>1 - 2pm</div>
+                        <div><svg class="workshop-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/></svg>Gilroy Library</div>
+                    </div>
+                    <div class="workshop-desc">
+                        <h4>Description</h4>
+                        <p>Join us for a lecture on Python Programming basics. You'll learn basic data structures and be able to code your own programs!</p><br>
+                        <h4>Topics Covered:</h4>
+                        <ul style="margin-left: 20px">
+                            <li>Variables</li>
+                            <li>Input / Output</li>
+                            <li>Arrays</li>
+                            <li>Functions</li>
+                        </ul><br>
+                        <h4>Please Bring</h4>
+                        <ul style="margin-left: 20px">
+                            <li>A Laptop (Windows, MacBook, Linux, etc.)</li>
+                        </ul>
+                    </div>
+                    <div class="workshop-footer">
+                        Instructed By <span class="emphasis-text">Clement Boiteux</span>
+                    </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section id="rules">
             <h2 class="topic">Rules</h2>
             <hr class="line">
@@ -797,7 +849,7 @@
 <footer>
     <div id="footer-container">
         <article id="footer-desc">
-            <img id="footer-logo" src="img/Gilroy Hacks Logo [Summer-wide-2].png" alt="logo"/>
+            <div id="footer-logo-div"><img id="footer-logo" src="img/Gilroy Hacks Logo [Summer-wide-2].png" alt="logo"/></div>
             <p>
                 Gilroy Hacks is a student-led organization focused on promoting community engagement and improving STEM exposure for local middle/high school students.
             </p>
@@ -811,7 +863,7 @@
             </p>
         </article>
         <article id="footer-links">
-            <h3>Links</h3><br>
+            <h3 class="footer-title">Links</h3>
             <ul>
                 <li><a class="link" onclick="check('02'); save()" target="_blank" href="https://discord.gg/nkTDKMcYbr" title="Discord Invite Link">Discord<svg class="new-tab-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 320c-17.67 0-32 14.33-32 32v96H64V160h96c17.67 0 32-14.32 32-32s-14.33-32-32-32L64 96c-35.35 0-64 28.65-64 64V448c0 35.34 28.65 64 64 64h288c35.35 0 64-28.66 64-64v-96C416 334.3 401.7 320 384 320zM488 0H352c-12.94 0-24.62 7.797-29.56 19.75c-4.969 11.97-2.219 25.72 6.938 34.88L370.8 96L169.4 297.4c-12.5 12.5-12.5 32.75 0 45.25C175.6 348.9 183.8 352 192 352s16.38-3.125 22.62-9.375L416 141.3l41.38 41.38c9.156 9.141 22.88 11.84 34.88 6.938C504.2 184.6 512 172.9 512 160V24C512 10.74 501.3 0 488 0z"/></svg></a></li>
                 <li><a class="link" onclick="check('01'); save();" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7">Signup Form<svg class="new-tab-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 320c-17.67 0-32 14.33-32 32v96H64V160h96c17.67 0 32-14.32 32-32s-14.33-32-32-32L64 96c-35.35 0-64 28.65-64 64V448c0 35.34 28.65 64 64 64h288c35.35 0 64-28.66 64-64v-96C416 334.3 401.7 320 384 320zM488 0H352c-12.94 0-24.62 7.797-29.56 19.75c-4.969 11.97-2.219 25.72 6.938 34.88L370.8 96L169.4 297.4c-12.5 12.5-12.5 32.75 0 45.25C175.6 348.9 183.8 352 192 352s16.38-3.125 22.62-9.375L416 141.3l41.38 41.38c9.156 9.141 22.88 11.84 34.88 6.938C504.2 184.6 512 172.9 512 160V24C512 10.74 501.3 0 488 0z"/></svg></a></li>
@@ -821,7 +873,7 @@
             </ul>
         </article>
         <article id="footer-location">
-            <h3>Location</h3><br>
+            <h3 class="footer-title">Location</h3>
             <ul>
                 <li>Gilroy Library<br>350 W 6th St, Gilroy, CA 95020</li>
             </ul>
