@@ -424,6 +424,37 @@ nav ul li {
   animation: slidein ease 1.5s;
 }
 
+.header-link {
+  background: unset !important;
+  color: white !important;
+}
+
+#header-tooltip::after {
+  content: '← Add to Calendar';
+  top: 12px;
+  right: -160px;
+  transform-origin: left;
+  color: rgb(252, 188, 93);
+}
+
+#spots-tooltip::after {
+  content: '← Signups Available!';
+  top: 12px;
+  right: -170px;
+  transform-origin: left;
+  color: rgb(252, 188, 93);
+}
+
+@media (max-width: 610px) {
+  #header-tooltip::after, #spots-tooltip::after {
+    display: none;
+  }
+}
+
+.header-icon {
+  margin-right: 6px;
+}
+
 #spots-container {
   display: flex;
   place-items: center;
