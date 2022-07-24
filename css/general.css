@@ -1599,6 +1599,8 @@ section {
   margin-top: 20px;
   justify-content: center;
   align-items: flex-start;
+  width: 90%;
+  margin: auto;
 }
 
 .workshop-entry {
