@@ -1692,10 +1692,29 @@ section {
   margin-right: 5px;
 }
 
+.workshop-instructor {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px 0 10px;
+}
+
+.instructor-img {
+  width: 20px;
+  height: 20px;
+}
+
+.default-pfp {
+  border-radius: 50%;
+  border: 1px solid rgb(161, 161, 161);
+}
+
 .workshop-footer {
   padding: 10px 30px;
   text-align: center;
   background-color: #151618;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Rules */

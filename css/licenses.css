@@ -566,6 +566,26 @@ section {
   background-size: 0 0.1em, 100% 0.1em;
 }
 
+@media (max-width: 869px) {
+  #footer-desc {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 565px) {
+  footer * {
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-title {
+    margin-bottom: 0 !important;
+  }
+  #footer-desc, #footer-links, #footer-location {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+}
+
 footer {
   width: auto;
   height: auto;
@@ -611,12 +631,6 @@ footer {
   margin: 0 10px;
 }
 
-.new-tab-icon {
-  fill: white;
-  height: 10px;
-  margin-left: 5px;
-}
-
 #footer-copyright {
   color: rgb(129, 129, 129);
 }
@@ -631,6 +645,10 @@ footer {
   margin-top: 7px;
   margin-right: 20px;
   text-align: left;
+}
+
+.footer-title {
+  margin-bottom: 19px;
 }
 
 #footer-location {
