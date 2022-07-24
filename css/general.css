@@ -1600,7 +1600,7 @@ section {
   justify-content: center;
   align-items: flex-start;
   width: 90%;
-  margin: auto;
+  margin: 20px auto 0;
 }
 
 .workshop-entry {
