@@ -13,5 +13,4 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let marker = L.marker([37.00529, -121.572764], {icon: myIcon}).addTo(map)
 
-L.popup().setLatLng([37.00529, -121.572697]).setContent('<h3 style="text-align: center">Gilroy Library</h3><br>350 W 6th St, Gilroy, CA 95020')
-    .openOn(map);
+L.popup().setLatLng([37.00529, -121.572697]).setContent('<h3 style="text-align: center">Gilroy Library</h3><br>350 W 6th St, Gilroy, CA 95020').openOn(map);
