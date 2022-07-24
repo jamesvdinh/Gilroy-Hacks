@@ -1690,6 +1690,17 @@ section {
   margin: 0 10px;
 }
 
+.cal-tooltip::after {
+  content: 'Add to Calendar';
+  font-size: 16px;
+  top: 30px;
+  right: -20px;
+}
+
+#workshop-link {
+  background: unset;
+}
+
 .workshop-icon {
   float: left;
   margin-top: 2px;
