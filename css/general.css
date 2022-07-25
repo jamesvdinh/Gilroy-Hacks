@@ -1695,67 +1695,6 @@ section {
   flex-flow: row-reverse;
 }
 
-/* .ribbon {
-  position: absolute;
-  display: inline-block;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  white-space: nowrap;
-  text-align: center;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-.ribbon:after, .ribbon:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: -.5em;
-  width: 1em;
-  height: 100%;
-  background-color: #69c48d;
-  pointer-events: none;
-}
-.ribbon:after {
-  right: -.57em;
-  z-index: -1;
-}
-h3:before {
-  bottom: auto;
-  top: -.5em;
-  left: -.57em;
-  z-index: -1;
-}
-.ribbon span {
-  display: inline-block;
-  position: relative;
-  padding: .15em .75em;
-  text-decoration: none;
-  color: #192238;
-  background-color: #8ed2a9;
-}
-.ribbon span:after, h1 span:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: -.5em;
-  left: -.05em;
-  pointer-events: none;
-}
-.ribbon span:before {
-  bottom: auto;
-  top: -.5em;
-  border-bottom: 0.5em solid #398e5b;
-  border-left: .5em solid transparent;
-}
-.ribbon span:after {
-  left: auto;
-  right: -.05em;
-  border-top: 0.5em solid #398e5b;
-  border-right: .5em solid transparent;
-} */
-
 .workshop-img {
   height: 30px;
   width: 30px;
