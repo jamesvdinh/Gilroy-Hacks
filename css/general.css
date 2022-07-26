@@ -1086,7 +1086,7 @@ section {
 }
 
 .timeline-button.zoom-link:hover > .timeline-icon{
-  filter:hue-rotate(90deg);
+  filter:hue-rotate(60deg);
 }
 
 .timeline-button:hover {
@@ -1096,11 +1096,11 @@ section {
 }
 
 .tooltip.zoom-tooltip::after {
-  content: 'Unavailable';
+  content: 'Zoom Link';
   font-size: 16px;
   top: 40px;
-  right: 5px;
-  color: rgb(230, 96, 96);
+  right: 12px;
+  color: rgb(45, 140, 255);
 }
 
 #submit-tooltip:after {
