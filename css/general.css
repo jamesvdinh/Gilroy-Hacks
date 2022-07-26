@@ -1757,6 +1757,57 @@ section {
   border: 1px solid rgb(161, 161, 161);
 }
 
+.workshop-slides {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.workshop-topics-covered {
+  width: 50%;
+  min-width: 150px;
+}
+
+.workshop-presentation {
+  text-align: center;
+  justify-content: center;
+  float: right;
+  width: 50%;
+}
+
+.slides-thumbnail {
+  padding: 10px 15px;
+}
+
+.slides-thumbnail:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.slides-element {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(102, 102, 102);
+}
+
+.tooltip#python-slides-tooltip::after {
+  content: 'Intro to Python Programming';
+  color: rgb(252, 188, 93);
+  right: -11px;
+}
+
+.tooltip#webdev-slides-tooltip::after {
+  content: 'Web Dev & Git Version Control';
+  color: rgb(252, 188, 93);
+  right: -15px;
+}
+
+.tooltip#python-slides-tooltip::after {
+  content: 'Intro to Python Programming';
+  color: rgb(252, 188, 93);
+  right: -11px;
+}
+
 .workshop-difficulty {
   display: flex;
   justify-content: center;
