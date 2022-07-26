@@ -685,6 +685,11 @@ option {
   cursor: help;
 }
 
+.tooltip.email-link::after {
+  content: 'Email';
+  right: calc((100%/2) - 25px);
+}
+
 @media (max-width: 500px) {
   #event, #rules, #prizes, #team {
     transform: scale(0.9);
