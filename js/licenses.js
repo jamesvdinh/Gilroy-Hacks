@@ -31,6 +31,19 @@ if (document.documentElement.scrollTop > 50) {
 }
 }
 
+// Email Replace
+function setAttributes(elem, attrs) {
+    for(var key in attrs) {
+      elem.setAttribute(key, attrs[key]);
+    }
+}
+
+const tech_emails = document.querySelectorAll('.email-replace-tech');
+    tech_emails.forEach(entry => {
+        setAttributes(entry, {"href": "mailto:tech" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
+        entry.innerHTML = "tech" + "@" + "gilroyhacks.com";
+    });
+
 // Timer
 // SRC: W3Schools https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
