@@ -1130,7 +1130,7 @@ section {
 }
 
 /* Signup Container */
-#signup-container {
+.signup-container {
     margin: 20px auto;
   }
   
@@ -1196,7 +1196,7 @@ section {
 }
 
 /* Signup Checklist */
-#checklist {
+.checklist {
   --text: #414856;
   --check: #00ff37;
   --disabled: #C3C8DE;
@@ -1207,7 +1207,7 @@ section {
   grid-template-columns: 0px auto;
   align-items: center;
 }
-#checklist label {
+.checklist label {
   color: var(--text);
   position: relative;
   cursor: pointer;
@@ -1216,24 +1216,24 @@ section {
   width: fit-content;
   transition: color 0.3s ease;
 }
-#checklist label::before, #checklist label::after {
+.checklist label::before, .checklist label::after {
   content: "";
   position: absolute;
 }
-#checklist label::before {
+.checklist label::before {
   height: 2px;
   width: 8px;
   left: -35px;
   border-radius: 2px;
 }
-#checklist label:after {
+.checklist label:after {
   height: 4px;
   width: 4px;
   top: 8px;
   left: -35px;
   border-radius: 50%;
 }
-#checklist input[type=checkbox] {
+.checklist input[type=checkbox] {
   appearance: none;
   position: relative;
   height: 15px;
@@ -1246,7 +1246,7 @@ section {
   display: grid;
   align-items: center;
 }
-#checklist input[type=checkbox]::before, #checklist input[type=checkbox]::after {
+.checklist input[type=checkbox]::before, .checklist input[type=checkbox]::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -1254,33 +1254,33 @@ section {
   background: var(--check);
   border-radius: 2px;
 }
-#checklist input[type=checkbox]::before {
+.checklist input[type=checkbox]::before {
   width: 0px;
   transform-origin: right bottom;
   z-index: 2;
 }
-#checklist input[type=checkbox]::after {
+.checklist input[type=checkbox]::after {
   width: 0px;
   transform-origin: left bottom;
   z-index: 2;
 }
-#checklist input[type=checkbox]:checked::before {
+.checklist input[type=checkbox]:checked::before {
   animation: check-01 0.4s ease forwards;
   left: -36px;
 }
-#checklist input[type=checkbox]:checked::after {
+.checklist input[type=checkbox]:checked::after {
   animation: check-02 0.4s ease forwards;
   left: -31px;
 }
-#checklist input[type=checkbox]:checked + label {
+.checklist input[type=checkbox]:checked + label {
   color: var(--disabled);
     animation: move 0.3s ease 0.1s forwards;
 }
-#checklist input[type=checkbox]:checked + label::before {
+.checklist input[type=checkbox]:checked + label::before {
   background: var(--disabled);
     animation: slice 0.4s ease forwards;
 }
-#checklist input[type=checkbox]:checked + label::after {
+.checklist input[type=checkbox]:checked + label::after {
   animation: firework 0.5s ease forwards 0.1s;
   left: -33px;
 }
@@ -1409,7 +1409,7 @@ section {
   color: rgb(255, 208, 137)
 }
 
-#discord::after {
+.tooltip.discord::after {
   content: 'Discord';
   color: rgb(128, 130, 245);
   right: -70px;
@@ -1731,7 +1731,7 @@ section {
   right: -20px;
 }
 
-#workshop-link {
+.workshop-link {
   background: unset;
 }
 
@@ -1876,19 +1876,19 @@ section {
   left: -28px;
 }
 
-#rules-1::before {
+.rules-1::before {
   content: "1";
 }
-#rules-2::before {
+.rules-2::before {
   content: "2";
 }
-#rules-3::before {
+.rules-3::before {
   content: "3";
 }
-#rules-4::before {
+.rules-4::before {
   content: "4";
 }
-#rules-5::before {
+.rules-5::before {
   content: "5";
 }
 
@@ -1968,7 +1968,7 @@ section {
   margin: 10px 0;
 }
 
-#prize-column {
+.prize-column {
   display: flex;
   flex-flow: column-reverse;
 }
