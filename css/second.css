@@ -680,6 +680,20 @@ option {
   padding-top: 10px;
 }
 
+.tooltip-rules {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+@media (max-width: 500px) {
+  #event, #rules, #prizes, #team {
+    transform: scale(0.9);
+  }
+  section {
+    padding-top: 0 !important;
+  }
+}
+
 /* Title of the card */
 .rules-title {
   color: rgb(253, 103, 103);
