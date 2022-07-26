@@ -221,7 +221,7 @@ window.addEventListener("load", function() {
 // General functions
 // Checkbox Local Storage
 var i;
-var checkboxes = document.querySelectorAll('#signup-container input[type=checkbox]');
+var checkboxes = document.querySelectorAll('#signup-checklist input[type=checkbox]');
 var verify = true;
 function save() {
     for (i = 0; i < checkboxes.length; i++) {
