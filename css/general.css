@@ -687,6 +687,10 @@ section {
   padding-left: 20px;
 }
 
+.desc-list {
+  margin-left: 25px;
+}
+
 .list li{
   margin: 10px 0;
 }
@@ -1073,15 +1077,15 @@ section {
   margin: 0 10px;
 }
 
-#zoom-link {
+.zoom-link {
   border: 1px solid rgb(45, 140, 255);
 }
 
-.timeline-button#zoom-link:hover {
+.timeline-button.zoom-link:hover {
   background-color: rgb(45, 140, 255);
 }
 
-.timeline-button#zoom-link:hover > .timeline-icon{
+.timeline-button.zoom-link:hover > .timeline-icon{
   filter:hue-rotate(90deg);
 }
 
@@ -1091,7 +1095,7 @@ section {
   transition: 0.5s;
 }
 
-#zoom-tooltip::after {
+.tooltip.zoom-tooltip::after {
   content: 'Unavailable';
   font-size: 16px;
   top: 40px;
