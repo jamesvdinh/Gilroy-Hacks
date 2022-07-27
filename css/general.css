@@ -1799,7 +1799,7 @@ section {
 .tooltip#webdev-slides-tooltip::after {
   content: 'Web Dev & Git Version Control';
   color: rgb(252, 188, 93);
-  right: -15px;
+  right: -17px;
 }
 
 .tooltip#python-slides-tooltip::after {
