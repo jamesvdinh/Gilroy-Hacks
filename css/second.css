@@ -806,6 +806,12 @@ option {
   color: rgb(255, 208, 137)
 }
 
+#youtube::after {
+  content: 'Youtube';
+  right: -25px;
+  color: rgb(255, 208, 137)
+}
+
 .emphasis-text {
     color:rgb(51, 235, 189);
 }
