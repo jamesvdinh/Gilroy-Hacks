@@ -124,6 +124,10 @@ nav ul li {
   align-content: stretch;
 }
 
+#nav-icon {
+  margin: 0 0 0 5px;
+}
+
 #sign-up {
   padding: 6px 7px;
   margin: 14px 15px 14px 4px;
