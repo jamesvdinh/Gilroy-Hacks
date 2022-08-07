@@ -152,30 +152,30 @@
                             <div class="input-flex-container">
                                 <div id="timeline-left-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></div>
                                 <input id="t1" class="timeline-input" type="radio" name="timeline-dot" data-description="1" checked>
-                                <div onclick="check('t1')" class="dot-info" data-description="1">
+                                <label for="t1" onclick="check('t1')" class="dot-info" data-description="1">
                                     <span class="year">8/12 4:00pm</span>
                                     <span class="label">Opening Ceremony</span>
-                                </div>
-                                <input id="t2" class="timeline-input" type="radio" name="timeline-dot" data-description="2">
-                                <div onclick="check('t2')" class="dot-info" data-description="2">
+                                </label>
+                                <input for="t2" id="t2" class="timeline-input" type="radio" name="timeline-dot" data-description="2">
+                                <label onclick="check('t2')" class="dot-info" data-description="2">
                                     <span class="year">8/12 5:00pm</span>
                                     <span class="label">Hacking Begins</span>
-                                </div>
+                                </label>
                                 <input id="t3" class="timeline-input" type="radio" name="timeline-dot" data-description="3">
-                                <div onclick="check('t3')" class="dot-info" data-description="3">
+                                <label for="t3" onclick="check('t3')" class="dot-info" data-description="3">
                                     <span class="year">8/14 2:00pm</span>
                                     <span class="label">Projects Due</span>
-                                </div>
+                                </label>
                                 <input id="t4" class="timeline-input" type="radio" name="timeline-dot" data-description="4">
-                                <div onclick="check('t4')" class="dot-info" data-description="4">
+                                <label for="t4" onclick="check('t4')" class="dot-info" data-description="4">
                                     <span class="year">8/14 2:30pm</span>
                                     <span class="label">Project Presentations</span>
-                                </div>
+                                </label>
                                 <input id="t5" class="timeline-input" type="radio" name="timeline-dot" data-description="5">
-                                <div onclick="check('t5')" class="dot-info" data-description="5">
+                                <label for="t5" onclick="check('t5')" class="dot-info" data-description="5">
                                     <span class="year">8/14 4:00pm</span>
                                     <span class="label">Awards Ceremony</span>
-                                </div>
+                                </label>
                                 <div id="timeline-right-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
                                 <div id="timeline-descriptions-wrapper">
                                     <div class="timeline-desc" data-description="1">
@@ -184,18 +184,17 @@
                                             <div class="right"></div>
                                         </div>
                                         <h3>Opening Ceremony</h3>
-                                        <h4 class="timeline-description-subtitle">8/12 | 4:00pm - 4:45pm</h4>
-                                        <br>
+                                        <h4 class="timeline-description-subtitle">8/12 | 4:00pm - 4:45pm</h4><br>
                                         <div>
                                             <p class="timeline-description">The official start of the hackathon where we deliver the opening presentation along with the finalized teams, prompts, rules, and timeline.</p>
-                                                <ul class="timeline-description-list">
-                                                    <li>Along with the in-person event held at the <u>Community Room</u> at the Gilroy Library, we will be streaming the event on Zoom</li>
-                                                    <li><span class="important-text">=IMPORTANT=</span> DO NOT START CODING during this period</li>
-                                                    <li>After this event, participants will <u>head back home</u> to start coding</li>
-                                                </ul>
-                                                <div class="timeline-links">
-                                                    <a class="tooltip zoom-tooltip" href="https://us06web.zoom.us/j/84398429896?pwd=b0ZUZ2pieXFKeUwxTVY0NVE1MTNxdz09" target="_blank"><div class="timeline-button zoom-link"><img class="timeline-icon" loading="lazy" src="img/zoom.png" alt="Zoom"></div></a>
-                                                </div>
+                                            <ul class="timeline-description-list">
+                                                <li>Along with the in-person event held at the <u>Community Room</u> at the Gilroy Library, we will be streaming the event on Zoom</li>
+                                                <li><span class="important-text">=IMPORTANT=</span> DO NOT START CODING during this period</li>
+                                                <li>After this event, participants will <u>head back home</u> to start coding</li>
+                                            </ul>
+                                            <div class="timeline-links">
+                                                <a class="tooltip zoom-tooltip" href="https://us06web.zoom.us/j/84398429896?pwd=b0ZUZ2pieXFKeUwxTVY0NVE1MTNxdz09" target="_blank"><div class="timeline-button zoom-link"><img class="timeline-icon" loading="lazy" src="img/zoom.png" alt="Zoom"></div></a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="timeline-desc" data-description="2">
@@ -205,7 +204,7 @@
                                         </div>
                                         <h3>Hacking Begins</h3>
                                         <h4 class="timeline-description-subtitle">8/12 | 5:00pm</h4><br>
-                                        <div class="timeline-description">Now's your time to shine! Start working with your team to build your project. No strings attached!
+                                        <p class="timeline-description">Now's your time to shine! Start working with your team to build your project. No strings attached!</p>
                                             <ul class="timeline-description-list">
                                                 <li><span class="important-text">=IMPORTANT=</span> Your project must follow one of the given prompts; otherwise, your team may lose a lot of points for unrelated topic deductions</li>
                                                 <li><u>Hybrid model</u> - you may either code online or in-person at the Library</li>
@@ -214,7 +213,6 @@
                                             <div class="timeline-links">
                                                 <a target="_blank" href="https://docs.google.com/document/d/1g0NyLcNGcteaXelcNRLpGSzd0l6Mky78ohbBQgQTDQY/edit?usp=sharing"><div class="timeline-button">View the Rubric</div></a>
                                             </div>
-                                        </div>
                                     </div>
                                     <div class="timeline-desc" data-description="3">
                                         <div class="bracket" id="bracket-3">
@@ -223,15 +221,14 @@
                                         </div>
                                         <h3>Projects Due</h3>
                                         <h4 class="timeline-description-subtitle">8/14 | 2:00pm</h4><br>
-                                        <p class="timeline-description">STOP coding! Your 46 hours of intense stress and turmoil are finally up! We hope you learned some valuable skills and made some new friends along the way.<br>
-                                            <ul class="timeline-description-list">
-                                                <li><span class="important-text">=IMPORTANT=</span> Make sure you turn in your project BEFORE the deadline at 2:00pm. You can find the submission form on the Discord server or <a class="link tooltip" id="submit-tooltip" href="https://forms.gle/bpoXvyjP2TcsrELX8" target="_blank">Submit Here</a></li>
-                                                <li>From now until Project Presentations (2:30pm), your team will have around 30 mins to prepare for your presentation. Get back to work!</li>
-                                            </ul>
-                                            <div class="timeline-links">
-                                                <a target="_blank" href="https://docs.google.com/document/d/1g0NyLcNGcteaXelcNRLpGSzd0l6Mky78ohbBQgQTDQY/edit?usp=sharing"><div class="timeline-button">View the Rubric</div></a>
-                                            </div>
-                                        </p>
+                                        <p class="timeline-description">STOP coding! Your 46 hours of intense stress and turmoil are finally up! We hope you learned some valuable skills and made some new friends along the way.</p>
+                                        <ul class="timeline-description-list">
+                                            <li><span class="important-text">=IMPORTANT=</span> Make sure you turn in your project BEFORE the deadline at 2:00pm. You can find the submission form on the Discord server or <a class="link tooltip" id="submit-tooltip" href="https://forms.gle/bpoXvyjP2TcsrELX8" target="_blank">Submit Here</a></li>
+                                            <li>From now until Project Presentations (2:30pm), your team will have around 30 mins to prepare for your presentation. Get back to work!</li>
+                                        </ul>
+                                        <div class="timeline-links">
+                                            <a target="_blank" href="https://docs.google.com/document/d/1g0NyLcNGcteaXelcNRLpGSzd0l6Mky78ohbBQgQTDQY/edit?usp=sharing"><div class="timeline-button">View the Rubric</div></a>
+                                        </div>
                                     </div>
                                     <div class="timeline-desc" data-description="4">
                                         <div class="bracket" id="bracket-4">
@@ -240,18 +237,17 @@
                                         </div>
                                         <h3>Project Presentations</h3>
                                         <h4 class="timeline-description-subtitle">8/14 | 2:30pm - 3:30pm</h4><br>
-                                        <p class="timeline-description">This is where your team will present your product to our honored judges.<br>
-                                            <ul class="timeline-description-list">
-                                                <li>Be Creative! Make your product stand out by including a demo or showing its function across multiple applications</li>
-                                                <li>Presentations will occur in order of team number (i.e. Team 1 will go first)</li>
-                                                <li><span class="important-text">=IMPORTANT=</span> Your team's presentation is NOT ALLOWED to go above 5 minutes... Use your time wisely.</li>
-                                                <li>Your team will be graded on both the product and presentation as per the rubric</li>
-                                            </ul>
-                                            <div class="timeline-links">
-                                                <a class="tooltip zoom-tooltip" href="https://us06web.zoom.us/j/84398429896?pwd=b0ZUZ2pieXFKeUwxTVY0NVE1MTNxdz09" target="_blank"><div class="timeline-button zoom-link"><img class="timeline-icon" loading="lazy" src="img/zoom.png" alt="Zoom"></div></a>
-                                                <a target="_blank" href="https://docs.google.com/document/d/1g0NyLcNGcteaXelcNRLpGSzd0l6Mky78ohbBQgQTDQY/edit?usp=sharing"><div class="timeline-button">View the Rubric</div></a>
-                                            </div>
-                                        </p>
+                                        <p class="timeline-description">This is where your team will present your product to our honored judges.</p>
+                                        <ul class="timeline-description-list">
+                                            <li>Be Creative! Make your product stand out by including a demo or showing its function across multiple applications</li>
+                                            <li>Presentations will occur in order of team number (i.e. Team 1 will go first)</li>
+                                            <li><span class="important-text">=IMPORTANT=</span> Your team's presentation is NOT ALLOWED to go above 5 minutes... Use your time wisely.</li>
+                                            <li>Your team will be graded on both the product and presentation as per the rubric</li>
+                                        </ul>
+                                        <div class="timeline-links">
+                                            <a class="tooltip zoom-tooltip" href="https://us06web.zoom.us/j/84398429896?pwd=b0ZUZ2pieXFKeUwxTVY0NVE1MTNxdz09" target="_blank"><div class="timeline-button zoom-link"><img class="timeline-icon" loading="lazy" src="img/zoom.png" alt="Zoom"></div></a>
+                                            <a target="_blank" href="https://docs.google.com/document/d/1g0NyLcNGcteaXelcNRLpGSzd0l6Mky78ohbBQgQTDQY/edit?usp=sharing"><div class="timeline-button">View the Rubric</div></a>
+                                        </div>
                                     </div>
                                     <div class="timeline-desc" data-description="5">
                                         <div class="bracket" id="bracket-5">
@@ -260,15 +256,14 @@
                                         </div>
                                         <h3>Awards Ceremony</h3>
                                         <h4 class="timeline-description-subtitle">8/14 | 4:00pm - 4:30pm</h4><br>
-                                        <p class="timeline-description">Congratuations! Judge scores are tallied and here's where we announce the 1st, 2nd, and 3rd place teams along with constructive feedback for each in the <u>Community Room</u>.<br>
-                                            <ul class="timeline-description-list">
-                                                <li><u>Winners</u>: we will contact you via Email about your prizes; allow up to 2 days for a response</li>
-                                                <li>For Questions, ask in the Discord server (#ask-questions), or contact tech support at <a class="link tooltip email-link email-replace-tech" target="_blank" href="mailto:tech@gilroyhacks.com">tech@gilroyhacks.com</a></li>
-                                            </ul>
-                                            <div class="timeline-links">
-                                                <a class="tooltip zoom-tooltip" href="https://us06web.zoom.us/j/84398429896?pwd=b0ZUZ2pieXFKeUwxTVY0NVE1MTNxdz09" target="_blank"><div class="timeline-button zoom-link"><img class="timeline-icon" loading="lazy" src="img/zoom.png" alt="Zoom"></div></a>
-                                            </div>
-                                        </p>
+                                        <p class="timeline-description">Congratuations! Judge scores are tallied and here's where we announce the 1st, 2nd, and 3rd place teams along with constructive feedback for each in the <u>Community Room</u>.</p>
+                                        <ul class="timeline-description-list">
+                                            <li><u>Winners</u>: we will contact you via Email about your prizes; allow up to 2 days for a response</li>
+                                            <li>For Questions, ask in the Discord server (#ask-questions), or contact tech support at <a class="link tooltip email-link email-replace-tech" target="_blank" href="mailto:tech@gilroyhacks.com">tech@gilroyhacks.com</a></li>
+                                        </ul>
+                                        <div class="timeline-links">
+                                            <a class="tooltip zoom-tooltip" href="https://us06web.zoom.us/j/84398429896?pwd=b0ZUZ2pieXFKeUwxTVY0NVE1MTNxdz09" target="_blank"><div class="timeline-button zoom-link"><img class="timeline-icon" loading="lazy" src="img/zoom.png" alt="Zoom"></div></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -292,7 +287,7 @@
                                             <p class="title">1. Sign up w/ this <a onclick="check('01'); save()" class="link tooltip" id="signup-link" target="_blank" href="https://forms.gle/coK7q43RwBV2f15i7">form</a></p>
                                         </label>
                                         <label for="01">
-                                            <p class="step-desc">- These questions are used to gauge your experience and skills so we can pair you with others</p>
+                                            <span class="step-desc">- These questions are used to gauge your experience and skills so we can pair you with others</span>
                                         </label>
                                     </div>
                                 </div>
@@ -305,7 +300,7 @@
                                             <p class="title">2. Join the <a onclick="check('02'); save()" class="link tooltip" id="discord-link" target="_blank" href="https://discord.gg/nkTDKMcYbr">Discord</a></p>
                                         </label>
                                         <label for="02">
-                                            <p class="step-desc">- Please change your nickname to your First and Last name</p>
+                                            <span class="step-desc">- Please change your nickname to your First and Last name</span>
                                         </label>
                                     </div>
                                 </div>
@@ -318,7 +313,7 @@
                                             <p class="title">3. Create/join a team</p>
                                         </label>
                                         <label for="03">
-                                            <p class="step-desc">- Join teams in the Discord Server!</p>
+                                            <span class="step-desc">- Join teams in the Discord Server!</span>
                                         </label>
                                     </div>
                                 </div>
@@ -331,11 +326,11 @@
                                             <p class="title">4. Start preparing</p>
                                         </label>
                                         <label for="04">
-                                            <p class="step-desc">
+                                            <span class="step-desc">
                                                 - Between now and the start of the hackathon is a great time to download any software you may need
                                                 <br>
                                                 - However, you can't start working on the project until the hackathon begins
-                                            </p>                                        
+                                            </span>                                        
                                         </label>
                                     </div>
                                 </div>
@@ -348,7 +343,7 @@
                                             <p class="title">5. Wait for the hackathon to start!</p>
                                         </label>
                                         <label for="05">
-                                            <p class="step-desc">- Mark your calendars, Aug 12 - 14</p>
+                                            <span class="step-desc">- Mark your calendars, Aug 12 - 14</span>
                                         </label>
                                     </div>
                                 </div>
@@ -527,7 +522,7 @@
                             <div class="workshop-presentation">
                                 <h4>Slides Presentation:</h4>
                                 <div class="slides-thumbnail">
-                                    <a class="tooltip" id="webdev-slides-tooltip" href="https://docs.google.com/presentation/d/19sgQbGn7sqNV1A_LlYYiCNZF2GlHGuc-pFoWAdAEtV0/edit?usp=sharing" target="_blank"><img class="slides-element" src="img/webdev_slides.jpg"></a>
+                                    <a class="tooltip" id="webdev-slides-tooltip" href="https://docs.google.com/presentation/d/19sgQbGn7sqNV1A_LlYYiCNZF2GlHGuc-pFoWAdAEtV0/edit?usp=sharing" target="_blank"><img class="slides-element" src="img/webdev_slides.jpg" alt="slide thumbnail"></a>
                                 </div>
                             </div>
                         </div>
@@ -575,7 +570,7 @@
                             <div class="workshop-presentation">
                                 <h4>Slides Presentation:</h4>
                                 <div class="slides-thumbnail">
-                                    <a class="tooltip" id="python-slides-tooltip" href="https://docs.google.com/presentation/d/1nSepXdvXbz1ZaOXXQgIr0wWG9QS4FvW_wJ4KKt2zS7k/edit?usp=sharing" target="_blank"><img class="slides-element" src="img/python_slides.jpg"></a>
+                                    <a class="tooltip" id="python-slides-tooltip" href="https://docs.google.com/presentation/d/1nSepXdvXbz1ZaOXXQgIr0wWG9QS4FvW_wJ4KKt2zS7k/edit?usp=sharing" target="_blank"><img class="slides-element" src="img/python_slides.jpg" alt="slide thumbnail"></a>
                                 </div>
                             </div>
                         </div>
@@ -603,7 +598,7 @@
                                 <div class="prize-content">$210</div>
                             </div>
                             <img class="prize-laurel" src="img/silver-laurel.png" loading="lazy" alt="silver laurel">
-                            <img class="prize-img" src="img/NEHEME_drone.png" loading="lazy" alt="NEHEME Drone">
+                            <img class="prize-img" id="drone-img" src="img/NEHEME_drone.png" loading="lazy" alt="NEHEME Drone">
                             <div class="prize-subtitle">NEHEME NH525 Foldable Drone (x4)</div>
                         </div>
                         <div class="podium-edge"></div>
@@ -618,7 +613,7 @@
                                 <span class="prize-content">$360</span>
                             </div>
                             <img class="prize-laurel" src="img/gold-laurel.png" loading="lazy" alt="gold laurel">
-                            <img class="prize-img" src="img/pixoo_sling_bag.png" loading="lazy" alt="NEHEME Drone">
+                            <img class="prize-img" id="sling-img" src="img/pixoo_sling_bag.png" loading="lazy" alt="Divoom Pixoo Sling Bag">
                             <div class="prize-subtitle">Divoom LED Display Sling Bag (x4)</div>
                         </div>
                         <div class="podium-edge"></div>
@@ -637,7 +632,7 @@
                                 <span class="prize-content">$100</span>
                             </div>
                             <img class="prize-laurel" src="img/bronze-laurel.png" loading="lazy" alt="bronze laurel">
-                            <img class="prize-img" src="img/Kunodi_speaker.png" loading="lazy" alt="NEHEME Drone">
+                            <img class="prize-img" id="speaker-img" src="img/Kunodi_speaker.png" loading="lazy" alt="Kunodi Bluetooth Speaker">
                             <div class="prize-subtitle">Kunodi Bluetooth 5.0 Portable Speaker (x4)</div>
                         </div>
                         <div class="podium-edge"></div>
