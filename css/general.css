@@ -1108,6 +1108,14 @@ section {
   color: rgb(45, 140, 255);
 }
 
+.tooltip.zoom-tooltip-link::after {
+  content: 'Zoom Link';
+  font-size: 16px;
+  top: 22px;
+  right: -18px;
+  color: rgb(45, 140, 255);
+}
+
 #submit-tooltip:after {
   content: 'Submission Form';
   right: -20px;
