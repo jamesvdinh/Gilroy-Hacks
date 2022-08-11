@@ -395,17 +395,17 @@ nav ul li {
 #header-tooltip::after {
   content: '← Add to Calendar';
   top: 8px;
-  right: -100px;
+  right: -90px;
   transform-origin: left;
   color: rgb(252, 188, 93);
 }
 
 #spots-tooltip::after {
-  content: '← Signups Available!';
+  content: '← Signups Closed';
   top: 8px;
-  right: -165px;
+  right: -150px;
   transform-origin: left;
-  color: rgb(252, 188, 93);
+  color: rgb(252, 93, 93);
 }
 
 @media (max-width: 700px) {

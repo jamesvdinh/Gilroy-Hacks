@@ -441,11 +441,11 @@ nav ul li {
 }
 
 #spots-tooltip::after {
-  content: '← Signups Available!';
+  content: '← Signups Closed';
   top: 12px;
-  right: -170px;
+  right: -150px;
   transform-origin: left;
-  color: rgb(252, 188, 93);
+  color: rgb(252, 93, 93);
 }
 
 @media (max-width: 610px) {
