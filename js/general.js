@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function(){
         document.getElementById("timer").innerHTML = days + "d " + hours + "h";
     }
     else if (hours != 0) {
-        document.getElementById("timer").innerHTML = hours + "h" + minutes + "m";
+        document.getElementById("timer").innerHTML = hours + "h " + minutes + "m";
     }
     else {
         document.getElementById("timer").innerHTML = minutes + "m";
