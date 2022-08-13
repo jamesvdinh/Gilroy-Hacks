@@ -172,7 +172,7 @@ nav ul li {
 }
 
 #timer::after {
-  content: 'Aug 12, 4pm';
+  content: 'Aug 14, 2pm';
   position: absolute;
   text-align: center;
   align-items: center;
