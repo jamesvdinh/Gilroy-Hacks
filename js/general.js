@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // Timer
     // SRC: W3Schools https://www.w3schools.com/howto/howto_js_countdown.asp
     // Set the date we're counting down to
-    var countDownDate = new Date("Aug 12, 2022 16:00:00").getTime();
+    var countDownDate = new Date("Aug 14, 2022 14:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
