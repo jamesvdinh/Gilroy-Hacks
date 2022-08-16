@@ -173,12 +173,12 @@ nav ul li {
 }
 
 #timer::after {
-  content: 'Aug 12, 4pm';
+  content: 'Spring 2023?';
   position: absolute;
   text-align: center;
   align-items: center;
   top: 30px;
-  right: -23px;
+  right: -45px;
   padding: 2px 7px;
   width: max-content;
   opacity: 1;

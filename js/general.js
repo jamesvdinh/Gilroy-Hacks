@@ -198,10 +198,10 @@ document.addEventListener('DOMContentLoaded', function(){
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("timer").innerHTML = "LIVE";
+        document.getElementById("timer").innerHTML = "TBA";
     }
     // Display the result in the element with id="timer"
-    if (days != 0) {
+    else if (days != 0) {
         document.getElementById("timer").innerHTML = days + "d " + hours + "h";
     }
     else if (hours != 0) {
