@@ -206,6 +206,11 @@ nav ul li {
   animation-fill-mode: forwards;
 }
 
+#chart {
+  max-width: 650px;
+  margin: 35px auto;
+}
+
 #team-emphasis {
   color:rgb(180, 213, 253);
 }
