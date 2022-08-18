@@ -250,7 +250,7 @@ function notification(id) {
 var options = {
     series: [{
     name: 'Idea',
-    data: [7, 9, 6, 10, 14]
+    data: [7, 9, 6, 10, 14],
   }, {
     name: 'Implementation',
     data: [11, 6, 11, 3, 9]
@@ -259,7 +259,7 @@ var options = {
     data: [12, 7, 12, 11, 8]
   }, {
     name: 'Overall',
-    data: [10, 6, 9, 7, 11]
+    data: [10, 6, 9, 7, 11],
   }],
     chart: {
     type: 'bar',
@@ -283,10 +283,18 @@ var options = {
     labels: {
       formatter: function (val) {
         return val + ""
+      },
+      style: {
+        colors: '#fff'
       }
-    }
+    },
   },
   yaxis: {
+    labels: {
+        style: {
+          colors: '#fff'
+        }
+    },
     title: {
       text: undefined
     },
@@ -296,7 +304,8 @@ var options = {
       formatter: function (val) {
         return val + ""
       }
-    }
+    },
+    colors: ['#fff']
   },
   fill: {
     opacity: 1
@@ -304,8 +313,8 @@ var options = {
   legend: {
     position: 'top',
     horizontalAlign: 'left',
-    offsetX: 40
-  }
+    offsetX: 40,
+  },
   };
 
   var chart = new ApexCharts(document.querySelector("#chart"), options);

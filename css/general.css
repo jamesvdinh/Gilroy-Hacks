@@ -1398,6 +1398,14 @@ section {
   }
 }
 
+#chart {
+  color: #000;
+}
+
+.apexcharts-legend-text {
+  color: #fff !important;
+}
+
 .tooltip {
   position: relative;
 }
