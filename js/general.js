@@ -248,7 +248,7 @@ function notification(id) {
 }
 
 var options = {
-    series: [{
+  series: [{
     name: 'Idea',
     data: [7, 9, 6, 10, 14],
   }, {
@@ -305,7 +305,7 @@ var options = {
         return val + ""
       }
     },
-    colors: ['#fff']
+    colors: ['#000']
   },
   fill: {
     opacity: 1

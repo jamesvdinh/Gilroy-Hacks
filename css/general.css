@@ -1402,7 +1402,7 @@ section {
   color: #000;
 }
 
-.apexcharts-legend-text {
+.apexcharts-legend-text, .apexcharts-title-text {
   color: #fff !important;
 }
 
