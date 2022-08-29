@@ -308,6 +308,7 @@ var options = {
         return val + ""
       }
     },
+    theme: 'dark'
   },
   fill: {
     opacity: 1
