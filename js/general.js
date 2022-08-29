@@ -276,7 +276,10 @@ var options = {
     colors: ['#fff']
   },
   title: {
-    text: 'Team Scores'
+    text: 'Team Scores',
+    style: {
+      color: '#fff'
+    }
   },
   xaxis: {
     categories: ['Team 2', 'Team 3', 'Team 4', 'Team 6', 'Team 7'],
@@ -305,7 +308,6 @@ var options = {
         return val + ""
       }
     },
-    colors: ['#000']
   },
   fill: {
     opacity: 1
@@ -314,6 +316,9 @@ var options = {
     position: 'top',
     horizontalAlign: 'left',
     offsetX: 40,
+    labels: {
+      colors: '#fff',
+  },
   },
   };
 

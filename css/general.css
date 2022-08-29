@@ -1398,12 +1398,8 @@ section {
   }
 }
 
-#chart {
+#chart .apexcharts-tooltip {
   color: #000;
-}
-
-.apexcharts-legend-text, .apexcharts-title-text {
-  color: #fff !important;
 }
 
 .tooltip {
