@@ -265,7 +265,6 @@ var options = {
     type: 'bar',
     height: 350,
     stacked: true,
-    theme: 'dark'
   },
   plotOptions: {
     bar: {
@@ -277,7 +276,7 @@ var options = {
     colors: ['#fff']
   },
   title: {
-    text: 'Team Scores',
+    text: 'Team Scores - [Summer 2022]',
     style: {
       color: '#fff'
     }
