@@ -261,10 +261,11 @@ var options = {
     name: 'Overall',
     data: [10, 6, 9, 7, 11],
   }],
-    chart: {
+  chart: {
     type: 'bar',
     height: 350,
     stacked: true,
+    theme: 'dark'
   },
   plotOptions: {
     bar: {

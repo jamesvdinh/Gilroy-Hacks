@@ -1398,8 +1398,14 @@ section {
   }
 }
 
-#chart .apexcharts-tooltip {
-  color: #fff;
+.apexcharts-menu {
+  background-color: #27293d!important;
+  border: 0px;
+  text-align: center;
+}
+
+.apexcharts-menu-item:hover {
+  background-color: #3f3f3f!important;
 }
 
 .tooltip {
