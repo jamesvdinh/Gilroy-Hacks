@@ -276,7 +276,7 @@ var options = {
     colors: ['#fff']
   },
   title: {
-    text: 'Team Scores - [Summer 2022]',
+    text: 'Team Scores - Summer 2022',
     style: {
       color: '#fff'
     }
