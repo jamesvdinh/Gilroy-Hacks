@@ -265,6 +265,7 @@ var options = {
     type: 'bar',
     height: 350,
     stacked: true,
+    background: '#0d1117'
   },
   plotOptions: {
     bar: {
