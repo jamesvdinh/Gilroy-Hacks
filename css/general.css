@@ -393,6 +393,12 @@ nav ul li {
   animation: pulse-green 2s infinite;
 }
 
+.blob.gold {
+  background: rgb(254, 228, 84);
+  box-shadow: 0 0 0 0 rgba(254, 228, 84, 1);
+  animation: pulse-gold 2s infinite;
+}
+
 @keyframes pulse-green {
   0% {
     transform: scale(0.95);
@@ -408,9 +414,24 @@ nav ul li {
   }
 }
 
+@keyframes pulse-gold {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(254, 228, 84);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+  }
+}
+
 /* Header */
 #header-background {
-  background-image: url(/img/mountains-1.jpg);
+  background-image: url(/img/dojo.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1868,6 +1889,16 @@ section {
   justify-content: space-around;
 }
 
+.workshop-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #963c3c;
+  padding: 3px 30px;
+  justify-content: space-around;
+}
+
 .workshop-footer {
   padding: 10px 30px;
   text-align: center;
@@ -2118,12 +2149,12 @@ section {
 
 #podium-label-1 {
   margin-right: 7px;
-  color: #ff914d;
+  color: #7ed856;
 }
 
 #podium-label-2 {
   margin-left: 7px;
-  color: #ffde59;
+  color: #018036;
 }
 
 .prize-img {
@@ -2407,7 +2438,7 @@ footer {
 }
 
 #socials {
-  width: 100%;
+  width: fit-content;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -2415,7 +2446,7 @@ footer {
 }
 
 .socials-icon {
-  margin: 0 10px;
+  margin-right: 10px;
 }
 
 #footer-copyright {

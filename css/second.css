@@ -343,7 +343,7 @@ nav ul li {
 
 /* Header */
 #header-background {
-  background-image: url(/img/mountains-1.jpg);
+  background-image: url(/img/dojo.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -916,7 +916,7 @@ footer {
 }
 
 #socials {
-  width: 100%;
+  width: fit-content;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -924,7 +924,7 @@ footer {
 }
 
 .socials-icon {
-  margin: 0 10px;
+  margin-right: 10px;
 }
 
 #footer-copyright {

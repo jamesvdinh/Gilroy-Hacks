@@ -11,7 +11,7 @@ var scrollNavbar = () => {
     const navBar = document.getElementById("navBar");
     const links = document.querySelectorAll("#navBar a");
 
-if (document.documentElement.scrollTop > 50) {
+if (document.documentElement.scrollTop > 20) {
     navBar.classList.add("pa-fixed-header");
 
     // Change the color of links on scroll
