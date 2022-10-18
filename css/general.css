@@ -312,13 +312,13 @@ nav ul li {
   #podium-label-2 {
     margin-left: 1px !important;
   }
-  #header-background {
+  /* #header-background {
     background-position: unset !important;
     background-size: unset !important;
-  }
+  } */
   #logo {
-    height: 300px !important;
-    width: 300px !important;
+    height: 230px !important;
+    width: 230px !important;
   }
   #banner {
     display: inline-flex;
@@ -345,8 +345,8 @@ nav ul li {
       width: 50px;
   }
   #logo {
-      height: 300px;
-      width: 300px;
+      height: 2300px;
+      width: 230px;
   }
   #prizes-container {
     transform: scale(0.9);
@@ -452,11 +452,61 @@ nav ul li {
 }
 
 #logo {
-  height: 400px;
-  width: 400px;
+  height: 230px;
+  width: 230px;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.waviy {
+  position: relative;
+  display: flex;
+  font-size: 60px;
+}
+.waviy span {
+  font-family: "Norwester";
+  font-weight: lighter;
+  margin: 0 1.4px;
+  position: relative;
+  display: inline-block;
+  left: 0%;
+  animation: waviy 1s;
+  animation-delay: calc(var(--i));
+  animation-fill-mode:both;
+}
+
+.waviy span:hover {
+  padding-left: -20px;
+
+}
+
+#top-logo-text {
+  color: #7ed957;
+}
+
+#bottom-logo-text {
+  color: #008037;
+}
+
+@keyframes waviy {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 #header-subtitle-date {
