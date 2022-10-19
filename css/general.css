@@ -317,8 +317,11 @@ nav ul li {
     background-size: unset !important;
   } */
   #logo {
-    height: 230px !important;
-    width: 230px !important;
+    height: 180px !important;
+    width: 180px !important;
+  }
+  header .waviy {
+    font-size: 45px;
   }
   #banner {
     display: inline-flex;
