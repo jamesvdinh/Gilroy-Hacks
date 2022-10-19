@@ -21,24 +21,24 @@ document.addEventListener('DOMContentLoaded', function(){
     aadhavan.innerHTML = "aadhavan.magesh" + "@" + "gmail.com";
 
     var isaac = document.getElementById("email-replace-isaac");
-    setAttributes(isaac, {"href": "mailto:ihwang125" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
-    isaac.innerHTML = "ihwang125" + "@" + "gmail.com";
+    setAttributes(isaac, {"href": "mailto:ihwang" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
+    isaac.innerHTML = "ihwang" + "@" + "gilroyhacks.com";
 
     var steven = document.getElementById("email-replace-steven");
     setAttributes(steven, {"href": "mailto:stevendinh987" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
     steven.innerHTML = "stevendinh987" + "@" + "gmail.com";
 
     var vijay = document.getElementById("email-replace-vijay");
-    setAttributes(vijay, {"href": "mailto:vijaykethanaboyina" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
-    vijay.innerHTML = "vijaykethanaboyina" + "@" + "gmail.com";
+    setAttributes(vijay, {"href": "mailto:vijay" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
+    vijay.innerHTML = "vijay" + "@" + "gilroyhacks.com";
 
     var jonathan = document.getElementById("email-replace-jonathan");
     setAttributes(jonathan, {"href": "mailto:jonathantessmann" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
     jonathan.innerHTML = "jonathantessmann" + "@" + "gmail.com";
 
     var james = document.getElementById("email-replace-james");
-    setAttributes(james, {"href": "mailto:jamesdinh77" + "@" + "protonmail.com?subject=Gilroy Hacks", "target": "_blank"});
-    james.innerHTML = "jamesdinh77" + "@" + "protonmail.com";
+    setAttributes(james, {"href": "mailto:james" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
+    james.innerHTML = "james" + "@" + "gilroyhacks.com";
 
     var ezra = document.getElementById("email-replace-ezra");
     setAttributes(ezra, {"href": "mailto:ezrabridger27" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
