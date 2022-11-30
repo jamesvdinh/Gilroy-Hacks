@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // Timer
     // SRC: W3Schools https://www.w3schools.com/howto/howto_js_countdown.asp
     // Set the date we're counting down to
-    var countDownDate = new Date("Aug 14, 2022 14:00:00").getTime();
+    var countDownDate = new Date("Apr 15, 2023 12:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("timer").innerHTML = "TBA";
+        document.getElementById("timer").innerHTML = "---";
     }
     // Display the result in the element with id="timer"
     else if (days != 0) {
