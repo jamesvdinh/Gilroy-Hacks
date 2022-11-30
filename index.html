@@ -30,6 +30,8 @@
     <script defer src="js/map.js"></script>
     <script defer src="js/general.js"></script>
     <script src="js/apexcharts.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
     <script defer data-domain="gilroyhacks.com" src="https://plausible.gilroyhacks.com/js/script.js"></script>
     <style>
         @font-face {
@@ -121,7 +123,7 @@
                     </div>
                     <hr id="line-header">
                     <!-- <a class="link tooltip header-link" id="header-tooltip" target="_blank" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220812T230000Z%2F20220814T233000Z&details=Participate%20in%20a%20weekend-long%20hackathon%20to%20strengthen%20your%20coding%20skills%20and%20earn%20some%20cool%20prizes%21&location=Gilroy%20Library&text=Gilroy%20Hacks%20Hackathon"><h2 id="header-subtitle-date"><svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Aug 12 - 14</h2></a> -->
-                    <h2 id="header-subtitle-date"><svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Spring 2023</h2>
+                    <h2 id="header-subtitle-date"><svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Apr 15 - 16</h2>
                     <a class="tooltip header-link" id="spots-tooltip"><div id="spots-container">
                         <div class="blob gold" aria-hidden="true"></div>
                         <h2 id="header-subtitle-spots">Signups not yet open</h2>
@@ -158,7 +160,7 @@
                             <h3 class="desc-title">Details</h3>
                             <ul class="desc-list">
                                 <ul>
-                                    <li><u>In-Person model</u> - All events will be available in person</li>
+                                    <li><u>In-Person</u> - All events will be available in person</li>
                                     <li>Signups are limited to <u>TBA</u></li>
                                     <li>Workshops are <u>fully open to the public</u></li>
                                 </ul>
@@ -391,7 +393,104 @@
                     </div>
                 </article>
             </div>
-            <div id="map-article">
+            <!-- <div class="schedule-container">
+                <br/>
+        <div class="cd-schedule loading">
+            <div class="timeline">
+                <ul>
+                    <li><span>09:00</span></li>
+                    <li><span>09:30</span></li>
+                    <li><span>10:00</span></li>
+                    <li><span>10:30</span></li>
+                    <li><span>11:00</span></li>
+                    <li><span>11:30</span></li>
+                    <li><span>12:00</span></li>
+                    <li><span>12:30</span></li>
+                    <li><span>1:00</span></li>
+                    <li><span>1:30</span></li>
+                    <li><span>2:00</span></li>
+                    <li><span>2:30</span></li>
+                    <li><span>3:00</span></li>
+                    <li><span>3:30</span></li>
+                    <li><span>4:00</span></li>
+                    <li><span>4:30</span></li>
+                    <li><span>5:00</span></li>
+                    <li><span>5:30</span></li>
+                    <li><span>6:00</span></li>
+                </ul>
+            </div>
+
+            <div class="events">
+                <ul class="wrap">
+                    <li class="events-group">
+                        <div class="top-info"><span>Saturday</span></div>
+                        <ul>
+                            <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
+                                <a href="#0">
+                                    <em class="event-name">Event 1</em>
+                                </a>
+                            </li>
+
+                            <li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2">
+                                <a href="#0">
+                                    <em class="event-name">Event 2</em>
+                                </a>
+                            </li>
+
+                            <li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3">
+                                <a href="#0">
+                                    <em class="event-name">Event 3</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="events-group">
+                        <div class="top-info"><span>Sunday</span></div>
+                        <ul>
+                            <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
+                                <a href="#0">
+                                    <em class="event-name">Event 1</em>
+                                </a>
+                            </li>
+
+                            <li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2">
+                                <a href="#0">
+                                    <em class="event-name">Event 2</em>
+                                </a>
+                            </li>
+
+                            <li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3">
+                                <a href="#0">
+                                    <em class="event-name">Event 3</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="event-modal">
+                <header class="header">
+                    <div class="content">
+                        <span class="event-date"></span>
+                        <h3 class="event-name"></h3>
+                    </div>
+
+                    <div class="header-bg"></div>
+                </header>
+
+                <div class="body">
+                    <div class="event-info"></div>
+                    <div class="body-bg"></div>
+                </div>
+
+                <a href="#0" class="close">Close</a>
+            </div>
+        <div class="cover-layer"></div>
+    </div>
+</div> -->
+            <!-- <div id="map-article">
                 <div id="cal-parent">
                     <article id="cal-container">
                         <h2 class="map-title">Calendar</h2>
@@ -503,7 +602,7 @@
                         </div>
                     </article>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section id="workshops">
             <h2 class="topic">Workshops</h2>
