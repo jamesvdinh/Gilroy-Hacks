@@ -1629,9 +1629,6 @@ table {
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
 
 .codyhouse {
   font-size: 62.5%;
