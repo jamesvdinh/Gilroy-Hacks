@@ -302,7 +302,7 @@ nav ul li {
 }
 @media (max-width: 470px) {
   #nav-logo {
-      content: url(/img/Gilroy-Hacks-Logo-icon-tp.ico);
+      content: url(/img/logo_mini.png);
       height: 50px;
       width: 50px;
   }

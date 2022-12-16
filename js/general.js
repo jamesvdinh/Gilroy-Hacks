@@ -221,6 +221,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (testDate > countDownDate && now < testDate) {
         countDownDate = testDate;
         document.getElementById("event-name").innerHTML = event;
+        document.styleSheets[0].addRule('#timer:after','content: "'+ events[event] +'";');
         break;
       }
     }
@@ -368,4 +369,4 @@ var options = {
   };
 
   var chart = new ApexCharts(document.querySelector("#chart"), options);
-  chart.render();
+  chart.re
