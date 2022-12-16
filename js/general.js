@@ -136,7 +136,28 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
     // Adding the class animations to these elements
-    let elements_id = ['#description-heading', '#event-main-box', '#timeline', '#signup-title', '#steps-card', '#sponsor-title', '#sponsor-container', '#schedule-pa', '#workshops-description', '#second-podium', '#first-podium', '#third-podium', '#chart', '#prize-box', '#administration', '#logistics', '#outreach', '#tech', '#marketing'];
+    let elements_id = [
+      '#description-heading',
+      '#event-main-box',
+      '#timeline',
+      '#signup-title',
+      '#steps-card',
+      '#sponsor-title',
+      '#sponsor-container',
+      '#schedule-title',
+      '#schedule-pa',
+      '#workshops-description',
+      '#second-podium',
+      '#first-podium',
+      '#third-podium',
+      '#chart',
+      '#prize-box',
+      '#administration',
+      '#logistics',
+      '#outreach',
+      '#tech',
+      '#marketing'
+    ];
     elements_id.forEach(entry => {
         var thing = document.querySelector(entry)
         observer.observe(document.querySelector(entry));

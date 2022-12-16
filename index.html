@@ -15,7 +15,6 @@
     
     <title>Gilroy Hacks</title>
     <link href="css/general.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/schedule.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/scroll_nav.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="css/leaflet.css"/>
     <link rel="icon" href="img/icon.ico">
@@ -152,16 +151,10 @@
                         <hr class="line">
                         <div class="list">
                             <p>"Grab a team and make something cool."<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- GHacks Team</p>
-                            <h3 class="desc-title">Main Events</h3>
-                            <ul class="desc-list">
-                                <ul>
-                                    <li><span class="emphasis-text">April 15 - 16</span> -> Spring 2023 will be held fully in person at the Gilroy Library!</li>
-                                </ul>
-                            </ul>
                             <h3 class="desc-title">Details</h3>
                             <ul class="desc-list">
                                 <ul>
-                                    <li><u>In-Person</u> - All events will be held in person</li>
+                                    <li><span class="emphasis-text"><u>In-Person</u></span> - All events will be held in person</li>
                                     <li>Signups are limited to <u>high school students only</u></li>
                                     <li>Workshops are <u>fully open to the public</u></li>
                                 </ul>
@@ -385,9 +378,6 @@
                         <a href="https://sccld.org/" target="_blank">
                             <img id="gilroy-library-logo" src="img/SCCLD_logo.png" alt="Gilroy Library logo">
                         </a>
-                        <a href="https://www.gavilan.edu/" target="_blank">
-                            <img id="gavilan-college-logo" src="img/gavilan_college.png" alt="Gavilan College logo">
-                        </a>
                         <a href="https://www.gavengineering.club/" target="_blank">
                             <img id="gear-club-logo" src="img/gear_logo.png" alt="GEAR Club logo">
                         </a>
@@ -396,37 +386,43 @@
             </div>
 
             <!-- Schedule -->
+            <div id="schedule-title">
+                <h2 id="schedule-heading">Event Schedule</h2>
+                <span class="caption">The official Spring 2023 Hackathon schedule</span>
+            </div>
             <div class="schedule-parent" id="schedule-pa">
                 <div class="schedule-element">
                     <h3 class="time-column-header">Saturday</h3>
                     <div class="schedule-container">
                         <!-- TIMES -->
-                        <div class="time start-800">8:00am</div>
-                        <div class="time start-900">9:00am</div>
-                        <div class="time start-1000">10:00am</div>
-                        <div class="time start-1100">11:00am</div>
-                        <div class="time start-1200">12:00pm</div>
-                        <div class="time start-1300">1:00pm</div>
-                        <div class="time start-1400">2:00pm</div>
-                        <div class="time start-1500">3:00pm</div>
-                        <div class="time start-1600">4:00pm</div>
-                        <div class="time start-1700">5:00pm</div>
-                        <div class="time start-1800">6:00pm</div>
-                        <div class="time start-1900">7:00pm</div>
-                        <div class="time start-2000">8:00pm</div>
-                        <div class="time start-2100">9:00pm</div>
+                        <div class="time start-800"><span>8:00am</span></div>
+                        <div class="time start-900"><span>9:00am</span></div>
+                        <div class="time start-1000"><span>10:00am</span></div>
+                        <div class="time start-1100"><span>11:00am</span></div>
+                        <div class="time start-1200"><span>12:00pm</span></div>
+                        <div class="time start-1300"><span>1:00pm</span></div>
+                        <div class="time start-1400"><span>2:00pm</span></div>
+                        <div class="time start-1500"><span>3:00pm</span></div>
+                        <div class="time start-1600"><span>4:00pm</span></div>
+                        <div class="time start-1700"><span>5:00pm</span></div>
+                        <div class="time start-1800"><span>6:00pm</span></div>
+                        <div class="time start-1900"><span>7:00pm</span></div>
+                        <div class="time start-2000"><span>8:00pm</span></div>
+                        <div class="time start-2100"><span>9:00pm</span></div>
                         
                         <!-- EVENTS -->
-                        <div class="event stage-saturn start-800 end-800 length-4">Arrival and registration <span>Registration Area</span></div>
+                        <div class="event start-800 end-800 length-4 empty"></div>
                         <div class="event start-900 end-900 length-4 empty"></div>
-                        <div class="event start-1000 end-1000 length-4 empty"></div>
+                        <div class="event logistics start-1000 end-1000 length-1">Check In<span>10 - 10:15am</span></div>
+                        <div class="event logistics start-1000 end-1000 length-2">Opening Ceremony<span>10:15 - 11am</span></div>
+                        <div class="event hacking start-1000 end-1000 length-1 small">Hacking starts<span>Start 11am</span></div>
                         <div class="event start-1100 end-1100 length-4 empty"></div>
-                        <div class="event start-1200 end-1200 length-4 empty"></div>
-                        <div class="event start-1300 end-1300 length-4 empty"></div>
+                        <div class="event food start-1200 end-1200 length-4">Lunch<span>12 - 1pm</span></div>
+                        <div class="event workshop start-1300 end-1300 length-4">Web Dev Workshop<span>1 - 2pm</span></div>
                         <div class="event start-1400 end-1400 length-4 empty"></div>
-                        <div class="event start-1500 end-1500 length-4 empty"></div>
+                        <div class="event workshop start-1500 end-1500 length-4">[REDACTED] Workshop<span>3 - 4pm</span></div>
                         <div class="event start-1600 end-1600 length-4 empty"></div>
-                        <div class="event start-1700 end-1700 length-4 empty"></div>
+                        <div class="event game start-1700 end-1700 length-4">Kahoot (win a cool prize!)<span>Start 5pm</span></div>
                         <div class="event start-1800 end-1800 length-4 empty"></div>
                         <div class="event start-1900 end-1900 length-4 empty"></div>
                         <div class="event start-2000 end-2000 length-4 empty"></div>
@@ -437,31 +433,32 @@
                     <h3 class="time-column-header">Sunday</h3>
                     <div class="schedule-container">
                         <!-- TIMES -->
-                        <div class="time start-800">8:00am</div>
-                        <div class="time start-900">9:00am</div>
-                        <div class="time start-1000">10:00am</div>
-                        <div class="time start-1100">11:00am</div>
-                        <div class="time start-1200">12:00pm</div>
-                        <div class="time start-1300">1:00pm</div>
-                        <div class="time start-1400">2:00pm</div>
-                        <div class="time start-1500">3:00pm</div>
-                        <div class="time start-1600">4:00pm</div>
-                        <div class="time start-1700">5:00pm</div>
-                        <div class="time start-1800">6:00pm</div>
-                        <div class="time start-1900">7:00pm</div>
-                        <div class="time start-2000">8:00pm</div>
-                        <div class="time start-2100">9:00pm</div>
+                        <div class="time start-800"><span>8:00am</span></div>
+                        <div class="time start-900"><span>9:00am</span></div>
+                        <div class="time start-1000"><span>10:00am</span></div>
+                        <div class="time start-1100"><span>11:00am</span></div>
+                        <div class="time start-1200"><span>12:00pm</span></div>
+                        <div class="time start-1300"><span>1:00pm</span></div>
+                        <div class="time start-1400"><span>2:00pm</span></div>
+                        <div class="time start-1500"><span>3:00pm</span></div>
+                        <div class="time start-1600"><span>4:00pm</span></div>
+                        <div class="time start-1700"><span>5:00pm</span></div>
+                        <div class="time start-1800"><span>6:00pm</span></div>
+                        <div class="time start-1900"><span>7:00pm</span></div>
+                        <div class="time start-2000"><span>8:00pm</span></div>
+                        <div class="time start-2100"><span>9:00pm</span></div>
                         
                         <!-- EVENTS -->
-                        <div class="event stage-saturn start-800 end-800 length-4">Arrival and registration <span>Registration Area</span></div>
+                        <div class="event start-800 end-800 length-4 empty"></div>
                         <div class="event start-900 end-900 length-4 empty"></div>
                         <div class="event start-1000 end-1000 length-4 empty"></div>
                         <div class="event start-1100 end-1100 length-4 empty"></div>
                         <div class="event start-1200 end-1200 length-4 empty"></div>
                         <div class="event start-1300 end-1300 length-4 empty"></div>
-                        <div class="event start-1400 end-1400 length-4 empty"></div>
-                        <div class="event start-1500 end-1500 length-4 empty"></div>
-                        <div class="event start-1600 end-1600 length-4 empty"></div>
+                        <div class="event hacking start-1400 end-1400 length-1 small">Hacking Ends<span>Deadline: 2pm</span></div>
+                        <div class="event logistics start-1400 end-1500 length-3">Project Presentations<span>Start 2:15pm</span></div>
+                        <div class="event start-1600 end-1600 length-2">Judging<span>4 - 4:30pm</span></div>
+                        <div class="event start-1600 end-1600 length-2">Awards Ceremony<span>4:30 - 5pm</span></div>
                         <div class="event start-1700 end-1700 length-4 empty"></div>
                         <div class="event start-1800 end-1800 length-4 empty"></div>
                         <div class="event start-1900 end-1900 length-4 empty"></div>
@@ -471,110 +468,6 @@
                 </div>
             </div>
             <!-- <div id="map-article">
-                <div id="cal-parent">
-                    <article id="cal-container">
-                        <h2 class="map-title">Calendar</h2>
-                        <div class="cal-card">
-                            <div class="cal-entry">
-                                <div class="cal-date" id="fri">
-                                    <span class="day-of-week">FRI</span>
-                                    <span class="cal-subtitle">8/12</span>
-                                </div>
-                                <div class="vertical-line"></div>
-                                <div class="cal-desc">
-                                    <h3 class="cal-title">Community Room</h3>
-                                    <div class="event-list">
-                                        <div class="event-entry">
-                                            <div class="time-column">
-                                                <span class="event-time">4-5pm</span>
-                                            </div>
-                                            <div class="event-column">
-                                                <span class="event-title">Opening Ceremony</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cal-card">
-                            <div class="cal-entry">
-                                <div class="cal-date" id="sat">
-                                    <span class="day-of-week">SAT</span>
-                                    <span class="cal-subtitle">8/13</span>
-                                </div>
-                                <div class="vertical-line"></div>
-                                <div class="cal-desc">
-                                    <h3 class="cal-title">Community Room</h3>
-                                    <div class="event-list">
-                                        <div class="event-entry">
-                                            <div class="time-column">
-                                                <span class="event-time">10am-5:30pm</span>
-                                            </div>
-                                            <div class="event-column">
-                                                <span class="event-title">In-Person Hacking Session</span>
-                                            </div>
-                                        </div>
-                                        <h3 class="cal-title">Computer Lab</h3>
-                                        <div class="event-entry">
-                                            <div class="time-column">
-                                                <span class="event-time">11am-12pm</span>
-                                            </div>
-                                            <div class="event-column">
-                                                <span class="event-title">Web Dev Workshop</span>
-                                            </div>
-                                        </div>
-                                        <div class="event-entry">
-                                            <div class="time-column">
-                                                <span class="event-time">1-2pm</span>
-                                            </div>
-                                            <div class="event-column">
-                                                <span class="event-title">Python Workshop</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cal-card">
-                            <div class="cal-entry">
-                                <div class="cal-date" id="sun">
-                                    <span class="day-of-week">SUN</span>
-                                    <span class="cal-subtitle">8/14</span>
-                                </div>
-                                <div class="vertical-line"></div>
-                                <div class="cal-desc">
-                                    <h3 class="cal-title">Community Room</h3>
-                                    <div class="event-list">
-                                        <div class="event-entry">
-                                            <div class="time-column">
-                                                <span class="event-time">1-2pm</span>
-                                            </div>
-                                            <div class="event-column">
-                                                <span class="event-title">In-Person Hacking Session</span>
-                                            </div>
-                                        </div>
-                                        <div class="event-entry">
-                                            <div class="time-column">
-                                                <span class="event-time">2:30-3:30pm</span>
-                                            </div>
-                                            <div class="event-column">
-                                                <span class="event-title">Project Presentations</span>
-                                            </div>
-                                        </div>
-                                        <div class="event-entry">
-                                            <div class="time-column">
-                                                <span class="event-time">4-4:30pm</span>
-                                            </div>
-                                            <div class="event-column">
-                                                <span class="event-title">Awards Ceremony</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="bottom-text">*All events will be held in-person at the Gilroy Library</p>
-                    </article>
                     <article id="map-div">
                         <h2 class="map-title">Location</h2>
                         <div id="map-container">
