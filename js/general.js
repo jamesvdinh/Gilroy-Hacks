@@ -362,10 +362,7 @@ document.addEventListener(
   function (event) {
     // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
     if (!openClick && openModal == true) {
-      if (
-        event.target.matches(".button-close-modal") ||
-        !event.target.closest(currentModal)
-      ) {
+      if (event.target.matches(".button-close-modal") || !event.target.closest(".modal")) {
         closeModal(currentModal);
       }
     }

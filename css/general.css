@@ -1762,6 +1762,7 @@ section {
   border-radius: 0.2rem;
   font-size: 18px;
   border-top: thin solid rgb(68, 68, 68);
+  cursor: pointer;
 }
 .event span {
   display: block;
@@ -1771,6 +1772,7 @@ section {
 }
 .event.empty {
   background-color: unset;
+  cursor: unset;
 }
 
 .event.start-800 {
