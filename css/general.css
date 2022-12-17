@@ -1655,6 +1655,7 @@ section {
   text-align: left;
   border-radius: 5px;
   overflow: hidden;
+  z-index: 2;
 }
 
 .modal-header {
