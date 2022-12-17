@@ -1387,6 +1387,64 @@ section {
   transition: opacity .2s ease;
 }
 
+.timeline-description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.timeline-description-list li {
+  margin: 10px 40px;
+  font-size: 16px;
+}
+
+.important-text {
+  color: rgb(255, 126, 126);
+}
+
+.timeline-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none !important;
+  margin-top: 15px;
+}
+
+.timeline-icon {
+  height: 23px;
+  width: 75px;
+  float: left;
+}
+
+.timeline-button {
+  color: rgb(233, 203, 104);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid rgb(192, 168, 88);
+  padding: 5px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.zoom-link {
+  border: 1px solid rgb(45, 140, 255);
+}
+
+.timeline-button.zoom-link:hover {
+  background-color: rgb(45, 140, 255);
+}
+
+.timeline-button.zoom-link:hover > .timeline-icon{
+  filter:hue-rotate(60deg);
+}
+
+.timeline-button:hover {
+  color: white;
+  background-color: rgb(192, 168, 88);
+  transition: 0.5s;
+}
+
 /**
  * Time
  */
