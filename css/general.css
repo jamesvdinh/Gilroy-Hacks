@@ -771,17 +771,9 @@ section {
   text-align: left;
 }
 
-#event-main-box {
-  padding: 10px;
-  width: auto;
-  height: auto;
-  border-radius: 10px;
-  border: 1px solid rgb(68, 68, 68);
-}
-
-#description-heading {
+.description-heading {
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: 10px;
 }
 
 #description-content {
@@ -796,6 +788,108 @@ section {
   margin-top: 15px;
 }
 
+/* Splash text */
+.splash-container {
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(68, 68, 68);
+  margin: 10px 0;
+}
+
+.splash-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#why-GilroyHacks {
+  width: 100%;
+  min-width: 300px;
+  max-width: 315px;
+  margin: 15px;
+}
+
+#who-GilroyHacks {
+  width: 100%;
+  min-width: 300px;
+  max-width: 315px;
+  margin: 15px;
+}
+
+.splash-title {
+  color:rgb(51, 235, 189);
+  margin-bottom: 10px;
+}
+
+.splash-desc {
+  line-height: 25px;
+}
+
+.slider {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+}
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  background: #222;
+  z-index: 1;
+  border-radius: 5px;
+}
+#items {
+  width: 10000px;
+  position: relative;
+  top: 0;
+  left: -300px;
+}
+#items.shifting {
+  transition: left .2s ease-out;
+}
+.slide {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 1s;
+  position: relative;
+  background: #4b1c6b;
+  text-align: center;
+}
+
+.slide-button {
+  margin: 9px;
+}
+
+.control {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(80, 80, 80);
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.prev,
+.next {
+  cursor: pointer;
+}
+
+.prev {
+  left: 20px;
+}
+.next {
+  right: 20px;
+}
+.prev:active,
+.next:active {
+  transform: scale(0.8);
+}
+
 .list {
   padding-left: 20px;
 }
@@ -806,406 +900,6 @@ section {
 
 .list li{
   margin: 10px 0;
-}
-
-/* Timeline */
-#timeline {
-  padding: 10px;
-  width: 100%;
-  text-align: center;
-}
-
-#timeline-heading {
-  text-align: center;
-  margin-top: 20px;
-}
-  
-.flex-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 200px;
-}
-  
-.input-flex-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 80%;
-  max-width: 1000px;
-  position: relative;
-  z-index: 0;
-  margin-left: 30px;
-}
-
-#timeline-right-arrow {
-  width: 0px;
-  height: fit-content;
-  position: relative;
-  right: 30px;
-  top: 3px;
-}
-#timeline-left-arrow {
-  width: 0px;
-  height: fit-content;
-  position: relative;
-  right: 50px;
-  top: 3px;
-}
-@media (max-width: 740px) {
-  #timeline-right-arrow {
-    right: calc(3vw);
-  }
-}
-
-.timeline-input {
-  width: 22px;
-  height: 22px;
-  background-color: #2C3E50;
-  position: relative;
-  border-radius: 50%;
-  display: block;
-  appearance: none;
-  cursor: pointer;
-  box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
-  animation: pulse-gray 2s infinite;
-}
-@keyframes pulse-gray {
-  0% {
-    box-shadow: 0 0 0 0 rgba(110, 110, 110, 0.7);
-  }
-  70% {
-    box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
-  }
-}
-.timeline-input:focus {
-  animation: pulse-gray 0s;
-}
-.timeline-input::before, .timeline-input::after {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #2C3E50;
-  width: 64px;
-  height: 5px;
-}
-.timeline-input::before {
-  left: -64px;
-}
-
-.timeline-input::after {
-  right: -64px;
-}
-.timeline-input:checked {
-  background-color: #2C3E50;
-}
-.timeline-input:checked::before {
-  background-color: #2C3E50;
-}
-.timeline-input:checked::after {
-  background-color: #AEB6BF;
-}
-.timeline-input:checked ~ .timeline-input, .timeline-input:checked ~ .timeline-input::before, .timeline-input:checked ~ .timeline-input::after {
-  background-color: #AEB6BF;
-}
-.timeline-input:checked + .dot-info span {
-  font-size: 13px;
-  color: rgb(243, 174, 252);
-  font-weight: bold;
-}
-
-.dot-info {
-  width: 25px;
-  height: 25px;
-  display: flex;
-  visibility: hidden;
-  position: relative;
-  z-index: -1;
-  right: 44px;
-}
-.dot-info span {
-  visibility: visible;
-  position: absolute;
-  font-size: 12px;
-}
-.dot-info span.year {
-  bottom: -30px;
-  right: -0.2vw;
-  cursor: pointer;
-}
-.dot-info span.label {
-  top: -56px;
-  left: -10px;
-  transform: rotateZ(-45deg);
-  width: 70px;
-  text-indent: -10px;
-  cursor: pointer;
-}
-
-/* Bracket */
-.bracket {
-  display: inline-flex;
-  width: 105%;
-  margin-left: -20px;
-}
-.bracket>div {
-  width: 50%;
-  height: 1px;
-  background: rgb(255, 255, 255);
-  margin: 0px 30px 20px;
-  position: relative;
-}
-#bracket-1 > .left {
-  width: 2%;
-}
-#bracket-1 > .right {
-  width: 98%;
-}
-#bracket-2 > .left {
-  width: 24%;
-}
-#bracket-2 > .right {
-  width: 76%;
-}
-#bracket-3 > .left {
-  width: 46%;
-}
-#bracket-3 > .right {
-  width: 54%;
-}
-#bracket-4 > .left {
-  width: 68%;
-}
-#bracket-4 > .right {
-  width: 32%;
-}
-#bracket-5 > .left {
-  width: 89%;
-}
-#bracket-5 > .right {
-  width: 11%;
-}
-.bracket>div:before,
-.bracket>div:after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-top-left-radius: 200px;
-  border: 1px solid rgb(255, 255, 255);
-  border-right: none;
-  border-bottom: none;
-}
-.bracket>div:after {
-  right: -30px;
-}
-.left:after {
-  transform: rotate(-180deg);
-  top: -30px;
-}
-.right:before {
-  transform: rotate(-90deg);
-  top: -30px;
-  left: -30px;
-}
-.right:after {
-  transform: rotate(90deg);
-}
-.left:before {
-  left: -30px;
-}
-
-#timeline-descriptions-wrapper {
-  width: 100%;
-  margin-top: 70px;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: left;
-}
-.timeline-desc {
-  margin-top: -30px;
-  display: none;
-}
-
-.timeline-description {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.timeline-description-subtitle {
-  font-size: 18px;
-  color: rgb(121, 120, 120);
-}
-
-.t-flex-container {
-  display: flex;
-}
-
-.timeline-description-list li {
-  margin: 10px 40px;
-  font-size: 16px;
-}
-
-.important-text {
-  color: rgb(255, 126, 126);
-}
-
-.timeline-input[data-description="1"]:checked ~ #timeline-descriptions-wrapper div[data-description="1"] {
-  display: block;
-}
-
-.timeline-input[data-description="2"]:checked ~ #timeline-descriptions-wrapper div[data-description="2"] {
-  display: block;
-}
-
-.timeline-input[data-description="3"]:checked ~ #timeline-descriptions-wrapper div[data-description="3"] {
-  display: block;
-}
-
-.timeline-input[data-description="4"]:checked ~ #timeline-descriptions-wrapper div[data-description="4"] {
-  display: block;
-}
-
-.timeline-input[data-description="5"]:checked ~ #timeline-descriptions-wrapper div[data-description="5"] {
-  display: block;
-}
-@media (max-width: 630px) {
-  .flex-parent {
-    justify-content: initial;
-    margin-top: 0;
-  }
-
-  .input-flex-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 400px;
-    height: auto;
-    margin-top: 7vh;
-    margin-left: 0;
-  }
-
-  .timeline-input, .dot-info {
-    width: 60px;
-    height: 60px;
-    margin: 0 10px 50px;
-  }
-
-  .timeline-input::before, .timeline-input::after {
-    content: none;
-  }
-  .timeline-input:checked + .dot-info {
-    background-color: #2C3E50;
-  }
-  .timeline-input:checked + .dot-info span.year {
-    font-size: 14px;
-  }
-  .timeline-input:checked + .dot-info span.label {
-    font-size: 12px;
-  }
-
-  .dot-info {
-    visibility: visible;
-    border-radius: 50%;
-    z-index: 0;
-    left: 0;
-    margin-left: -70px;
-    background-color: #AEB6BF;
-  }
-  .dot-info span.year {
-    top: 0;
-    left: 0;
-    transform: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ECF0F1;
-  }
-  .dot-info span.label {
-    top: calc(100% + 5px);
-    left: 50%;
-    transform: translateX(-50%);
-    text-indent: 0;
-    text-align: center;
-  }
-
-  #timeline-descriptions-wrapper {
-    margin-top: 30px;
-    margin-left: 0;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-
-  #timeline-right-arrow {
-    display: none;
-  }
-  #timeline-left-arrow {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  .input-flex-container {
-    width: 340px;
-  }
-}
-@media (max-width: 400px) {
-  .input-flex-container {
-    width: 300px;
-  }
-}
-
-.timeline-links {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none !important;
-  margin-top: 15px;
-}
-
-.timeline-icon {
-  height: 23px;
-  width: 75px;
-  float: left;
-}
-
-.timeline-button {
-  color: rgb(233, 203, 104);
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 18px;
-  border: 1px solid rgb(192, 168, 88);
-  padding: 5px;
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.zoom-link {
-  border: 1px solid rgb(45, 140, 255);
-}
-
-.timeline-button.zoom-link:hover {
-  background-color: rgb(45, 140, 255);
-}
-
-.timeline-button.zoom-link:hover > .timeline-icon{
-  filter:hue-rotate(60deg);
-}
-
-.timeline-button:hover {
-  color: white;
-  background-color: rgb(192, 168, 88);
-  transition: 0.5s;
 }
 
 .tooltip.zoom-tooltip::after {
@@ -1642,7 +1336,7 @@ section {
 }
 
 .modal {
-	border: 1px solid #eee;
+	border: 1px solid rgb(142, 102, 177);
   background-color: #23262a;
 	width: 500px;
 	position: fixed;
@@ -2827,3 +2521,8 @@ footer li {
   line-height: 30px;
   list-style: none;
 }
+
+/* Are you interested in coding, engineering, or STEM? Does a weekend full of intense brainstorming and
+coding extravaganza with tons of other like-minded students sound (at the least bit) interesting to you? 
+Gilroy Hacks is all about allowing passionate students showcase their skills and teaching new concepts to 
+newcomers. If this sounds like you, then all aboard the Hackathon train! */

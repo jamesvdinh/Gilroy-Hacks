@@ -42,7 +42,7 @@
         @font-face {
             font-family: "Norwester";
             src: url("font/Norwester.otf") format('opentype');
-            font-display: swap;
+            /* font-display: swap; */
         }
         body {
             position: relative;
@@ -141,153 +141,43 @@
     <!--Main-->
     <main>
         <section id="event">
-            <h2 class="topic">Hackathon Event</h2>
+            <h2 class="topic">Spring 2023 Event</h2>
             <hr class="line">
             <div id="event-container">
                 <article id="event-description">
-                    <h2 id="description-heading">Our Mission & Important Info</h2>
-                    <div id="event-main-box">
-                        <div id="description-content">Gilroy Hacks is a student-led organization fiscally sponsored by Hack Club, a 501(c)(3) nonprofit, and focused on promoting community engagement and improving STEM exposure for students.</div>
-                        <hr class="line">
-                        <div class="list">
-                            <p>"Grab a team and make something cool."<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- GHacks Team</p>
-                            <h3 class="desc-title">Details</h3>
-                            <ul class="desc-list">
-                                <ul>
-                                    <li><span class="emphasis-text"><u>In-Person</u></span> - All events will be held in person</li>
-                                    <li>Signups are limited to <u>high school students only</u></li>
-                                    <li>Workshops are <u>fully open to the public</u></li>
-                                </ul>
-                            </ul>
+                    <div id="event-title">
+                        <h2 class="description-heading">New Hackathon Who Dis?</h2>
+                        <span class="caption">Some info on us...</span>
+                    </div>
+                    <div class="splash-container" id="what-GilroyHacks">
+                        <h2 class="splash-title">What is Gilroy Hacks?</h2>
+                        <div class="splash-desc">Are you interested in coding, engineering, or STEM? Does a weekend full of intense brainstorming and coding extravaganza 
+                            with tons of other like-minded students sound (at the least bit) interesting to you? Gilroy Hacks is all about letting students 
+                            showcase their skills and teaching new concepts to newcomers!</div>
+                    </div>
+                    <div class="splash-group">
+                        <div class="splash-container" id="why-GilroyHacks">
+                            <h2 class="splash-title">Why?</h2>
+                            <div class="splash-desc">We wanted to give the power for students to create what they make best: projects that make a difference.</div>
+                        </div>
+                        <div class="splash-container" id="who-GilroyHacks">
+                            <h2 class="splash-title">Who are we?</h2>
+                            <div class="splash-desc">We're a group of high schoolers in the Bay Area looking to spread our love of coding and collaboration to local students.</div>
                         </div>
                     </div>
-                    <!-- Timeline src: https://codepen.io/cjl750/pen/MXvYmg -->
-                    <div id="timeline">
-                        <h2 id="timeline-heading">Timeline</h2>
-                        <span class="caption">Click on each dot for more info</span>
-                        <div class="flex-parent">
-                            <div class="input-flex-container">
-                                <div id="timeline-left-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></div>
-                                <input id="t1" class="timeline-input" type="radio" name="timeline-dot" data-description="1">
-                                <label for="t1" onclick="check('t1')" class="dot-info" data-description="1">
-                                    <span class="year">TBA</span>
-                                    <span class="label">TBA</span>
-                                </label>
-                                <input for="t2" id="t2" class="timeline-input" type="radio" name="timeline-dot" data-description="2">
-                                <label onclick="check('t2')" class="dot-info" data-description="2">
-                                    <span class="year">TBA</span>
-                                    <span class="label">TBA</span>
-                                </label>
-                                <input id="t3" class="timeline-input" type="radio" name="timeline-dot" data-description="3">
-                                <label for="t3" onclick="check('t3')" class="dot-info" data-description="3">
-                                    <span class="year">TBA</span>
-                                    <span class="label">TBA</span>
-                                </label>
-                                <input id="t4" class="timeline-input" type="radio" name="timeline-dot" data-description="4">
-                                <label for="t4" onclick="check('t4')" class="dot-info" data-description="4">
-                                    <span class="year">TBA</span>
-                                    <span class="label">TBA</span>
-                                </label>
-                                <input id="t5" class="timeline-input" type="radio" name="timeline-dot" data-description="5" checked>
-                                <label for="t5" onclick="check('t5')" class="dot-info" data-description="5">
-                                    <span class="year">TBA</span>
-                                    <span class="label">TBA</span>
-                                </label>
-                                <div id="timeline-right-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
-                                <div id="timeline-descriptions-wrapper">
-                                    <div class="timeline-desc" data-description="1">
-                                        <div class="bracket" id="bracket-1">
-                                            <div class="left"></div>
-                                            <div class="right"></div>
-                                        </div>
-                                        <h3>TBA</h3>
-                                        <h4 class="timeline-description-subtitle">TBA</h4><br>
-                                        <div>
-                                            <p class="timeline-description">The official start of the hackathon where we deliver the opening presentation along with the finalized teams, prompts, rules, and timeline.</p>
-                                            <ul class="timeline-description-list">
-                                                <li>Along with the in-person event held at the <u>Community Room</u> at the Gilroy Library, we will be streaming the event on Zoom</li>
-                                                <li><span class="important-text">=IMPORTANT=</span> DO NOT START CODING during this period</li>
-                                                <li>After this event, participants will <u>head back home</u> to start coding</li>
-                                            </ul>
-                                            <div class="timeline-links">
-                                                <a class="tooltip zoom-tooltip" href="https://us06web.zoom.us/j/84398429896?pwd=b0ZUZ2pieXFKeUwxTVY0NVE1MTNxdz09" target="_blank"><div class="timeline-button zoom-link"><img class="timeline-icon" loading="lazy" src="img/zoom.png" alt="Zoom"></div></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-desc" data-description="2">
-                                        <div class="bracket" id="bracket-2">
-                                            <div class="left"></div>
-                                            <div class="right"></div>
-                                        </div>
-                                        <h3>TBA</h3>
-                                        <h4 class="timeline-description-subtitle">TBA</h4><br>
-                                        <p class="timeline-description">Now's your time to shine! Start working with your team to build your project. No strings attached!</p>
-                                            <ul class="timeline-description-list">
-                                                <li><span class="important-text">=IMPORTANT=</span> Your project must follow one of the given prompts; otherwise, your team may lose a lot of points for unrelated topic deductions</li>
-                                                <li><u>Hybrid model</u> - you may either code online or in-person at the Library</li>
-                                                <li>Remember, you only have 46 hours to complete your project... Use your time wisely</li>
-                                            </ul>
-                                            <div class="timeline-links">
-                                                <a target="_blank" href="https://docs.google.com/document/d/1g0NyLcNGcteaXelcNRLpGSzd0l6Mky78ohbBQgQTDQY/edit?usp=sharing"><div class="timeline-button">View the Rubric</div></a>
-                                                <a target="_blank" href="https://docs.google.com/document/d/1orakhyHzQOzGaL6r1CCQzZAWt8U1GTdaC9wcrvCiu5w/edit"><div class="timeline-button">Prompts</div></a>
-                                            </div>
-                                    </div>
-                                    <div class="timeline-desc" data-description="3">
-                                        <div class="bracket" id="bracket-3">
-                                            <div class="left"></div>
-                                            <div class="right"></div>
-                                        </div>
-                                        <h3>TBA</h3>
-                                        <h4 class="timeline-description-subtitle">TBA</h4><br>
-                                        <p class="timeline-description">STOP coding! Your 46 hours of intense stress and turmoil are finally up! We hope you learned some valuable skills and made some new friends along the way.</p>
-                                        <ul class="timeline-description-list">
-                                            <li><span class="important-text">=IMPORTANT=</span> Make sure you turn in your project BEFORE the deadline at 2:00pm. You can find the submission form on the Discord server or <a class="link tooltip" id="submit-tooltip" href="https://forms.gle/bpoXvyjP2TcsrELX8" target="_blank">Submit Here</a></li>
-                                            <li>From now until Project Presentations (2:30pm), your team will have around 30 mins to prepare for your presentation. Get back to work!</li>
-                                        </ul>
-                                        <div class="timeline-links">
-                                            <a target="_blank" href="https://docs.google.com/document/d/1g0NyLcNGcteaXelcNRLpGSzd0l6Mky78ohbBQgQTDQY/edit?usp=sharing"><div class="timeline-button">View the Rubric</div></a>
-                                            <a target="_blank" href="https://docs.google.com/document/d/1orakhyHzQOzGaL6r1CCQzZAWt8U1GTdaC9wcrvCiu5w/edit"><div class="timeline-button">Prompts</div></a>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-desc" data-description="4">
-                                        <div class="bracket" id="bracket-4">
-                                            <div class="left"></div>
-                                            <div class="right"></div>
-                                        </div>
-                                        <h3>TBA</h3>
-                                        <h4 class="timeline-description-subtitle">TBA</h4><br>
-                                        <p class="timeline-description">This is where your team will present your product to our honored judges.</p>
-                                        <ul class="timeline-description-list">
-                                            <li>Be Creative! Make your product stand out by including a demo or showing its function across multiple applications</li>
-                                            <li>Presentations will occur in order of team number (i.e. Team 1 will go first)</li>
-                                            <li><span class="important-text">=IMPORTANT=</span> Your team's presentation is NOT ALLOWED to go above 5 minutes... Use your time wisely.</li>
-                                            <li>Your team will be graded on both the product and presentation as per the rubric</li>
-                                        </ul>
-                                        <div class="timeline-links">
-                                            <a class="tooltip zoom-tooltip" href="https://us06web.zoom.us/j/84398429896?pwd=b0ZUZ2pieXFKeUwxTVY0NVE1MTNxdz09" target="_blank"><div class="timeline-button zoom-link"><img class="timeline-icon" loading="lazy" src="img/zoom.png" alt="Zoom"></div></a>
-                                            <a target="_blank" href="https://docs.google.com/document/d/1g0NyLcNGcteaXelcNRLpGSzd0l6Mky78ohbBQgQTDQY/edit?usp=sharing"><div class="timeline-button">View the Rubric</div></a>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-desc" data-description="5">
-                                        <div class="bracket" id="bracket-5">
-                                            <div class="left"></div>
-                                            <div class="right"></div>
-                                        </div>
-                                        <h3>TBA</h3>
-                                        <h4 class="timeline-description-subtitle">TBA</h4><br>
-                                        <p class="timeline-description">Congratuations! Judge scores are tallied and here's where we announce the 1st, 2nd, and 3rd place teams along with constructive feedback for each in the <u>Community Room</u>.</p>
-                                        <ul class="timeline-description-list">
-                                            <li><u>Winners</u>: we will contact you via Email/Discord about your prizes; please allow up to 2 days for a response</li>
-                                            <li>For Questions, ask in the Discord server (#ask-questions), or contact tech support at <a class="link tooltip email-link email-replace-tech" target="_blank" href="mailto:tech@gilroyhacks.com">tech@gilroyhacks.com</a></li>
-                                        </ul>
-                                        <div class="timeline-links">
-                                            <a class="tooltip zoom-tooltip" href="https://us06web.zoom.us/j/84398429896?pwd=b0ZUZ2pieXFKeUwxTVY0NVE1MTNxdz09" target="_blank"><div class="timeline-button zoom-link"><img class="timeline-icon" loading="lazy" src="img/zoom.png" alt="Zoom"></div></a>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- <div id="slider" class="slider">
+                        <a id="prev" class="control prev"><svg class="slide-button" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a>
+                        <div class="wrapper">
+                            <div id="items" class="items">
+                                <span class="slide">Slide 1</span>
+                                <span class="slide">Slide 2</span>
+                                <span class="slide">Slide 3</span>
+                                <span class="slide">Slide 4</span>
+                                <span class="slide">Slide 5</span>
                             </div>
                         </div>
-                    </div>
+                        <a id="next" class="control next"><svg class="slide-button" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a>
+                      </div> -->
                 </article>
                 <article id="signup-article">
                     <div id="signup-title">
