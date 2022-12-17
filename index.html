@@ -26,8 +26,8 @@
     <meta name="keywords" content="Gilroy Hacks, GilroyHacks, Gilroy, hackathon, Bay Area, GECA, Dr. TJ Owens Gilroy Early College Academy">
     
     <!-- JavaScript Refs -->
-    <script defer src="js/leaflet.js"></script>
-    <script defer src="js/map.js"></script>
+    <!-- <script defer src="js/leaflet.js"></script>
+    <script defer src="js/map.js"></script> -->
     <script defer src="js/general.js"></script>
     <script src="js/apexcharts.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -413,16 +413,16 @@
                         <!-- EVENTS -->
                         <div class="event start-800 end-800 length-4 empty"></div>
                         <div class="event start-900 end-900 length-4 empty"></div>
-                        <div class="event logistics start-1000 end-1000 length-1">Check In<span>10 - 10:15am</span></div>
-                        <div class="event logistics start-1000 end-1000 length-2">Opening Ceremony<span>10:15 - 11am</span></div>
-                        <div class="event hacking start-1000 end-1000 length-1 small">Hacking starts<span>Start 11am</span></div>
+                        <div class="event logistics start-1000 end-1000 length-1" onclick="showModal('check-in')">Check In<span>10 - 10:15am</span></div>
+                        <div class="event logistics start-1000 end-1000 length-2" onclick="showModal('opening-ceremony')">Opening Ceremony<span>10:15 - 11am</span></div>
+                        <div class="event hacking start-1000 end-1000 length-1 small" onclick="showModal('hacking-starts')">Hacking starts<span>Start 11am</span></div>
                         <div class="event start-1100 end-1100 length-4 empty"></div>
-                        <div class="event food start-1200 end-1200 length-4">Lunch<span>12 - 1pm</span></div>
-                        <div class="event workshop start-1300 end-1300 length-4">Web Dev Workshop<span>1 - 2pm</span></div>
+                        <div class="event food start-1200 end-1200 length-4" onclick="showModal('lunch')">Lunch<span>12 - 1pm</span></div>
+                        <div class="event workshop start-1300 end-1300 length-4" onclick="showModal('workshop1')">Web Dev Workshop<span>1 - 2pm</span></div>
                         <div class="event start-1400 end-1400 length-4 empty"></div>
-                        <div class="event workshop start-1500 end-1500 length-4">[REDACTED] Workshop<span>3 - 4pm</span></div>
+                        <div class="event workshop start-1500 end-1500 length-4" onclick="showModal('workshop2')">[REDACTED] Workshop<span>3 - 4pm</span></div>
                         <div class="event start-1600 end-1600 length-4 empty"></div>
-                        <div class="event game start-1700 end-1700 length-4">Kahoot (win a cool prize!)<span>Start 5pm</span></div>
+                        <div class="event game start-1700 end-1700 length-4" onclick="showModal('activity1')">Kahoot (win a cool prize!)<span>Start 5pm</span></div>
                         <div class="event start-1800 end-1800 length-4 empty"></div>
                         <div class="event start-1900 end-1900 length-4 empty"></div>
                         <div class="event start-2000 end-2000 length-4 empty"></div>
@@ -455,15 +455,157 @@
                         <div class="event start-1100 end-1100 length-4 empty"></div>
                         <div class="event start-1200 end-1200 length-4 empty"></div>
                         <div class="event start-1300 end-1300 length-4 empty"></div>
-                        <div class="event hacking start-1400 end-1400 length-1 small">Hacking ends<span>Deadline: 2pm</span></div>
-                        <div class="event logistics start-1400 end-1500 length-3">Project Presentations<span>2:30 - 4pm</span></div>
-                        <div class="event start-1600 end-1600 length-2">Judging<span>4 - 4:30pm</span></div>
-                        <div class="event start-1600 end-1600 length-2">Awards Ceremony<span>4:30 - 5pm</span></div>
+                        <div class="event hacking start-1400 end-1400 length-1 small" onclick="showModal('hacking-ends')">Hacking ends<span>Deadline: 2pm</span></div>
+                        <div class="event logistics start-1400 end-1500 length-3" onclick="showModal('project-presentations')">Project Presentations<span>2:30 - 4pm</span></div>
+                        <div class="event start-1600 end-1600 length-2" onclick="showModal('judging')">Judging<span>4 - 4:30pm</span></div>
+                        <div class="event start-1600 end-1600 length-2" onclick="showModal('awards-ceremony')">Awards Ceremony<span>4:30 - 5pm</span></div>
                         <div class="event start-1700 end-1700 length-4 empty"></div>
                         <div class="event start-1800 end-1800 length-4 empty"></div>
                         <div class="event start-1900 end-1900 length-4 empty"></div>
                         <div class="event start-2000 end-2000 length-4 empty"></div>
                         <div class="event start-2100 end-2100 length-4 empty"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-overlay">
+                <div class="modal" id="check-in">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header logistics">
+                        <h2>Check In</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: 10 - 10:15am</h3>
+                        <h3><span class="emphasis-text">Location</span>: Community Room (2nd Floor)</h3><br>
+                        <p>Try to arrive by 10:15am so we can get you your lanyard, merch, and table!</p>
+                    </div>
+                </div>
+                <div class="modal" id="opening-ceremony">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header logistics">
+                        <h2>Opening Ceremony</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: 10:15 - 11am</h3>
+                        <h3><span class="emphasis-text">Location</span>: Community Room (2nd Floor)</h3><br>
+                        <p class="timeline-description">The official start of the hackathon where we deliver the opening presentation along with the finalized teams, prompts, rules, and timeline.</p>
+                        <ul class="timeline-description-list">
+                            <li>Fully in-person event held in the <u>Community Room</u> at the Gilroy Library</li>
+                            <li><span class="important-text">=IMPORTANT=</span> DO NOT START CODING during this period</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal" id="hacking-starts">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header hacking">
+                        <h2>Hacking starts</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: Starts at 11am</h3><br>
+                        <p class="timeline-description">Now's your time to shine! Start working with your team to build your project. No strings attached!</p>
+                            <ul class="timeline-description-list">
+                                <li><span class="important-text">=IMPORTANT=</span> Your project must follow one of the given prompts; otherwise, your team may lose a lot of points for unrelated topic deductions</li>
+                                <li><u>In-person</u> - coding shall be done IN-PERSON (though, you may work on your projects at home as well)</li>
+                                <li>Remember, you only have 28 hours to complete your project... Use your time wisely</li>
+                            </ul>
+                            <div class="timeline-links">
+                                <a target="_blank" href="https://docs.google.com/document/d/1g0NyLcNGcteaXelcNRLpGSzd0l6Mky78ohbBQgQTDQY/edit?usp=sharing"><div class="timeline-button">View the Rubric</div></a>
+                                <a target="_blank" href="https://docs.google.com/document/d/1orakhyHzQOzGaL6r1CCQzZAWt8U1GTdaC9wcrvCiu5w/edit"><div class="timeline-button">Prompts</div></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal" id="lunch">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header food">
+                        <h2>Lunch</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: 12 - 1pm</h3>
+                        <h3><span class="emphasis-text">Location</span>: Community Room (2nd Floor)</h3><br>
+                        <p class="timeline-description">Food options TBA!</p>
+                    </div>
+                </div>
+                <div class="modal" id="workshop1">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header workshop">
+                        <h2>Web Dev Workshop</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: 1 - 2pm</h3>
+                        <h3><span class="emphasis-text">Location</span>: Community Room (2nd Floor)</h3><br>
+                        <p class="timeline-description">More details coming!</p>
+                    </div>
+                </div>
+                <div class="modal" id="workshop2">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header workshop">
+                        <h2>[REDACTED] Workshop</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: 3 - 4pm</h3>
+                        <h3><span class="emphasis-text">Location</span>: Community Room (2nd Floor)</h3><br>
+                        <p class="timeline-description">Hmm what's this? A secret workshop?</p>
+                    </div>
+                </div>
+                <div class="modal" id="activity1">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header game">
+                        <h2>Kahoot</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: Starts at 5pm</h3>
+                        <h3><span class="emphasis-text">Location</span>: Community Room (2nd Floor)</h3><br>
+                        <p class="timeline-description">More details coming!</p>
+                    </div>
+                </div>
+                <div class="modal" id="hacking-ends">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header hacking">
+                        <h2>Hacking ends</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: DEADLINE is at <u>2pm</u></h3><br>
+                        <p class="timeline-description">STOP coding! Your 28 hours of intense stress and turmoil are finally up! We hope you learned some valuable skills and made some new friends along the way.</p>
+                            <ul class="timeline-description-list">
+                                <li><span class="important-text">=IMPORTANT=</span> Make sure you turn in your project BEFORE the deadline at 2:00pm. You can find the submission form on the Discord server or <a class="link tooltip" id="submit-tooltip" href="https://forms.gle/bpoXvyjP2TcsrELX8" target="_blank">Submit Here</a></li>
+                                <li>From now until Project Presentations (2:30pm), your team will have around 30 mins to prepare for your presentation. Get back to work!</li>
+                            </ul>
+                            <div class="timeline-links">
+                                <a target="_blank" href="https://docs.google.com/document/d/1g0NyLcNGcteaXelcNRLpGSzd0l6Mky78ohbBQgQTDQY/edit?usp=sharing"><div class="timeline-button">View the Rubric</div></a>
+                                <a target="_blank" href="https://docs.google.com/document/d/1orakhyHzQOzGaL6r1CCQzZAWt8U1GTdaC9wcrvCiu5w/edit"><div class="timeline-button">Prompts</div></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal" id="project-presentations">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header logistics">
+                        <h2>Project Presentations</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: 2:30 - 4pm</h3>
+                        <h3><span class="emphasis-text">Location</span>: Community Room (2nd Floor)</h3><br>
+                        <p>More details coming!</p>
+                    </div>
+                </div>
+                <div class="modal" id="judging">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header logistics">
+                        <h2>Judging</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: 4 - 4:30pm</h3>
+                        <h3><span class="emphasis-text">Location</span>: Community Room (2nd Floor)</h3><br>
+                        <p>More details coming!</p>
+                    </div>
+                </div>
+                <div class="modal" id="awards-ceremony">
+                    <button class="button-close-modal">x</button>
+                    <div class="modal-header logistics">
+                        <h2>Awards Ceremony</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: 4:30 - 5pm</h3>
+                        <h3><span class="emphasis-text">Location</span>: Community Room (2nd Floor)</h3><br>
+                        <p>More details coming!</p>
                     </div>
                 </div>
             </div>

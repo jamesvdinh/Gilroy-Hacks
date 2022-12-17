@@ -694,24 +694,36 @@ nav ul li {
   }
 }
 
+@keyframes modal-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .slide-animation {
     animation: slidein-side ease 1s;
   }
-}
-@media (prefers-reduced-motion: no-preference) {
   .slide-animation-prize-2 {
     animation: slidein-prize-2 ease 3s;
   }
-}
-@media (prefers-reduced-motion: no-preference) {
   .slide-animation-prize-1 {
     animation: slidein-prize-1 ease 2s;
   }
-}
-@media (prefers-reduced-motion: no-preference) {
   .slide-animation-prize-3 {
     animation: slidein-prize-3 ease 3s;
+  }
+  .slide-animation-card-img {
+    animation: card-img-pullout ease 2s;
+  }
+  .slide-animation-card-desc {
+    animation: card-desc-pullout ease 2s;
+  }
+  .modal-animation {
+    animation: modal-fade-in ease 0.5s;
   }
 }
 
@@ -1629,6 +1641,57 @@ section {
   grid-template-areas: "time800 stage stage stage stage" "time900 stage stage stage stage" "time1000 stage stage stage stage" "time1100 stage stage stage stage" "time1200 stage stage stage stage" "time1300 stage stage stage stage" "time1400 stage stage stage stage" "time1500 stage stage stage stage" "time1600 stage stage stage stage" "time1700 stage stage stage stage" "time1800 stage stage stage stage" "time1900 stage stage stage stage" "time2000 stage stage stage stage" "time2100 stage stage stage stage";
 }
 
+.modal {
+	border: 1px solid #eee;
+  background-color: #23262a;
+	width: 500px;
+	position: fixed;
+  margin: auto;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	max-width: 100%;
+  display: none;
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: rgb(147, 29, 141);
+  padding: 5px 10px;
+}
+
+.modal-desc {
+  padding: 8px 10px 15px;
+}
+
+.button-close-modal {
+	display: block;
+  float: right;
+  color: white;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  margin: 5px 10px 0 0;
+}
+
+#modal-overlay {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .5);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
 /**
  * Time
  */
@@ -1810,19 +1873,19 @@ section {
   font-size: 16px;
 }
 
-.event.logistics {
+.logistics {
   background-color: rgb(147, 29, 141);
 }
-.event.hacking {
+.hacking {
   background-color: rgb(53, 53, 199);
 }
-.event.food {
+.food {
   background-color: #03833b;
 }
-.event.workshop {
+.workshop {
   background-color: rgb(109, 40, 194);
 }
-.event.game {
+.game {
   background-color: rgb(105, 94, 139);
 }
 
@@ -2534,16 +2597,6 @@ section {
   100% {
     opacity: 1;
     transform: translateX(0px);
-  }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .slide-animation-card-img {
-    animation: card-img-pullout ease 2s;
-  }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .slide-animation-card-desc {
-    animation: card-desc-pullout ease 2s;
   }
 }
 
