@@ -1528,6 +1528,12 @@ section {
   cursor: unset;
 }
 
+.event:hover:not(.empty) {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
 .event.start-800 {
   grid-row-start: time800;
 }
