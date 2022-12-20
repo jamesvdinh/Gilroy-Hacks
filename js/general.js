@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // Add class animations to these elements
     let elements_id = [
       '#event-title',
+      '#splash-entrance',
       '#what-GilroyHacks',
       '#why-GilroyHacks',
       '#who-GilroyHacks',

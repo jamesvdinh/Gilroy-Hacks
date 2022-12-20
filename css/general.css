@@ -827,19 +827,22 @@ section {
 
 .slider {
   width: 100%;
-  min-width: 390px;
   max-width: 680px;
   height: 400px;
   margin: 20px auto;
   display: flex;
   align-items: center;
 }
+
 .slides-wrapper {
+  width: 100%;
+  max-width: 600px;
   overflow: hidden;
   position: relative;
   background: #222;
   border-radius: 5px;
 }
+
 #items {
   width: 10000px;
   position: relative;
@@ -861,7 +864,6 @@ section {
   justify-content: center;
   transition: all 1s;
   position: relative;
-  background: #4b1c6b;
   text-align: center;
 }
 
@@ -892,6 +894,11 @@ section {
 .prev:active,
 .next:active {
   transform: scale(0.8);
+}
+
+.slide-img {
+  width: 100%;
+  height: auto;
 }
 
 .list {
