@@ -1654,6 +1654,22 @@ section {
   background-color: rgb(105, 94, 139);
 }
 
+.logistics-border {
+  border: 1px solid rgb(147, 29, 141);
+}
+.hacking-border {
+  border: 1px solid rgb(53, 53, 199);
+}
+.food-border {
+  border: 1px solid #03833b;
+}
+.workshop-border {
+  border: 1px solid rgb(109, 40, 194);
+}
+.game-border {
+  border: 1px solid rgb(105, 94, 139);
+}
+
 
 #map-article {
   margin: 20px auto 0;
