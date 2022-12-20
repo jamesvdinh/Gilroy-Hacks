@@ -825,11 +825,15 @@ section {
   line-height: 25px;
 }
 
+#headline-recap {
+  color: #fbc334;
+}
+
 .slider {
   width: 100%;
   max-width: 680px;
   height: 400px;
-  margin: 20px auto;
+  margin: 20px auto 50px;
   display: flex;
   align-items: center;
 }
@@ -864,7 +868,15 @@ section {
   justify-content: center;
   transition: all 1s;
   position: relative;
-  text-align: center;
+  align-items: center;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 2%;
+  background-color: #232323b8;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 
 .slide-button {
