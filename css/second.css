@@ -159,6 +159,10 @@ nav ul li {
   min-width: 310px;
 }
 
+#event-name {
+  margin: 0px;
+}
+
 #banner-text {
   text-align: center;
 }

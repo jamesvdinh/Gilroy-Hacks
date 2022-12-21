@@ -162,6 +162,10 @@ nav ul li {
   text-align: center;
 }
 
+#event-name {
+  margin: 0px;
+}
+
 #timer {
   color: rgb(184, 184, 184);
   animation: blinking 3s infinite;
