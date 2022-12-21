@@ -178,7 +178,7 @@ nav ul li {
   text-align: center;
   align-items: center;
   top: 30px;
-  right: -45px;
+  right: calc(100% / 2);
   padding: 2px 7px;
   width: max-content;
   opacity: 1;
@@ -212,13 +212,13 @@ nav ul li {
 
 @keyframes blinking {
   0% {
-    opacity: 1;
+    filter: brightness(1);
   }
   50% {
-    opacity: 0.8;
+    filter: brightness(0.8);
   }
   100% {
-    opacity: 1;
+    filter: brightness(1);
   }
 }
 
@@ -922,8 +922,6 @@ footer {
 }
 
 #socials {
-  width: fit-content;
-  height: auto;
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;

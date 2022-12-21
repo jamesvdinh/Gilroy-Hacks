@@ -177,7 +177,7 @@ nav ul li {
   text-align: center;
   align-items: center;
   top: 30px;
-  right: -60%;
+  right: calc(100% / 2);
   padding: 2px 7px;
   width: max-content;
   opacity: 1;
@@ -233,13 +233,13 @@ nav ul li {
 
 @keyframes blinking {
   0% {
-    opacity: 1;
+    filter: brightness(1);
   }
   50% {
-    opacity: 0.8;
+    filter: brightness(0.8);
   }
   100% {
-    opacity: 1;
+    filter: brightness(1);
   }
 }
 
@@ -1319,8 +1319,7 @@ section {
 }
 
 /* Schedule */
-
-#schedule-heading {
+#schedule {
   padding-top: 70px;
 }
 
@@ -1337,7 +1336,7 @@ section {
   padding: 20px 20px;
   margin-top: 20px;
   width: 95%;
-  min-width: 390px;
+  min-width: 370px;
   max-width: 650px;
   background-color: rgb(29, 27, 36);
   border-radius: 10px;
@@ -1361,13 +1360,13 @@ section {
 .modal {
 	border: 1px solid rgb(142, 102, 177);
   background-color: #23262a;
-	width: 500px;
+  min-width: 350px;
+  max-width: 500px;
 	position: fixed;
   margin: auto;
 	top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-	max-width: 100%;
   display: none;
   text-align: left;
   border-radius: 5px;
@@ -2582,8 +2581,6 @@ footer {
 }
 
 #socials {
-  width: fit-content;
-  height: auto;
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
