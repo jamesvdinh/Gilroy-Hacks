@@ -863,8 +863,10 @@ section {
 }
 
 .slide {
-  width: 600px;
-  height: 400px;
+  min-width: 340px;
+  max-width: 600px;
+  min-height: 200px;
+  max-height: 400px;
   cursor: pointer;
   float: left;
   display: flex;
