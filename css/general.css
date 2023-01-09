@@ -89,7 +89,7 @@ html {
 .nav-container .menu-btn:checked ~ .nav-menu {
   max-height: 300px;
   background-color: rgb(24, 24, 24);
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .nav-container .menu-btn:not(:checked) ~ .nav-menu {
@@ -122,10 +122,7 @@ html {
   }
 }
 
-@media (max-width: 950px) {
-  /* .nav-container {
-    background-color: unset;
-  } */
+@media (max-width: 1050px) {
   .nav-container .nav-menu {
     clear: both;
     max-height: 0;
@@ -280,10 +277,6 @@ nav * {
   text-align: center;
 }
 
-#event-name {
-  margin-right: 10px;
-}
-
 #timer {
   color: rgb(184, 184, 184);
   animation: blinking 3s infinite;
@@ -349,6 +342,7 @@ nav * {
   text-decoration: none;
   cursor: pointer;
   background: unset;
+  margin-right: 10px;
 }
 
 .link:hover {
@@ -397,37 +391,25 @@ nav * {
 }
 @media (max-width: 1200px) {
   #banner {
-    display: none;
+    display: block;
+    top: 1px;
+    max-width: 200px;
+    min-width: 150px;
+    width: auto;
+    margin-left: 300px;
+  }
+  #timer-container {
+    display: block;
+    text-align: center;
+  }
+  #timer {
+    display: inline-block;
+    position: relative;
+    margin: 3px auto 0;
+    padding: 0px 5px;
   }
 }
 @media (max-width: 900px) {
-  .checkbtn {
-    display: inline-block;
-  }
-  
-  /* nav ul {
-    position: fixed;
-    width: 100%;
-    height: 300px;
-    margin-top: 58px;
-    margin-right: 0;
-    background: rgb(24, 24, 24);
-    visibility: hidden;
-    text-align: center;
-  }
-  nav ul li {
-    display: block;
-    margin: 20px 0;
-    line-height: 30px;
-  }
-  #check:checked ~ul {
-    visibility: visible;
-    animation: dropdown 0.5s ease;
-  } */
-  .checkbtn {
-    display: inline-block;
-  }
-
   #prize-logo, .podium-label {
     transform: scale(0.9);
     font-size: 16px !important;
@@ -448,30 +430,6 @@ nav * {
   }
   header .waviy {
     font-size: 45px;
-  }
-  #banner {
-    display: inline-flex;
-    width: 310px;
-  }
-}
-@media (max-width: 750px) {
-  #banner {
-    display: block;
-    top: 1px;
-    max-width: 200px;
-    min-width: 150px;
-    width: auto;
-    margin-left: 300px;
-  }
-  #timer-container {
-    display: block;
-    text-align: center;
-  }
-  #timer {
-    display: inline-block;
-    position: relative;
-    margin: 3px auto 0;
-    padding: 0px 5px;
   }
 }
 @media (max-width: 620px) {
@@ -498,7 +456,7 @@ nav * {
       height: 2300px;
       width: 230px;
   }
-  #prizes-container {
+  #prizes-container, #banner {
     transform: scale(0.9);
   }
   #banner {
@@ -520,6 +478,8 @@ nav * {
   #prizes-container {
     transform: scale(0.9);
   }
+}
+@media (max-width: 370px) {
   #banner {
     display: none;
   }
@@ -2746,4 +2706,4 @@ footer li {
 /* Are you interested in coding, engineering, or STEM? Does a weekend full of intense brainstorming and
 coding extravaganza with tons of other like-minded students sound (at the least bit) interesting to you? 
 Gilroy Hacks is all about allowing passionate students showcase their skills and teaching new concepts to 
-newcomers. If this sounds like you, then all aboard the Hackathon tra                                
+newcomers. If this sounds like you, then all aboard the Hackathon tra */
