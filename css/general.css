@@ -18,6 +18,138 @@ html {
   box-sizing: border-box;
 }
 
+.nav-container {
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+/* menu */
+
+.nav-container .nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  clear: none;
+  float: right;
+  max-height: none;
+  margin-right: 110px;
+}
+
+.nav-container .nav-menu li {
+  display: inline-block;
+  line-height: 30px;
+  margin: 10px 7px;
+  padding: 3px 11px;
+  cursor: pointer;
+}
+
+/* menu icon */
+
+.nav-container .menu-icon {
+  display: none;
+}
+
+.nav-container .menu-icon .navicon {
+  background: rgb(123, 123, 123);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.nav-container .menu-icon .navicon:before,
+.nav-container .menu-icon .navicon:after {
+  background: rgb(123, 123, 123);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.nav-container .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.nav-container .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.nav-container .menu-btn {
+  display: none;
+}
+
+.nav-container .menu-btn:checked ~ .nav-menu {
+  max-height: 300px;
+  background-color: rgb(24, 24, 24);
+  transition: 0.2s;
+}
+
+.nav-container .menu-btn:not(:checked) ~ .nav-menu {
+  animation: slow-fade 1s ease;
+}
+
+.nav-container .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.nav-container .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.nav-container .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.nav-container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.nav-container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@keyframes slow-fade {
+  0% {
+    background-color: rgb(24, 24, 24);
+  }
+  90% {
+    background-color: unset;
+  }
+}
+
+@media (max-width: 950px) {
+  /* .nav-container {
+    background-color: unset;
+  } */
+  .nav-container .nav-menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+  }
+  .nav-container .nav-menu li {
+    display: block;
+  }
+  .nav-container .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  #sign-up {
+    right: 50px !important;
+  }
+}
+
 nav {
   height: 59px;
   width: 100%;
@@ -30,7 +162,6 @@ nav {
 
 nav * {
   padding: 0;
-  margin: 0px 5px;
   list-style: none;
   box-sizing: border-box;
   z-index: 100;
@@ -52,19 +183,6 @@ nav * {
   position: relative;
   margin: 0;
   margin-left: 10px;
-}
-
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 30px;
-  margin: 10px 7px;
-  padding: 3px 5px;
-  cursor: pointer;
 }
 
 .navlink {
@@ -119,7 +237,6 @@ nav ul li {
   padding: 0;
   height: 59px;
   float: right;
-  flex-wrap: nowrap;
   flex-direction: row-reverse;
   align-content: stretch;
 }
@@ -131,18 +248,19 @@ nav ul li {
 #sign-up {
   padding: 6px 7px;
   margin: 14px 15px 14px 4px;
-
+  width: 72px;
   border-radius: 5px;
   font-size: 16px;
   background-color: rgb(140, 42, 165);
   color: bisque;
-  display: flex;
-  place-items: center;
+  position: fixed;
+  display: inline-flex;
+  right: 10px;
 }
 
 #sign-up:hover {
-  transform: scale(1.05);
-  background-color: blueviolet;
+  transform: scale(1.03);
+  filter: brightness(1.05);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -163,7 +281,7 @@ nav ul li {
 }
 
 #event-name {
-  margin: 0px;
+  margin-right: 10px;
 }
 
 #timer {
@@ -172,7 +290,9 @@ nav ul li {
   background-color: rgb(57, 57, 57);
   border-radius: 5px;
   padding: 2px 5px;
+  margin-left: 5px;
   position: relative;
+  width: fit-content
 }
 
 #timer::after {
@@ -284,7 +404,8 @@ nav ul li {
   .checkbtn {
     display: inline-block;
   }
-  nav ul {
+  
+  /* nav ul {
     position: fixed;
     width: 100%;
     height: 300px;
@@ -302,10 +423,11 @@ nav ul li {
   #check:checked ~ul {
     visibility: visible;
     animation: dropdown 0.5s ease;
-  }
+  } */
   .checkbtn {
     display: inline-block;
   }
+
   #prize-logo, .podium-label {
     transform: scale(0.9);
     font-size: 16px !important;
@@ -334,6 +456,26 @@ nav ul li {
 }
 @media (max-width: 750px) {
   #banner {
+    display: block;
+    top: 1px;
+    max-width: 200px;
+    min-width: 150px;
+    width: auto;
+    margin-left: 300px;
+  }
+  #timer-container {
+    display: block;
+    text-align: center;
+  }
+  #timer {
+    display: inline-block;
+    position: relative;
+    margin: 3px auto 0;
+    padding: 0px 5px;
+  }
+}
+@media (max-width: 620px) {
+  #banner {
     display: none;
   }
 }
@@ -358,6 +500,28 @@ nav ul li {
   }
   #prizes-container {
     transform: scale(0.9);
+  }
+  #banner {
+    display: block;
+    margin-left: 75px;
+  }
+}
+@media (max-width: 400px) {
+  #nav-logo {
+      content: url(/img/logo_mini.png);
+      height: 45px;
+      width: 45px;
+      margin: 7px 0 0 5px;
+  }
+  #logo {
+      height: 2300px;
+      width: 230px;
+  }
+  #prizes-container {
+    transform: scale(0.9);
+  }
+  #banner {
+    display: none;
   }
 }
 @media (max-height: 550px) {
@@ -863,7 +1027,7 @@ section {
 }
 
 .slide {
-  min-width: 340px;
+  /* min-width: 340px; */
   max-width: 600px;
   min-height: 200px;
   max-height: 400px;
@@ -2631,4 +2795,4 @@ footer li {
 /* Are you interested in coding, engineering, or STEM? Does a weekend full of intense brainstorming and
 coding extravaganza with tons of other like-minded students sound (at the least bit) interesting to you? 
 Gilroy Hacks is all about allowing passionate students showcase their skills and teaching new concepts to 
-newcomers. If this sounds like you, then all aboard the Hackathon train! */
+newcomers. If this sounds like you, then all aboard the Hackathon tra                                                     

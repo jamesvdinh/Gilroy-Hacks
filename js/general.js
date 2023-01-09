@@ -328,6 +328,7 @@ function save() {
 }
 window.onload = function() {
     load();
+    document.getElementById('#menu-btn').checked = false;
 };
 function load() {
     for (i = 0; i < checkboxes.length; i++) {
