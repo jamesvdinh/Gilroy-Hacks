@@ -480,7 +480,7 @@ nav * {
   }
 }
 @media (max-width: 500px) {
-  #event, #rules, #prizes, #team {
+  #signup-article, #rules, #prizes, #team {
     transform: scale(0.9);
   }
   section {
@@ -997,90 +997,40 @@ section {
   color: #fbc334;
 }
 
-.slider {
-  width: 100%;
-  max-width: 680px;
-  height: 400px;
-  margin: 20px auto 50px;
-  display: flex;
-  align-items: center;
+.splide {
+  margin: 20px auto;
 }
 
-.slides-wrapper {
-  width: 100%;
-  max-width: 600px;
-  overflow: hidden;
-  position: relative;
-  background: #222;
+.slide-content {
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: fit-content;
+}
+
+.splide, .splide__track, .splide__list, .splide__slide, .slide-content, .slide-img {
   border-radius: 5px;
 }
 
-#items {
-  width: 10000px;
-  position: relative;
-  top: 0;
-  left: -600px;
-}
-
-#items.shifting {
-  transition: left .2s ease-out;
-}
-
-.slide {
-  /* min-width: 340px; */
-  max-width: 600px;
-  min-height: 200px;
-  max-height: 400px;
-  cursor: pointer;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: all 1s;
-  position: relative;
-  align-items: center;
-}
-
 .slide-caption {
-  position: absolute;
-  bottom: 2%;
+  position: relative;
+  bottom: 35px;
   background-color: #232323b8;
   padding: 2px 5px;
   border-radius: 5px;
 }
 
-.slide-button {
-  margin: 9px;
-}
-
-.control {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background-color: rgb(80, 80, 80);
-  border-radius: 20px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-.prev,
-.next {
-  cursor: pointer;
-}
-
-.prev {
-  left: 20px;
-}
-.next {
-  right: 20px;
-}
-.prev:active,
-.next:active {
-  transform: scale(0.8);
-}
-
 .slide-img {
   width: 100%;
   height: auto;
+}
+
+.splide__slide, .splide__slide:focus, .splide.is-focus-in, .splide__pagination__page:focus-visible {
+  border: none !important;
+  outline: none !important;
+}
+
+li .splide__pagination__page.is-active {
+  background: #545454;
 }
 
 .list {
@@ -1491,6 +1441,7 @@ section {
 /* Schedule */
 #schedule {
   padding-top: 70px;
+  margin-bottom: 30px;
 }
 
 .schedule-parent {
@@ -2795,4 +2746,4 @@ footer li {
 /* Are you interested in coding, engineering, or STEM? Does a weekend full of intense brainstorming and
 coding extravaganza with tons of other like-minded students sound (at the least bit) interesting to you? 
 Gilroy Hacks is all about allowing passionate students showcase their skills and teaching new concepts to 
-newcomers. If this sounds like you, then all aboard the Hackathon tra                                                     
+newcomers. If this sounds like you, then all aboard the Hackathon tra                                
