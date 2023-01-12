@@ -438,7 +438,6 @@ var splide = new Splide( '.splide', {
 
 splide.mount();
 
-
 // var options = {
 //   series: [{
 //     name: 'Idea',
@@ -517,4 +516,4 @@ splide.mount();
 //   };
 
 //   var chart = new ApexCharts(document.querySelector("#chart"), options);
-//   chart.ren
+//   chart.render

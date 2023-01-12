@@ -645,10 +645,11 @@ nav * {
 }
 
 #header-subtitle-date {
-  padding: 5px;
+  padding: 5px 7px;
   margin-top: 5px;
   border-radius: 10px;
   display: flex;
+  width: fit-content;
   place-items: center;
   border: 1px solid rgb(73, 73, 73);
   background-color: rgb(22, 22, 22);
@@ -692,6 +693,7 @@ nav * {
   border-radius: 10px;
   margin-top: 5px;
   padding: 0 7px;
+  width: fit-content;
   border: 1px solid rgb(73, 73, 73);
   background-color: rgb(22, 22, 22);
   animation: slidein-2 ease 3s;
@@ -1622,6 +1624,7 @@ li .splide__pagination__page.is-active {
   font-size: 18px;
   border-top: thin solid rgb(68, 68, 68);
   cursor: pointer;
+  position: relative;
 }
 .event span {
   display: block;
