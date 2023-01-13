@@ -28,9 +28,11 @@ document.addEventListener('DOMContentLoaded', function(){
   setAttributes(steven, {"href": "mailto:stevendinh987" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
   steven.innerHTML = "stevendinh987" + "@" + "gmail.com";
 
-  var vijay = document.getElementById("email-replace-vijay");
-  setAttributes(vijay, {"href": "mailto:vijay" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
-  vijay.innerHTML = "vijay" + "@" + "gilroyhacks.com";
+  const vijay_emails = document.querySelectorAll('.email-replace-vijay');
+  vijay_emails.forEach(entry => {
+    setAttributes(entry, {"href": "mailto:vijay" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
+    entry.innerHTML = "vijay" + "@" + "gilroyhacks.com";
+  });
 
   var jonathan = document.getElementById("email-replace-jonathan");
   setAttributes(jonathan, {"href": "mailto:jonathantessmann" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
