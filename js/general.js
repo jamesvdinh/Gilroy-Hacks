@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   var aadhavan = document.getElementById("email-replace-aadhavan");
-  setAttributes(aadhavan, {"href": "mailto:aadhavan.magesh" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
-  aadhavan.innerHTML = "aadhavan.magesh" + "@" + "gmail.com";
+  setAttributes(aadhavan, {"href": "mailto:amagesh" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
+  aadhavan.innerHTML = "amagesh" + "@" + "gilroyhacks.com";
 
   var isaac = document.getElementById("email-replace-isaac");
   setAttributes(isaac, {"href": "mailto:ihwang" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', function(){
   vijay.innerHTML = "vijay" + "@" + "gilroyhacks.com";
 
   var jonathan = document.getElementById("email-replace-jonathan");
-  setAttributes(jonathan, {"href": "mailto:jonathantessmann" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
-  jonathan.innerHTML = "jonathantessmann" + "@" + "gmail.com";
+  setAttributes(jonathan, {"href": "mailto:jonathantessmann" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
+  jonathan.innerHTML = "jonathantessmann" + "@" + "gilroyhacks.com";
 
   var james = document.getElementById("email-replace-james");
   setAttributes(james, {"href": "mailto:james" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
@@ -516,4 +516,4 @@ splide.mount();
 //   };
 
 //   var chart = new ApexCharts(document.querySelector("#chart"), options);
-//   chart.render
+//   chart.render        

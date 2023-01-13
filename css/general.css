@@ -728,6 +728,12 @@ nav * {
   background-image: linear-gradient(#0d111733 50%, #0d11175e 60%, #0d1117 100%);
 }
 
+.header-parent {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
