@@ -411,6 +411,7 @@ function showModal(id) {
   currentModal = id;
 }
 
+// Check if user clicks outside of modal
 document.addEventListener(
   "click",
   function (event) {
@@ -424,6 +425,30 @@ document.addEventListener(
   },
   false
 ); 
+
+var openNavClick = false;
+var nav_is_open = false;
+function CheckNavOpen() {
+  if (document.getElementById('menu-btn').checked == true) {
+    nav_is_open = true;
+    openNavClick = true;
+  }
+}
+// Check if user clicks outside of navbar menu
+document.addEventListener(
+  "click",
+  function (event) {
+    // If user either clicks X button OR clicks outside the modal window, then close modal
+    if (!openNavClick && nav_is_open == true) {
+      if (event.target.matches(".menu-btn") || !event.target.closest(".nav-container")) {
+        uncheck('menu-btn');
+        nav_is_open = false;
+      }
+    }
+    openNavClick = false;
+  },
+  false
+);
 
 var splide = new Splide( '.splide', {
   type   : 'loop',

@@ -88,12 +88,8 @@ html {
 
 .nav-container .menu-btn:checked ~ .nav-menu {
   max-height: 300px;
-  background-color: rgb(24, 24, 24);
+  background-color: rgba(24, 24, 24, 0.988);
   transition: 0.5s;
-}
-
-.nav-container .menu-btn:not(:checked) ~ .nav-menu {
-  animation: slow-fade 1s ease;
 }
 
 .nav-container .menu-btn:checked ~ .menu-icon .navicon {
@@ -144,6 +140,9 @@ html {
   }
   #sign-up {
     right: 50px !important;
+  }
+  .nav-container .menu-btn:not(:checked) ~ .nav-menu {
+    animation: slow-fade 1s ease;
   }
 }
 
@@ -1478,11 +1477,42 @@ li .splide__pagination__page.is-active {
 .button-close-modal {
 	display: block;
   float: right;
-  color: white;
   background-color: unset;
   border: none;
   cursor: pointer;
-  margin: 5px 10px 0 0;
+  margin-right: 5px;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 15px 20px 10px 10px;
+  cursor: pointer;
+}
+
+.button-close-modal:before,
+.button-close-modal:after {
+  background: rgb(200, 200, 200);
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 13px;
+}
+
+.button-close-modal:hover {
+  transform: scale(1.2);
+  filter: brightness(1.1);
+  transition: 0.3s;
+}
+
+.button-close-modal:before {
+  transform: rotate(-45deg);
+}
+
+.button-close-modal:after {
+  transform: rotate(45deg);
 }
 
 #modal-overlay {
