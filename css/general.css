@@ -132,7 +132,7 @@ html {
   }
   .nav-container .menu-icon {
     cursor: pointer;
-    display: inline-block;
+    display: block;
     float: right;
     padding: 28px 20px;
     position: relative;
@@ -580,6 +580,25 @@ nav * {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.header-logo-parent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 
   text-align: center;
   position: relative;
@@ -674,6 +693,13 @@ nav * {
   right: -150px;
   transform-origin: left;
   color: rgb(252, 93, 93);
+}
+
+.header-info-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 @media (max-width: 610px) {
