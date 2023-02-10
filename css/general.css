@@ -677,6 +677,7 @@ nav * {
 .header-link {
   background: unset !important;
   color: white !important;
+  text-decoration: none;
 }
 
 #header-tooltip::after {
@@ -688,7 +689,7 @@ nav * {
 }
 
 #spots-tooltip::after {
-  content: '← Signups Closed';
+  content: '← Sign up here';
   top: 12px;
   right: -150px;
   transform-origin: left;
