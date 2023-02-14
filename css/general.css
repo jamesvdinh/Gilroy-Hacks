@@ -1411,6 +1411,15 @@ li .splide__pagination__page.is-active {
   justify-content: center;
 }
 
+#sponsor-container a {
+  padding: 7px 0;
+}
+
+#sponsor-container img {
+  max-width: 410px;
+  min-width: 300px;
+}
+
 #sponsor-container a:hover {
   transform: scale(1.03);
 }
@@ -1432,7 +1441,6 @@ li .splide__pagination__page.is-active {
 #gear-club-logo {
   height: 60px;
   width: 352px;
-  margin-top: 50px !important;
 }
 
 /* Schedule */
