@@ -276,6 +276,18 @@ nav * {
   text-align: center;
 }
 
+.header-info {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 420px;
+  min-width: none;
+  justify-content: center;
+}
+
+.header-info a {
+  margin: 0 5px;
+}
+
 #timer {
   color: rgb(184, 184, 184);
   animation: blinking 3s infinite;
@@ -681,10 +693,10 @@ nav * {
 }
 
 #header-tooltip::after {
-  content: '← Add to Calendar';
+  content: 'Add to Calendar →';
   top: 12px;
-  right: -160px;
-  transform-origin: left;
+  right: 160px;
+  transform-origin: right;
   color: rgb(252, 188, 93);
 }
 
