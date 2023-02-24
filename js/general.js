@@ -17,42 +17,42 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   var aadhavan = document.getElementById("email-replace-aadhavan");
-  setAttributes(aadhavan, {"href": "mailto:amagesh" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
-  aadhavan.innerHTML = "amagesh" + "@" + "gilroyhacks.com";
+  setAttributes(aadhavan, {"href": "mailto:aadhavanmagesh" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+  aadhavan.innerHTML = "aadhavanmagesh" + "@" + "gmail.com";
 
   var isaac = document.getElementById("email-replace-isaac");
-  setAttributes(isaac, {"href": "mailto:ihwang" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
-  isaac.innerHTML = "ihwang" + "@" + "gilroyhacks.com";
+  setAttributes(isaac, {"href": "mailto:ihwang125" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+  isaac.innerHTML = "ihwang125" + "@" + "gmail.com";
 
   var steven = document.getElementById("email-replace-steven");
-  setAttributes(steven, {"href": "mailto:steven" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
-  steven.innerHTML = "steven" + "@" + "gilroyhacks.com";
+  setAttributes(steven, {"href": "mailto:stevendinh987" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+  steven.innerHTML = "stevendinh987" + "@" + "gmail.com";
 
   const vijay_emails = document.querySelectorAll('.email-replace-vijay');
   vijay_emails.forEach(entry => {
-    setAttributes(entry, {"href": "mailto:vijay" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
-    entry.innerHTML = "vijay" + "@" + "gilroyhacks.com";
+    setAttributes(entry, {"href": "mailto:vijaykethanaboyina" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+    entry.innerHTML = "vijaykethanaboyina" + "@" + "gmail.com";
   });
 
   var jonathan = document.getElementById("email-replace-jonathan");
-  setAttributes(jonathan, {"href": "mailto:jonathantessmann" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
-  jonathan.innerHTML = "jonathantessmann" + "@" + "gilroyhacks.com";
+  setAttributes(jonathan, {"href": "mailto:jonathantessmann" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+  jonathan.innerHTML = "jonathantessmann" + "@" + "gmail.com";
 
   var james = document.getElementById("email-replace-james");
-  setAttributes(james, {"href": "mailto:james" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
-  james.innerHTML = "james" + "@" + "gilroyhacks.com";
+  setAttributes(james, {"href": "mailto:jamesdinh77" + "@" + "protonmail.com?subject=Gilroy Hacks", "target": "_blank"});
+  james.innerHTML = "jamesdinh77" + "@" + "protonmail.com";
 
   var ezra = document.getElementById("email-replace-ezra");
-  setAttributes(ezra, {"href": "mailto:clementboiteux" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
-  ezra.innerHTML = "clementboiteux" + "@" + "gilroyhacks.com";
+  setAttributes(ezra, {"href": "mailto:ezrabridger27" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+  ezra.innerHTML = "ezrabridger27" + "@" + "gmail.com";
 
   var mark = document.getElementById("email-replace-mark");
   setAttributes(mark, {"href": "mailto:markshen00" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
   mark.innerHTML = "markshen00" + "@" + "gmail.com";
 
   var bryce = document.getElementById("email-replace-bryce");
-  setAttributes(bryce, {"href": "mailto:bryce" + "@" + "gilroyhacks.com?subject=Gilroy Hacks", "target": "_blank"});
-  bryce.innerHTML = "bryce" + "@" + "gilroyhacks.com";
+  setAttributes(bryce, {"href": "mailto:brycemankovsky" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+  bryce.innerHTML = "brycemankovsky" + "@" + "gmail.com";
 
   // Scroll Element
   // Creating an observer when the user views that element
