@@ -1470,21 +1470,23 @@ li .splide__pagination__page.is-active {
 #sponsor-container {
   display: flex;
   flex-flow: column nowrap;
-  padding: 20px 5px;
+  padding: 20px 15px;
+  width: 400px;
   justify-content: center;
 }
 
 #sponsor-container a {
-  padding: 7px 0;
+  padding: 7px 0px;
 }
 
 #sponsor-container img {
   max-width: 410px;
-  min-width: 300px;
+  min-width: 250px;
+  width: 100%;
 }
 
 #sponsor-container a:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 #sponsor-container img {
@@ -2851,4 +2853,4 @@ footer li {
 /* Are you interested in coding, engineering, or STEM? Does a weekend full of intense brainstorming and
 coding extravaganza with tons of other like-minded students sound (at the least bit) interesting to you? 
 Gilroy Hacks is all about allowing passionate students showcase their skills and teaching new concepts to 
-newcomers. If this sounds like you, then all aboard the Hackathon tra */
+newcomers. If this sounds like you, then all aboard the Hackathon tra *
