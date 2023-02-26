@@ -1396,11 +1396,8 @@ li .splide__pagination__page.is-active {
   background-color: #3f3f3f!important;
 }
 
-.tooltip::after {
+.tooltip {
   position: relative;
-  font-size: 16px;
-  color: rgb(252, 188, 93);
-  font-weight: normal;
 }
 
 .tooltip::after {
