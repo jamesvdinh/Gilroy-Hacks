@@ -447,6 +447,11 @@ nav * {
     font-size: 45px;
   }
 }
+@media (max-width: 700px) {
+  .header-link.tooltip::after {
+    display: none;
+  }
+}
 @media (max-width: 620px) {
   #banner {
     display: none;
@@ -1391,8 +1396,11 @@ li .splide__pagination__page.is-active {
   background-color: #3f3f3f!important;
 }
 
-.tooltip {
+.tooltip::after {
   position: relative;
+  font-size: 16px;
+  color: rgb(252, 188, 93);
+  font-weight: normal;
 }
 
 .tooltip::after {
