@@ -2145,6 +2145,12 @@ li .splide__pagination__page.is-active {
   font-size: 25px;
 }
 
+.workshop-subtitle {
+  margin-top: 3px;
+  font-size: 15px;
+  color: rgb(168, 168, 168);
+}
+
 .workshop-topics {
   float: right;
   display: flex;
@@ -2467,14 +2473,7 @@ li .splide__pagination__page.is-active {
 
 .prize-title {
   color: rgb(167, 146, 234);
-  font-size: 25px;
-}
-
-.prize-content {
-  color:rgb(129, 218, 126);
-  font-size: 20px;
-  transform: rotate3d(0, 1, 0, 360deg);
-  transition: ease 0.5s;
+  font-size: 30px;
 }
 
 .prize-subtitle {
@@ -2540,18 +2539,6 @@ li .splide__pagination__page.is-active {
 
 .prize-img {
   height: 85px;
-}
-
-#drone-img {
-  width: 139px;
-}
-
-#sling-img {
-  width: 147px;
-}
-
-#speaker-img {
-  width: 111px;
 }
 
 #prize-box {
