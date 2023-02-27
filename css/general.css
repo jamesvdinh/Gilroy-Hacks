@@ -2466,9 +2466,13 @@ li .splide__pagination__page.is-active {
   position: absolute;
   color: rgb(167, 146, 234);
   font-size: 25px;
-  margin-bottom: 167px;
+  margin-bottom: 160px;
   line-height: 25px;
   z-index: 1;
+}
+
+#first-prize-title {
+  margin-bottom: 180px;
 }
 
 .prize-title {
