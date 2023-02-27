@@ -1474,20 +1474,19 @@ li .splide__pagination__page.is-active {
 
 #sponsor-container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   padding: 20px 15px;
-  width: 400px;
+  max-width: 1500px;
   justify-content: center;
 }
 
 #sponsor-container a {
   padding: 7px 0px;
+  margin: 5px 20px;
 }
 
 #sponsor-container img {
-  max-width: 410px;
-  min-width: 250px;
-  width: 100%;
+  max-height: 80px;
 }
 
 #sponsor-container a:hover {
