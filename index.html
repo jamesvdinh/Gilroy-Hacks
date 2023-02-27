@@ -361,10 +361,11 @@
                         
                         <!-- EVENTS -->
                         <div class="event start-800 end-800 length-4 empty"></div>
+                        <div class="event food start-9900 end-900 length-4" onclick="showModal('breakfast')">☕ Coffee & Bagels 🥯<span>9 - 10am</span></div>
                         <div class="event start-900 end-900 length-4 empty"></div>
                         <div class="event start-1000 end-1000 length-4 empty"></div>
                         <div class="event start-1100 end-1100 length-4 empty"></div>
-                        <div class="event start-1200 end-1200 length-4 empty"></div>
+                        <div class="event food start-1200 end-1200 length-4" onclick="showModal('lunch')">🍕 Lunch<span>12 - 1pm</span></div>
                         <div class="event start-1300 end-1300 length-4 empty"></div>
                         <div class="event hacking start-1400 end-1400 length-2 small" onclick="showModal('hacking-ends')">🛑 Hacking ends<span>Deadline: 2pm</span></div>
                         <div class="event logistics start-1400 end-1400 length-2 small" onclick="showModal('presentation-planning')">Presentation Planning<span>2 - 3pm</span></div>
@@ -486,6 +487,17 @@
                         <h3><span class="emphasis-text">Time</span>: Starts at 5pm</h3>
                         <h3><span class="emphasis-text">Location</span>: Student Center</h3><br>
                         <p class="timeline-description">Get studying with your concepts, cuz we'll be quizzing you 👀 (1st place wins a prize)!</p>
+                    </div>
+                </div>
+                <div class="modal food-border" id="breakfast">
+                    <button class="button-close-modal"></button>
+                    <div class="modal-header food">
+                        <h2>☕ Coffee & Bagels 🥯</h2>
+                    </div>
+                    <div class="modal-desc">
+                        <h3><span class="emphasis-text">Time</span>: 9 - 10am</h3>
+                        <h3><span class="emphasis-text">Location</span>: Student Center</h3><br>
+                        <p class="timeline-description">Wakey Wakey!!! We've got some coffee for y'all early risers and bagels to keep you awake throughout</p>
                     </div>
                 </div>
                 <div class="modal hacking-border" id="hacking-ends">
