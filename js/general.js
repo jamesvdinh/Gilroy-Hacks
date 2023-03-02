@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function(){
       entry.innerHTML = "tech" + "@" + "gilroyhacks.com";
   });
 
+  var sponsoremail = document.getElementById("email-replace-sponsor");
+  setAttributes(sponsoremail, {"href": "mailto:sponsor" + "@" + "gilroyhacks.com.com?subject=Gilroy Hacks", "target": "_blank"});
+  sponsoremail.innerHTML = "sponsor" + "@" + "gilroyhacks.com";
+
   var aadhavan = document.getElementById("email-replace-aadhavan");
   setAttributes(aadhavan, {"href": "mailto:aadhavanmagesh" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
   aadhavan.innerHTML = "aadhavanmagesh" + "@" + "gmail.com";

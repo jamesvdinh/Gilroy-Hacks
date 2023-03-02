@@ -740,6 +740,22 @@ nav * {
   color: rgb(252, 188, 93);
 }
 
+#header-tooltip-second::after {
+  content: '← Add to Calendar';
+  top: 12px;
+  right: -110px;
+  transform-origin: left;
+  color: rgb(252, 188, 93);
+}
+
+#spots-tooltip-second::after {
+  content: '← Sign up here';
+  top: 12px;
+  right: -130px;
+  transform-origin: left;
+  color: rgb(252, 188, 93);
+}
+
 #map-tooltip::after {
   content: '← Open map';
   top: 12px;
