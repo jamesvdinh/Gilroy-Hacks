@@ -285,7 +285,7 @@ nav ul li {
   .checkbtn {
     display: inline-block;
   }
-  #header-background {
+  .header-background {
     background-position: unset !important;
     background-size: unset !important;
   }
@@ -352,7 +352,7 @@ nav ul li {
 }
 
 /* Header */
-#header-background {
+.header-background {
   background-image: url(/img/background.jpg);
   background-position: center;
   background-size: cover;
@@ -361,7 +361,7 @@ nav ul li {
   height: 20%;
 }
 
-#header {
+.header {
   width: 100%;
   height: 100%;
   padding: 70px 0 50px;
@@ -385,7 +385,7 @@ nav ul li {
   margin-top: 10px;
 }
 
-#header-subtitle-date {
+.header-subtitle-date {
   font-size: 18px;
   padding: 5px 7px;
   width: fit-content;
@@ -428,7 +428,7 @@ nav ul li {
   margin-right: 6px;
 }
 
-#spots-container {
+.spots-container {
   display: flex;
   border-radius: 10px;
   margin-top: 5px;
@@ -443,7 +443,7 @@ nav ul li {
   padding: 5px;
 }
 
-#spots-container:hover, #header-subtitle-date:hover {
+.spots-container:hover, #header-subtitle-date:hover {
   transform: translateY(-2px);
   transition: 0.5s;
 }
