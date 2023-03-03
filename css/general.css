@@ -1510,15 +1510,15 @@ li .splide__pagination__page.is-active {
   display: flex;
   flex-flow: row wrap;
   padding: 20px 15px;
+  margin: 0 50px;
   max-width: 1500px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 #sponsor-container a {
   padding: 7px 0px;
   margin: 5px 20px;
   align-content: center;
-  margin: auto;
 }
 
 #sponsor-container img {
