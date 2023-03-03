@@ -1517,14 +1517,33 @@ li .splide__pagination__page.is-active {
 #sponsor-container a {
   padding: 7px 0px;
   margin: 5px 20px;
+  align-content: center;
+  margin: auto;
 }
 
 #sponsor-container img {
   max-height: 80px;
+  max-width: 370px;
 }
 
 #sponsor-container a:hover {
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
+  animation: 0.3s ease shake;
+}
+
+@keyframes shake {
+  0% {
+    transform:rotate(1deg);
+  }
+  33% {
+    transform:rotate(-1deg);
+  }
+  66% {
+    transform:rotate(1deg);
+  }
+  100% {
+    transform:rotate(0deg);
+  }
 }
 
 #sponsor-container img {
@@ -1640,7 +1659,7 @@ li .splide__pagination__page.is-active {
 }
 
 .button-close-modal:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
   filter: brightness(1.1);
   transition: 0.3s;
 }
@@ -2926,6 +2945,11 @@ option {
   }
 }
 
+.donate-button {
+  color: white;
+  text-decoration: none;
+}
+
 footer {
   width: auto;
   height: auto;
@@ -3004,4 +3028,4 @@ footer li {
 /* Are you interested in coding, engineering, or STEM? Does a weekend full of intense brainstorming and
 coding extravaganza with tons of other like-minded students sound (at the least bit) interesting to you? 
 Gilroy Hacks is all about allowing passionate students showcase their skills and teaching new concepts to 
-newcomers. If this sounds like you, then all aboard the Hackathon tra *
+newcomers. If this sounds like you, then all aboard the Hackathon tra */
