@@ -214,51 +214,69 @@ document.addEventListener('DOMContentLoaded', function(){
   const events = {
     "Opening Ceremony": 
       {
-        "start": "Apr 15, 2023 10:30:00",
+        "start": "Apr 15, 2023 9:30:00",
+        "end": "Apr 15, 2023 10:00:00",
+        "tooltip": "Apr 15, 9:30am" 
+      },
+    "Web Dev Workshop":
+      {
+        "start": "Apr 15, 2023 10:00:00",
         "end": "Apr 15, 2023 11:00:00",
-        "tooltip": "Apr 15, 10:30am" 
+        "tooltip": "Apr 15, 10am"
       },
     "Lunch":
       {
         "start": "Apr 15, 2023 12:00:00",
         "end": "Apr 15, 2023 13:00:00",
-        "tooltip": "Apr 15, 12:00am"
+        "tooltip": "Apr 15, 12pm"
       },
-    "Web Dev Workshop":
+    "Python Workshop":
       {
-        "start": "Apr 15, 2023 13:00:00",
-        "end": "Apr 15, 2023 14:00:00",
-        "tooltip": "Apr 15, 1:00pm"
+        "start": "Apr 15, 2023 14:00:00",
+        "end": "Apr 15, 2023 15:00:00",
+        "tooltip": "Apr 15, 2pm"
       },
-    "[REDACTED] Workshop":
+    "Ping Pong Tournament":
       {
-        "start": "Apr 15, 2023 15:00:00",
-        "end": "Apr 15, 2023 16:00:00",
-        "tooltip": "Apr 15, 3:00pm"
+        "start": "Apr 15, 2023 16:00:00",
+        "end": "Apr 15, 2023 17:00:00",
+        "tooltip": "Apr 15, 4pm"
       },
     "Kahoot":
       {
         "start": "Apr 15, 2023 17:00:00",
         "end": "Apr 15, 2023 18:00:00",
-        "tooltip": "Apr 15, 5:00pm"
+        "tooltip": "Apr 15, 5pm"
+      },
+    "Coffee & Bagels": 
+      {
+        "start": "Apr 16, 2023 9:00:00",
+        "end": "Apr 16, 2023 10:00:00",
+        "tooltip": "Apr 16, 9am" 
+      },
+    "Lunch (Sunday)": 
+      {
+        "start": "Apr 16, 2023 12:00:00",
+        "end": "Apr 16, 2023 13:00:00",
+        "tooltip": "Apr 16, 12pm"
       },
     "Hacking Ends":
       {
         "start": "Apr 16, 2023 14:00:00",
         "end": "Apr 16, 2023 14:00:00",
-        "tooltip": "Apr 16, 2:00pm"
+        "tooltip": "Apr 16, 2pm"
       },
     "Project Presentations":
       {
-        "start": "Apr 16, 2023 14:30:00",
-        "end": "Apr 16, 2023 16:00:00",
-        "tooltip": "Apr 16, 2:30pm"
+        "start": "Apr 16, 2023 15:00:00",
+        "end": "Apr 16, 2023 17:00:00",
+        "tooltip": "Apr 16, 3pm"
       },
     "Awards Ceremony" :
       {
-        "start": "Apr 16, 2023 16:30:00",
-        "end": "Apr 16, 2023 17:00:00",
-        "tooltip": "Apr 16, 4:30pm"
+        "start": "Apr 16, 2023 17:30:00",
+        "end": "Apr 16, 2023 18:00:00",
+        "tooltip": "Apr 16, 5:30pm"
       }
   }
   var countDownDate = 0;
