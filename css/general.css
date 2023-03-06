@@ -1419,6 +1419,40 @@ li .splide__pagination__page.is-active {
   }
 }
 
+.card-info-container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 400px;
+  min-width: 200px;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.info-card {
+  min-width: 180px;
+  max-width: 400px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #197e47;
+  border-radius: 5px;
+}
+
+.info-card.green {
+  background-color: #197e47;
+}
+
+.info-card.blue {
+  background-color: #188592;
+}
+
+.info-card.red {
+  background-color: #a83e32;
+}
+
+.card-heading {
+  font-size: 30px;
+}
+
 .apexcharts-menu {
   background-color: #27293d!important;
   border: 0px;
@@ -1527,19 +1561,18 @@ li .splide__pagination__page.is-active {
 }
 
 #sponsor-container a:hover {
-  /* transform: scale(1.02); */
   animation: 0.3s ease shake;
 }
 
 @keyframes shake {
   0% {
-    transform:rotate(1deg);
+    transform:rotate(0.5deg);
   }
   33% {
-    transform:rotate(-1deg);
+    transform:rotate(-0.5deg);
   }
   66% {
-    transform:rotate(1deg);
+    transform:rotate(0.5deg);
   }
   100% {
     transform:rotate(0deg);

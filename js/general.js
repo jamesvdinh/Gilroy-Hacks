@@ -111,6 +111,11 @@ document.addEventListener('DOMContentLoaded', function(){
       });
   });
 
+  const info_card = document.querySelectorAll('.info-card');
+  info_card.forEach(entry => {
+      observer.observe(entry);
+  });
+
   const workshop_entry = document.querySelectorAll('.workshop-entry');
   workshop_entry.forEach(entry => {
       observer.observe(entry);
