@@ -188,7 +188,7 @@ nav * {
   position: relative;
 }
 
-.navlink.active,a:hover {
+.navlink.active,.link:hover {
   color: rgba(233, 203, 104, 0.774);
   transition: .5s;
 }
@@ -1538,6 +1538,22 @@ li .splide__pagination__page.is-active {
 #sponsors {
   margin-bottom: 10px;
   padding-top: 30px;
+}
+
+.wolfram-logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 300px;
+}
+
+#wolfram-star {
+  max-height: 60px !important;
+}
+
+#wolfram-letters {
+  margin-left: 5px !important;
+  max-height: 35px !important;
 }
 
 #sponsor-container {
