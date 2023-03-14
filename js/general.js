@@ -116,6 +116,11 @@ document.addEventListener('DOMContentLoaded', function(){
       observer.observe(entry);
   });
 
+  const info_card_container = document.querySelectorAll('.card-info-container');
+  info_card_container.forEach(entry => {
+      observer.observe(entry);
+  });
+
   const workshop_entry = document.querySelectorAll('.workshop-entry');
   workshop_entry.forEach(entry => {
       observer.observe(entry);

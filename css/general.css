@@ -486,14 +486,14 @@ nav * {
 }
 @media (max-width: 400px) {
   #nav-logo {
-      content: url(/img/logo_mini.png);
-      height: 45px;
-      width: 45px;
-      margin: 7px 0 0 5px;
+    content: url(/img/logo_mini.png);
+    height: 45px;
+    width: 45px;
+    margin: 7px 0 0 5px;
   }
   #logo {
-      height: 2300px;
-      width: 230px;
+    height: 2300px;
+    width: 230px;
   }
   #prizes-container {
     transform: scale(0.9);
@@ -505,23 +505,17 @@ nav * {
   }
 }
 @media (max-height: 550px) {
-  #logo {
+  /* #logo {
     transform: scale(0.8);
-  }
-  .header-subtitle-date {
-    transform: translateY(-30px);
-  }
-  .spots-container {
-    transform: translateY(-30px);
-  }
-  #line-header {
-    transform: translateY(-30px);
-  }
+  } */
   #entrance-arrow {
     visibility: hidden;
   }
+  .header {
+    transform: scale(0.8);
+  }
 }
-@media (max-height: 400px) {
+@media (max-height: 450px) {
   .header {
     transform: scale(0.7);
   }
@@ -1426,6 +1420,9 @@ li .splide__pagination__page.is-active {
   min-width: 200px;
   justify-content: space-around;
   margin: 20px 0;
+  background-color: #1d1d1d;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .info-card {
@@ -1433,20 +1430,24 @@ li .splide__pagination__page.is-active {
   max-width: 400px;
   padding: 10px 20px;
   margin: 10px 0;
-  background-color: #197e47;
+  background-color:rgb(49, 48, 48);
   border-radius: 5px;
 }
 
-.info-card.green {
-  background-color: #197e47;
+.hcb-container {
+  font-size: 24px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.info-card.blue {
-  background-color: #188592;
+.hcb-svg {
+  margin-right: 5px
 }
 
-.info-card.red {
-  background-color: #a83e32;
+.spots-container.bankacc-click {
+  background:#9a4752;
 }
 
 .card-heading {
