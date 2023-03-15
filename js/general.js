@@ -58,6 +58,10 @@ document.addEventListener('DOMContentLoaded', function(){
   setAttributes(bryce, {"href": "mailto:brycemankovsky" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
   bryce.innerHTML = "brycemankovsky" + "@" + "gmail.com";
 
+  var daniel = document.getElementById("email-replace-daniel");
+  setAttributes(daniel, {"href": "mailto:kenhoule20" + "@" + "gmail.com?subject=Gilroy Hacks", "target": "_blank"});
+  daniel.innerHTML = "kenhoule20" + "@" + "gmail.com";
+
   // Scroll Element
   // Creating an observer when the user views that element
   const observer = new IntersectionObserver(entries => {
