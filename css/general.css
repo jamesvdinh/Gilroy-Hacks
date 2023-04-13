@@ -1434,6 +1434,12 @@ li .splide__pagination__page.is-active {
   border-radius: 5px;
 }
 
+.sub-text {
+  font-size: 10px;
+  color:rgb(154, 154, 154);
+  line-height: 1px;
+}
+
 .hcb-container {
   font-size: 24px;
   padding: 2px;
