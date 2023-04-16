@@ -257,24 +257,24 @@ document.addEventListener('DOMContentLoaded', function(){
         "end": "Apr 15, 2023 17:00:00",
         "tooltip": "Apr 15, 4pm"
       },
-    "Kahoot":
-      {
-        "start": "Apr 15, 2023 17:00:00",
-        "end": "Apr 15, 2023 18:00:00",
-        "tooltip": "Apr 15, 5pm"
-      },
-    "Coffee & Bagels": 
-      {
-        "start": "Apr 16, 2023 9:00:00",
-        "end": "Apr 16, 2023 10:00:00",
-        "tooltip": "Apr 16, 9am" 
-      },
-    "Lunch (Sunday)": 
-      {
-        "start": "Apr 16, 2023 12:00:00",
-        "end": "Apr 16, 2023 13:00:00",
-        "tooltip": "Apr 16, 12pm"
-      },
+    // "Kahoot":
+    //   {
+    //     "start": "Apr 15, 2023 17:00:00",
+    //     "end": "Apr 15, 2023 18:00:00",
+    //     "tooltip": "Apr 15, 5pm"
+    //   },
+    // "Coffee & Bagels": 
+    //   {
+    //     "start": "Apr 16, 2023 9:00:00",
+    //     "end": "Apr 16, 2023 10:00:00",
+    //     "tooltip": "Apr 16, 9am" 
+    //   },
+    // "Lunch (Sunday)": 
+    //   {
+    //     "start": "Apr 16, 2023 12:00:00",
+    //     "end": "Apr 16, 2023 13:00:00",
+    //     "tooltip": "Apr 16, 12pm"
+    //   },
     "Hacking Ends":
       {
         "start": "Apr 16, 2023 14:00:00",
