@@ -232,17 +232,17 @@ document.addEventListener('DOMContentLoaded', function(){
         "end": "Apr 15, 2023 10:00:00",
         "tooltip": "Apr 15, 9:30am" 
       },
-    "Web Dev Workshop":
-      {
-        "start": "Apr 15, 2023 10:00:00",
-        "end": "Apr 15, 2023 11:00:00",
-        "tooltip": "Apr 15, 10am"
-      },
     "Lunch":
       {
         "start": "Apr 15, 2023 12:00:00",
         "end": "Apr 15, 2023 13:00:00",
         "tooltip": "Apr 15, 12pm"
+      },
+      "Web Dev Workshop":
+      {
+        "start": "Apr 15, 2023 13:00:00",
+        "end": "Apr 15, 2023 14:00:00",
+        "tooltip": "Apr 15, 1pm"
       },
     "Python Workshop":
       {
