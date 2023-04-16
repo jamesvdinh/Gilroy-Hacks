@@ -157,6 +157,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // Add class animations to these elements
   let elements_id = [
+    '#current-info',
     '#event-title',
     '#headline-recap',
     '#div-hr',

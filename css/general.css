@@ -1434,9 +1434,9 @@ li .splide__pagination__page.is-active {
   border-radius: 5px;
 }
 
-.current-info {
+#current-info {
   padding: 10px 20px;
-  background-color: #3b3b3b;
+  background-color: #333333;
   max-width: 300px;
   text-align: center;
   border-radius: 5px;
