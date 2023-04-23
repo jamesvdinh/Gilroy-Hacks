@@ -157,9 +157,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // Add class animations to these elements
   let elements_id = [
-    '#current-info',
+    // '#current-info',
     '#event-title',
-    '#headline-recap',
     '#div-hr',
     '#splash-entrance',
     '#what-GilroyHacks',
@@ -176,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function(){
     '#second-podium',
     '#first-podium',
     '#third-podium',
-    // '#chart',
+    '#chart',
     '#administration',
     '#logistics',
     '#outreach',
@@ -509,82 +508,83 @@ var splide = new Splide( '.splide', {
 
 splide.mount();
 
-// var options = {
-//   series: [{
-//     name: 'Idea',
-//     data: [7, 9, 6, 10, 14],
-//   }, {
-//     name: 'Implementation',
-//     data: [11, 6, 11, 3, 9]
-//   }, {
-//     name: 'Presentation',
-//     data: [12, 7, 12, 11, 8]
-//   }, {
-//     name: 'Overall',
-//     data: [10, 6, 9, 7, 11],
-//   }],
-//   chart: {
-//     type: 'bar',
-//     height: 350,
-//     stacked: true,
-//     background: '#0d1117'
-//   },
-//   plotOptions: {
-//     bar: {
-//       horizontal: true,
-//     },
-//   },
-//   stroke: {
-//     width: 1,
-//     colors: ['#fff']
-//   },
-//   title: {
-//     text: 'Team Scores - Summer 2022',
-//     style: {
-//       color: '#fff'
-//     }
-//   },
-//   xaxis: {
-//     categories: ['Team 2', 'Team 3', 'Team 4', 'Team 6', 'Team 7'],
-//     labels: {
-//       formatter: function (val) {
-//         return val + ""
-//       },
-//       style: {
-//         colors: '#fff'
-//       }
-//     },
-//   },
-//   yaxis: {
-//     labels: {
-//         style: {
-//           colors: '#fff'
-//         }
-//     },
-//     title: {
-//       text: undefined
-//     },
-//   },
-//   tooltip: {
-//     y: {
-//       formatter: function (val) {
-//         return val + ""
-//       }
-//     },
-//     theme: 'dark'
-//   },
-//   fill: {
-//     opacity: 1
-//   },
-//   legend: {
-//     position: 'top',
-//     horizontalAlign: 'left',
-//     offsetX: 40,
-//     labels: {
-//       colors: '#fff',
-//   },
-//   },
-//   };
+var options = {
+  series: [{
+    name: 'Idea',
+    data: [13, 8, 12, 11, 14, 11, 13]
+  }, {
+    name: 'Implementation',
+    data: [9, 9, 10, 10, 10, 15, 9]
+  }, {
+    name: 'Presentation',
+    data: [9, 12, 7, 13, 12, 12, 11]
+  }],
+  // {
+  //   name: 'Overall',
+  //   data: [10, 9, 9, 7, 11],
+  // }],
+  chart: {
+    type: 'bar',
+    height: 350,
+    stacked: true,
+    background: '#0d1117'
+  },
+  plotOptions: {
+    bar: {
+      horizontal: true,
+    },
+  },
+  stroke: {
+    width: 1,
+    colors: ['#fff']
+  },
+  title: {
+    text: 'Spring 2023 Team Scores',
+    style: {
+      color: '#fff'
+    }
+  },
+  xaxis: {
+    categories: ['Rao Dynasty', 'The Computors', 'Helping Hand 4', 'Good Team Name #462', 'ClevelandThisIsForYou', 'ToxicBytes', 'Blitz'],
+    labels: {
+      formatter: function (val) {
+        return val + ""
+      },
+      style: {
+        colors: '#fff'
+      }
+    },
+  },
+  yaxis: {
+    labels: {
+        style: {
+          colors: '#fff'
+        }
+    },
+    title: {
+      text: undefined
+    },
+  },
+  tooltip: {
+    y: {
+      formatter: function (val) {
+        return val + ""
+      }
+    },
+    theme: 'dark'
+  },
+  fill: {
+    opacity: 1
+  },
+  legend: {
+    position: 'top',
+    horizontalAlign: 'left',
+    offsetX: 40,
+    labels: {
+      colors: '#fff',
+  },
+  },
+  };
 
-//   var chart = new ApexCharts(document.querySelector("#chart"), options);
-//   chart.render
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  chart.render();
