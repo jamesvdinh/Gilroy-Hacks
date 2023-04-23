@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function(){
         "start": "Apr 16, 2023 17:30:00",
         "end": "Apr 16, 2023 18:00:00",
         "tooltip": "Apr 16, 5:30pm"
-      }
+      },
   }
   var countDownDate = 0;
   // Get today's date and time
@@ -316,6 +316,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // Find the distance between now and the count down date
     var distance = countDownDate - now;
+    if (testDateStart < now && now > testDateEnd) {
+      countDownDate = new Date("Apr 16, 2023 18:00:00").getTime();
+      var distance = now - countDownDate;
+    }
 
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -324,7 +328,10 @@ document.addEventListener('DOMContentLoaded', function(){
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // If the count down is finished, write some text
-    if (testDateStart < now && now < testDateEnd) {
+    if (testDateStart < now && now > testDateEnd) {
+      document.getElementById("timer").innerHTML = days + "d " + "ago";
+    }
+    else if (testDateStart < now && now < testDateEnd) {
       document.getElementById("timer").innerHTML = "NOW";
     }
     // Display the result in the element with id="timer"
